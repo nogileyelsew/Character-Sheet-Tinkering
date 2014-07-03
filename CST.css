@@ -1,0 +1,10 @@
+.charsheet label {
+    display: inline-block;
+    width: 25em;
+	text-align: left;
+}
+.charsheet input.sheet-short {
+    width: 2em;
+}
+.charsheet input.sheet-long {
+    width: 165px;
