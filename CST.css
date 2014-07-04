@@ -1,11 +1,29 @@
 .charsheet label {
-    display: inline-block;
-    width: 25em;
-	text-align: left;
+    display: inline;
+    font-size: 85%;
+    text-align: left;
+    padding-right: 3px;
 }
 .charsheet input.sheet-short {
+    text-align: center;
     width: 2em;
-}
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: black;
+    border-width: 2px;
+    padding: 0px;}
 .charsheet input.sheet-long {
-    width: 165px;
+    width: 110px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: black;
+    padding: 0px;
+}
+.charsheet hr {
+    border-color: black;
+    margin: 2px;
 }
