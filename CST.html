@@ -105,7 +105,7 @@
    <label>Center Torso Rear:<input type="number" name="attr_centertorso_rear_armor" value="0" /><input type="number" name="attr_centertorso_rear_armor_max" value="28" /></label><br>
    <label>Right Torso Rear:<input type="number" name="attr_righttorso_rear_armor" value="0" /><input type="number" name="attr_righttorso_rear_armor_max" value="22" /></label>
  </div>
-<!--Section 2 Column 3 Internal Structure Data --> 
+<!--Section 2 Column 3 Internal Structure Data (Setting the Max as it is 10% of Mech tonnage.) --> 
  <div class="sheet-col">
    <h4 style="text-align:center;">Internal Structure <input type="hidden" name="attr_internalstructure" value="@{mech_tonnage}/10" disabled="true" /></h4>
    <label>Type:</label>
@@ -113,9 +113,9 @@
    <label>Endo-Steel <input type='checkbox' name='attr_endosteel_internalstructure' value='1' /></label>
    <label>Reinforced <input type='checkbox' name='attr_reinforced_internalstructure' value='1' /></label>
    <label>Composite <input type='checkbox' name='attr_composite_internalstructure' value='1' /></label><br>
-   <label>Head:<input type="number" name="attr_head_internalstructure" value="0" /><input type="number" name="attr_head_internalstructure_max" value="3" disabled="true" /></label><br>
-   <label>Left Torso:<input type="number" name="attr_lefttorso_internalstructure" value="0" /><input type="number" name="attr_lefttorso_internalstructure_max" value="ceil(@{internalstructure}*2.1)" disabled="true" /></label>
-   <label>Right Torso:<input type="number" name="attr_righttorso_internalstructure" value="0" /><input type="number" name="attr_righttorso_internalstructure_max" value="21" /></label><br>
+   <label>Head:<input type="number" name="attr_head_internalstructure" value="0" /><input type="text" name="attr_head_internalstructure_max" value="3" disabled="true" /></label><br>
+   <label>Left Torso:<input type="number" name="attr_lefttorso_internalstructure" value="0" /><input type="text" name="attr_lefttorso_internalstructure_max" value="round(@{internalstructure}*2.1)" disabled="true" /></label>
+   <label>Right Torso:<input type="number" name="attr_righttorso_internalstructure" value="0" /><input type="text" name="attr_righttorso_internalstructure_max" value="round(@{internalstructure}*2.1)" disable="true" /></label><br>
    <label>Left Arm:<input type="number" name="attr_leftarm_internalstructure" value="0" /><input type="number" name="attr_leftarm_internalstructure_max" value="17" /></label>
    <label>Center Torso:<input type="number" name="attr_centertorso_internalstructure" value="0" /><input type="number" name="attr_centertorso_internalstructure_max" value="31" /></label>
    <label>Right Arm:<input type="number" name="attr_rightarm_internalstructure" value="0" /><input type="number" name="attr_rightarm_internalstructure_max" value="17" /></label><br>
