@@ -100,7 +100,7 @@
    <label>Reinforced <input type='checkbox' name='attr_reinforced_internalstructure' value='1' /></label>
    <label>Composite <input type='checkbox' name='attr_composite_internalstructure' value='1' /></label><br>
    <label>Head:<input type="number" name="attr_head_internalstructure" value="0" /><input type="number" name="attr_head_internalstructure_max" value="3" disabled="true" /></label><br>
-   <label>Left Torso:<input type="number" name="attr_lefttorso_internalstructure" value="0" /><input type="number" name="attr_lefttorso_internalstructure_max" value="21" /></label>
+   <label>Left Torso:<input type="number" name="attr_lefttorso_internalstructure" value="0" /><input type="number" name="attr_lefttorso_internalstructure_max" value="ceil(@{internalstructure}*2.1)" disabled="true" /></label>
    <label>Right Torso:<input type="number" name="attr_righttorso_internalstructure" value="0" /><input type="number" name="attr_righttorso_internalstructure_max" value="21" /></label><br>
    <label>Left Arm:<input type="number" name="attr_leftarm_internalstructure" value="0" /><input type="number" name="attr_leftarm_internalstructure_max" value="17" /></label>
    <label>Center Torso:<input type="number" name="attr_centertorso_internalstructure" value="0" /><input type="number" name="attr_centertorso_internalstructure_max" value="31" /></label>
