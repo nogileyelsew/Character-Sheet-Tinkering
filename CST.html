@@ -75,12 +75,19 @@
    <label>10</label>
    <label>11</label>
    <lable>Dead</lable>
+   <!-- End: Column 3 Warrior Data -->
   </div>
 </div>
 <hr>
-<div class="sheet-3colrow">
+<!-- Setting up Tabs for Bottom part of Sheet -->
+<input type="radio" class="tab" name="attr_tab" value="armor" checked="checked" /><span title="Armor, Critical Hits"></span>
+<input type="radio" class="tab" name="attr_tab" value="weapons" /><span title="Weapons, Heat Scale"></span>
+<input type="radio" class="tab" name="attr_tab" value="attack" /><span title="Attack ModiFiers, Hit Locations"></span>
+<input type="radio" class="tab" name="attr_tab" value="construction" /><span title="Construction"></span>
+<div class="tab-content armor-tab">
+ <div class="sheet-3colrow">
 <!-- Section 2 Column 1 Armor Data -->
- <div class="sheet-col">
+  <div class="sheet-col">
    <h4 style="text-align:center;">Armor</h4>
    <label>Type:</label>
    <label>Standard <input type='checkbox' name='attr_standard_armor' value='1' checked="true" /></label>
@@ -97,16 +104,16 @@
    <label>Right Arm:<input type="number" name="attr_rightarm_armor" value="0" /><input type="number" name="attr_rightarm_armor_max" value="34" /></label><br>
    <label>Left Leg:<input type="number" name="attr_leftleg_armor" value="0" /><input type="number" name="attr_leftleg_armor_max" value="42" /></label>
    <label>Right Leg:<input type="number" name="attr_rightleg_armor" value="0" /><input type="number" name="attr_rightleg_armor_max" value="42" /></label>
- </div>
+  </div>
 <!--Section 2 Column 2 Rear Armor Data --> 
- <div class="sheet-col">
+  <div class="sheet-col">
    <h4 style="text-align:center;">Rear Armor</h4>
    <label>Left Torso Rear:<input type="number" name="attr_lefttorso_rear_armor" value="0" /><input type="number" name="attr_lefttorso_rear_armor_max" value="22" /></label><br>
    <label>Center Torso Rear:<input type="number" name="attr_centertorso_rear_armor" value="0" /><input type="number" name="attr_centertorso_rear_armor_max" value="28" /></label><br>
    <label>Right Torso Rear:<input type="number" name="attr_righttorso_rear_armor" value="0" /><input type="number" name="attr_righttorso_rear_armor_max" value="22" /></label>
- </div>
+  </div>
 <!--Section 2 Column 3 Internal Structure Data (Setting the Max as it is 10% of Mech tonnage.) --> 
- <div class="sheet-col">
+  <div class="sheet-col">
    <h4 style="text-align:center;">Internal Structure <input type="hidden" name="attr_internalstructure" value="@{mech_tonnage}/10" disabled="true" /></h4>
    <label>Type:</label>
    <label>Standard <input type='checkbox' name='attr_standard_internalstucture' value='1' checked='true' /></label>
@@ -121,10 +128,12 @@
    <label>Right Arm:<input type="number" name="attr_rightarm_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_rightarm_internalstructure_max" value="round(@{internalstructure}*1.65)" class="sheet-armor" disabled="true" /></label><br>
    <label>Left Leg:<input type="number" name="attr_leftleg_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_leftleg_internalstructure_max" value="round(@{internalstructure}*2.1)" class="sheet-armor" disabled="true" /></label>
    <label>Right Leg:<input type="number" name="attr_rightleg_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_rightleg_internalstructure_max" value="round(@{internalstructure}*2.1)" class="sheet-armor" disabled="true" /></label>
+  </div>
  </div>
-</div>
-
-
-
-
+</div> <!-- End of Tab Armor -->
+<div class="tab-content weapons-tab">
+ <div class= "sheet-col">
+   <label>Stuff Here!</label>
+ </div>
+</div> <!-- End of Tab Weapons -->
 
