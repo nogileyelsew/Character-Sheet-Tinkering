@@ -4,6 +4,7 @@
     text-align: left;
     padding-right: 3px;
 }
+/*Short Input Box*/
 .charsheet input.sheet-short {
     text-align: center;
     width: 2em;
@@ -14,6 +15,7 @@
     border-color: black;
     border-width: 2px;
     padding: 0px;}
+/*Long Input Box*/    
 .charsheet input.sheet-long {
     width: 110px;
     border-top-style: none;
@@ -29,4 +31,99 @@
 }
 .charsheet button {
     margin-right: 6px;
+}
+/*Armor/Internal Structure Input Box*/
+.charsheet input.sheet-armor {
+    text-align: center;
+    width: 2em;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 2px;
+    }
+/* Tab Styling*/
+.charsheet input[type="radio"].sheet-tab {
+    width: 15%;
+	display: inline-block;
+    opacity: 0;
+    position: relative;
+    cursor: pointer;
+	z-index: 1;
+}
+.charsheet input[type="radio"].sheet-tab + label{
+	width: 15%;
+	display: inline-block;
+    position: relative;
+	left: -15%;
+    margin-right: -15%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 100%;
+    font-weight:bold;
+    border: solid;
+    border-width: 2px;
+    margin-bottom: 2px;
+}    
+.charsheet input[type="radio"].sheet-tab:checked + label{
+    background-color: #D3D3D3;
+}
+
+.charsheet .sheet-tab-armor {
+    display: none;
+    visibility: hidden;
+}
+
+.charsheet .sheet-tab-armor-radio:checked ~ .sheet-tab-armor {
+    display: block;
+    visibility: visible;
+}
+
+.charsheet .sheet-tab-weapons {
+    display: none;
+    visibility: hidden;
+}
+
+.charsheet .sheet-tab-weapons-radio:checked ~ .sheet-tab-weapons {
+    display: block;
+    visibility: visible;
+}
+
+.charsheet .sheet-tab-modifiers {
+    display: none;
+    visibility: hidden;
+}
+
+.charsheet .sheet-tab-modifiers-radio:checked ~ .sheet-tab-modifiers {
+    display: block;
+    visibility: visible;
+}
+
+.charsheet .sheet-tab-modifiers-radio:checked ~ .sheet-tab-modifiers .sheet-tab-modifiers {
+    display: block;
+    visibility: visible;
+}
+.charsheet .sheet-tab-modifiers-radio:checked ~ .sheet-tab-modifiers .sheet-tab-construction {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.charsheet .sheet-tab-construction {
+    display: none;
+    visibility: hidden;
+}
+
+.charsheet .sheet-tab-construction-radio:checked ~ .sheet-tab-construction {
+    display: block;
+    visibility: visible;
+}
+
+.charsheet .sheet-tab-construction-radio:checked ~ .sheet-tab-construction .sheet-tab-construction {
+    display: block;
+    visibility: visible;
+}
+
+.charsheet .sheet-tab-construction-radio:checked ~ .sheet-tab-construction .sheet-tab-modifiers {
+    display: none !important;
+    visibility: hidden !important;
 }
