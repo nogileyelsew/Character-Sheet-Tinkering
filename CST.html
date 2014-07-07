@@ -206,8 +206,14 @@
       <label><input type='checkbox' name='attr_criticalhit_centertorso_b4' value='1' />4. <input type="text" name="attr_centertorso_b4" value="Engine" class='sheet-extralong' /></label><br>
       <label><input type='checkbox' name='attr_criticalhit_centertorso_b5' value='1' />5. <input type="text" name="attr_centertorso_b5" value="" class='sheet-extralong' /></label><br>
       <label><input type='checkbox' name='attr_criticalhit_centertorso_b6' value='1' />6. <input type="text" name="attr_centertorso_b6" value="" class='sheet-extralong' /></label><br>
-      <h4>Engine Hits</h4><input type='radio' class="sheet-critical-hidden" name='attr_criticalhit_engine_c1' value='1' />
-      <input type='radio' class="sheet-critical" name='attr_criticalhit_engine_c1' value="@{criticalhit_centertorso_a1}+@{criticalhit_centertorso_a2}+@{criticalhit_centertorso_a3}+@{criticalhit_centertorso_b2}+@{criticalhit_centertorso_b3}+@{criticalhit_centertorso_b4}"/>
+      <div class="sheet-criticalhit-block" style="text-align:center;">
+        <label>Engine Hits: <input type='checkbox' name='attr_criticalhit_engine_c1' value='1' /><input type='checkbox' name='attr_criticalhit_engine_c2' value='1' /><input type='checkbox' name='attr_criticalhit_engine_c3' value='1' /></label>
+        <label>Gyro Hits: <input type='checkbox' name='attr_criticalhit_gyro_c1' value='1' /><input type='checkbox' name='attr_criticalhit_gyro_c2' value='1' /></label>
+        <label>Sensor Hits: <input type='checkbox' name='attr_criticalhit_sensor_c1' value='1' /><input type='checkbox' name='attr_criticalhit_sensor_c2' value='1' /></label>
+        <label>Life Support: <input type='checkbox' name='attr_criticalhit_lifesupport_c1' value='1' /></label>
+      </div>
+      <label>Battle Value: <input type="text" name="attr_battlevalue" value="" class='sheet-long' /></label>
+      <label>Battle Value: <input type="text" name="attr_cost" value="" class='sheet-long' /></label>
     </div>
     <!-- Section 3 Column 3 Right Side Critical Hits --> 
     <div class="sheet-col" style="text-align:center;">
