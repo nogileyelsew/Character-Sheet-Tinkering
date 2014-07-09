@@ -9,17 +9,17 @@
   <div class="sheet-col">
    <h4 style="text-align:center;">Mech Data</h4>
    <label>Type:<input type="text" name="attr_mech_name" class='sheet-long' /></label>
-   <label>Tonnage:<input type="number" name="attr_mech_tonnage" value="10" class="sheet-short" /></label>
+   <label>Tonnage:<input type="text" name="attr_mech_tonnage" value="10" class="sheet-short" /></label>
    <label>Technology Base:</label>
    <label>Inner-Sphere <input type='checkbox' name='attr_technologybase_is' value='1' checked="true" /></label>
    <label>Clan <input type='checkbox' name='attr_technologybase_clan' value='1' /></label><br>
    <label>Movement Points:</label><br>
-   <label>Walking:<input type="number" name="attr_mech_walk" value="0" class="sheet-short" /></label>
-   <label>Running:<input type="number" name="attr_mech_run" value="0" class="sheet-short" /></label><br>
-   <label>Sprinting:<input type="number" name="attr_mech_sprint" value="0" class="sheet-short" /></label>
-   <label>Jumping:<input type="number" name="attr_mech_jump" value="0" class="sheet-short"/></label>
+   <label>Walking:<input type="text" name="attr_mech_walk" value="0" class="sheet-short" /></label>
+   <label>Running:<input type="text" name="attr_mech_run" value="0" class="sheet-short" /></label><br>
+   <label>Sprinting:<input type="text" name="attr_mech_sprint" value="0" class="sheet-short" /></label>
+   <label>Jumping:<input type="text" name="attr_mech_jump" value="0" class="sheet-short"/></label>
    <hr>
-   <label>Total Heat Sinks: <input type="number" name="attr_heatsinks" value="10" class="sheet-short" /><input type="number" name="attr_heatsinks_max" value="10" class="sheet-short"/></label><br>
+   <label>Total Heat Sinks: <input type="text" name="attr_heatsinks" value="10" class="sheet-short" /><input type="text" name="attr_heatsinks_max" value="10" class="sheet-short"/></label><br>
    <label>Type:</label>
    <label>Single <input type='checkbox' name='attr_single_heatsink' value='1' checked="true" /></label>
    <label>Double <input type='checkbox' name='attr_double_heatsink' value='1' /></label>
@@ -38,8 +38,8 @@
   <div class="sheet-col">
    <h4 style="text-align:center;">Warrior Data</h4>
    <label>Name:<input type="text" name="attr_warrior1_name" class='sheet-long' /></label><br>
-   <label>Gunnery:<input type="number" name="attr_warrior1_gunnery" value="4" class="sheet-short" /></label>
-   <label>Piloting:<input type="number" name="attr_warrior1_piloting" value="5" class="sheet-short" /></label><br>
+   <label>Gunnery:<input type="text" name="attr_warrior1_gunnery" value="4" class="sheet-short" /></label>
+   <label>Piloting:<input type="text" name="attr_warrior1_piloting" value="5" class="sheet-short" /></label><br>
    <button type="roll" value="/roll 2d6" name="roll_consciousness" /></button>
    <!-- Roll you can Call, "roll_consciousness" -->
    <label>Hits Taken:<input type="radio" type="hidden" value='0' name="attr_warrior1_hits" checked="true" />
@@ -59,8 +59,8 @@
    <lable>Dead</lable>
    <hr>
    <label>Name:<input type="text" name="attr_warrior2_name" class='sheet-long' /></label><br>
-   <label>Gunnery:<input type="number" name="attr_warrior2_gunnery" value="4" class="sheet-short" /></label>
-   <label>Piloting:<input type="number" name="attr_warrior2_piloting" value="5" class="sheet-short" /></label><br>
+   <label>Gunnery:<input type="text" name="attr_warrior2_gunnery" value="4" class="sheet-short" /></label>
+   <label>Piloting:<input type="text" name="attr_warrior2_piloting" value="5" class="sheet-short" /></label><br>
    <button type="roll" value="/roll 2d6" name="roll_consciousness" /></button>
    <label>Hits Taken:<input type="radio" type="hidden" value='0' name="attr_warrior2_hits" checked="true" />
     <input type="radio" value="1" name="attr_warrior2_hits" />
@@ -274,7 +274,7 @@
     <input type="text" name="weapon_ammo_label" value="Ammo" class="sheet-weapon" disabled="true" /><br>
     <!-- Repeating Weapons Field -->
     <fieldset class="repeating_weapons">
-      <input type="text" name="attr_weapon_name" class="sheet-extra-long" />
+      <input type="text" name="attr_weapon_name" class="sheet-uberlong" />
       <input type="text" name="attr_weapon_heat_generated" class="sheet-short" />
       <input type="text" name="attr_weapon_damage" class="sheet-short" />
       <input type="text" name="attr_weapon_minimum" class="sheet-short" />
