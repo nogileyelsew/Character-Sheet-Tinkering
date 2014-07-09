@@ -258,20 +258,22 @@
 </div> 
 <div class="sheet-tab-weapons">
   <div class="sheet-col">
+    <!-- Attack Roll Button -->  
     <button type="roll" value="/roll 2d6" name="roll_attack" /></button>
-    <input type="text" name="type" value="Type" class="sheet-armor" disabled="true" />
-    <label>Heat</label>
-    <label>Damage</label>
-    <label>Min.</label>
-    <label>Short</label>
-    <label>Medium</label>
-    <label>Long</label>
-    <label>Extreme</label>
-    <label>Location</label>
-    <label>Tons</label>
-    <label>Critical</label>
-    <label>Ammo</label><br>
-    <fieldset class="sheet-repeating_weapons">
+    <input type="text" name="weapon_type_label" value="Type" class="sheet-weapon-long" disabled="true" />
+    <input type="text" name="weapon_heat_label" value="Heat" class="sheet-weapon" disabled="true" />
+    <input type="text" name="weapon_damage_label" value="Damage" class="sheet-weapon" disabled="true" />
+    <input type="text" name="weapon_minimum_label" value="Min." class="sheet-weapon" disabled="true" />
+    <input type="text" name="weapon_short_label" value="Short" class="sheet-weapon" disabled="true" />
+    <input type="text" name="weapon_medium_label" value="Medium" class="sheet-weapon" disabled="true" />
+    <input type="text" name="weapon_long_label" value="Long" class="sheet-weapon" disabled="true" />
+    <input type="text" name="weapon_extreme_label" value="Extreme" class="sheet-weapon" disabled="true" />
+    <input type="text" name="weapon_location_label" value="Location" class="sheet-weapon" disabled="true" />
+    <input type="text" name="weapon_tonnage_label" value="Tons" class="sheet-weapon" disabled="true" />
+    <input type="text" name="weapon_critical_label" value="Critical" class="sheet-weapon" disabled="true" />
+    <input type="text" name="weapon_ammo_label" value="Ammo" class="sheet-weapon" disabled="true" /><br>
+    <!-- Repeating Weapons Field -->
+    <fieldset class="repeating_weapons">
       <input type="text" name="attr_weapon_name" class="sheet-extra-long" />
       <input type="text" name="attr_weapon_heat_generated" class="sheet-short" />
       <input type="text" name="attr_weapon_damage" class="sheet-short" />
