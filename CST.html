@@ -103,19 +103,19 @@
       <h4 style="text-align:center">Front Armor</h4>
       <label>Current | Max</label><br>
       <label>Head <input type="text" name="attr_head_armor" value="0" class="sheet-armor" /><input type="text" name="attr_head_armor_max" value="9" class="sheet-armor" /></label><br>
-      <label>L Arm <input type="text" name="attr_leftarm_armor" value="0" class="sheet-armor" /><input type="text" name="attr_leftarm_armor_max" value="34" class="sheet-armor" /></label>
+      <label>Left Arm <input type="text" name="attr_leftarm_armor" value="0" class="sheet-armor" /><input type="text" name="attr_leftarm_armor_max" value="34" class="sheet-armor" /></label>
       <label>|</label>
-      <label><input type="text" name="attr_rightarm_armor" value="0" class="sheet-armor" /><input type="text" name="attr_rightarm_armor_max" value="34" class="sheet-armor" /> R Arm</label><br>
-      <label>L Torso <input type="text" name="attr_lefttorso_armor" value="0" class="sheet-armor" /><input type="textr" name="attr_lefttorso_armor_max" value="42" class="sheet-armor" /></label>
+      <label><input type="text" name="attr_rightarm_armor" value="0" class="sheet-armor" /><input type="text" name="attr_rightarm_armor_max" value="34" class="sheet-armor" /> Right Arm</label><br>
+      <label>Left Torso <input type="text" name="attr_lefttorso_armor" value="0" class="sheet-armor" /><input type="textr" name="attr_lefttorso_armor_max" value="42" class="sheet-armor" /></label>
       <label>|</label>
-      <label><input type="text" name="attr_righttorso_armor" value="0" class="sheet-armor" /><input type="text" name="attr_righttorso_armor_max" value="42" class="sheet-armor" /> R Torso</label><br>
-      <label>C Torso <input type="text" name="attr_centertorso_armor" value="0" class="sheet-armor" /><input type="text" name="attr_centertorso_armor_max" value="64" class="sheet-armor" /></label><br>
-      <label>L Leg <input type="text" name="attr_leftleg_armor" value="0" class="sheet-armor" /><input type="text" name="attr_leftleg_armor_max" value="42" class="sheet-armor" /></label>
+      <label><input type="text" name="attr_righttorso_armor" value="0" class="sheet-armor" /><input type="text" name="attr_righttorso_armor_max" value="42" class="sheet-armor" /> Right Torso</label><br>
+      <label>Center Torso <input type="text" name="attr_centertorso_armor" value="0" class="sheet-armor" /><input type="text" name="attr_centertorso_armor_max" value="64" class="sheet-armor" /></label><br>
+      <label>Left Leg <input type="text" name="attr_leftleg_armor" value="0" class="sheet-armor" /><input type="text" name="attr_leftleg_armor_max" value="42" class="sheet-armor" /></label>
       <label>|</label>
-      <label><input type="text" name="attr_rightleg_armor" value="0" class="sheet-armor" /><input type="text" name="attr_rightleg_armor_max" value="42" class="sheet-armor" /> R Leg</label>
+      <label><input type="text" name="attr_rightleg_armor" value="0" class="sheet-armor" /><input type="text" name="attr_rightleg_armor_max" value="42" class="sheet-armor" /> Right Leg</label>
       <h4>Armor Factor</h4>
-      <label>Total Armor<input type="text" name="attr_total_armor" value="(@{head_armor}+@{leftarm_armor}+@{rightarm_armor}+@{lefttorso_armor}+@righttorso_armor}+@{centertorso_armor}+@{leftleg_armor}+@{rightleg_armor}+@{lefttorso_rear_armor}+@{centertorso_rear_armor}+@{righttorso_rear_armor})" class="sheet-armor" disabled="true" />
-      <input type="text" name="attr_total_armor_max" value="(@{head_armor_max}+@{leftarm_armor_max}+@{rightarm_armor_max}+@{lefttorso_armor_max}+@righttorso_armor_max}+@{centertorso_armor_max}+@{leftleg_armor_max}+@{rightleg_armor_max}+@{lefttorso_rear_armor_max}+@{centertorso_rear_armor_max}+@{righttorso_rear_armor_max})" class="sheet-armor" disabled="true"/>Total Armor Max</label>
+      <label>Total Armor<input type="text" name="attr_total_armor" value="@{head_armor}+@{leftarm_armor}+@{rightarm_armor}+@{lefttorso_armor}+@righttorso_armor}+@{centertorso_armor}+@{leftleg_armor}+@{rightleg_armor}+@{lefttorso_rear_armor}+@{centertorso_rear_armor}+@{righttorso_rear_armor}" class="sheet-armor" disabled="true" />
+      <input type="text" name="attr_total_armor_max" value="@{head_armor_max}+@{leftarm_armor_max}+@{rightarm_armor_max}+@{lefttorso_armor_max}+@righttorso_armor_max}+@{centertorso_armor_max}+@{leftleg_armor_max}+@{rightleg_armor_max}+@{lefttorso_rear_armor_max}+@{centertorso_rear_armor_max}+@{righttorso_rear_armor_max}" class="sheet-armor" disabled="true"/>Total Armor Max</label>
       <label>Armor Tonnage: <input type="text" name ="attr_armor_tonnage" /></label>
     </div>
     <!--Section 2 Column 2 Rear Armor Data --> 
@@ -136,17 +136,17 @@
       <label>Reinforced <input type='checkbox' name='attr_reinforced_internalstructure' value='1' /></label>
       <label>Composite <input type='checkbox' name='attr_composite_internalstructure' value='1' /></label><br>
       <label>Current | Max</label><br>
-      <label>Head:<input type="text" name="attr_head_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_head_internalstructure_max" value="3" class="sheet-armor" disabled="true" /></label><br>
-      <label>L Arm:<input type="text" name="attr_leftarm_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_leftarm_internalstructure_max" value="round(@{internalstructure}*1.65)" class="sheet-armor" disabled="true"/></label>
+      <label>Head<input type="text" name="attr_head_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_head_internalstructure_max" value="3" class="sheet-armor" disabled="true" /></label><br>
+      <label>Left Arm<input type="text" name="attr_leftarm_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_leftarm_internalstructure_max" value="round(@{internalstructure}*1.65)" class="sheet-armor" disabled="true"/></label>
       <label>|</label>
-      <label><input type="text" name="attr_rightarm_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_rightarm_internalstructure_max" value="round(@{internalstructure}*1.65)" class="sheet-armor" disabled="true" />R Arm</label><br>
-      <label>L Tors:<input type="text" name="attr_lefttorso_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_lefttorso_internalstructure_max" value="round(@{internalstructure}*2.1)" class="sheet-armor" disabled="true" /></label>
+      <label><input type="text" name="attr_rightarm_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_rightarm_internalstructure_max" value="round(@{internalstructure}*1.65)" class="sheet-armor" disabled="true" />Right Arm</label><br>
+      <label>Left Torso<input type="text" name="attr_lefttorso_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_lefttorso_internalstructure_max" value="round(@{internalstructure}*2.1)" class="sheet-armor" disabled="true" /></label>
       <label>|</label>
-      <label><input type="text" name="attr_righttorso_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_righttorso_internalstructure_max" value="round(@{internalstructure}*2.1)"  class="sheet-armor" disabled="true" /> R Tors</label><br>
-      <label>Center Torso:<input type="text" name="attr_centertorso_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_centertorso_internalstructure_max" value="round(@{internalstructure}*3.2)" class="sheet-armor" disabled="true" /></label><br>
-      <label>L Leg:<input type="text" name="attr_leftleg_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_leftleg_internalstructure_max" value="round(@{internalstructure}*2.1)" class="sheet-armor" disabled="true" /></label>
+      <label><input type="text" name="attr_righttorso_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_righttorso_internalstructure_max" value="round(@{internalstructure}*2.1)"  class="sheet-armor" disabled="true" /> Right Torso</label><br>
+      <label>Center Torso<input type="text" name="attr_centertorso_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_centertorso_internalstructure_max" value="round(@{internalstructure}*3.2)" class="sheet-armor" disabled="true" /></label><br>
+      <label>Left Leg<input type="text" name="attr_leftleg_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_leftleg_internalstructure_max" value="round(@{internalstructure}*2.1)" class="sheet-armor" disabled="true" /></label>
       <label>|</label>
-      <label><input type="text" name="attr_rightleg_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_rightleg_internalstructure_max" value="round(@{internalstructure}*2.1)" class="sheet-armor" disabled="true" /> R Leg</label><br>
+      <label><input type="text" name="attr_rightleg_internalstructure" value="0" class="sheet-armor" /><input type="text" name="attr_rightleg_internalstructure_max" value="round(@{internalstructure}*2.1)" class="sheet-armor" disabled="true" /> Right Leg</label><br>
     </div>
     <!-- End of Section 2 Armor Data --> 
     </div>
