@@ -114,8 +114,8 @@
       <label>|</label>
       <label><input type="text" name="attr_rightleg_armor" value="0" class="sheet-armor" /><input type="text" name="attr_rightleg_armor_max" value="42" class="sheet-armor" /> Right Leg</label>
       <h4>Armor Factor</h4>
-      <label>Total Armor<input type="text" name="attr_total_armor" value="round(@{head_armor}+@{leftarm_armor}+@{rightarm_armor}+@{lefttorso_armor}+@righttorso_armor}+@{centertorso_armor}+@{leftleg_armor}+@{rightleg_armor}+@{lefttorso_rear_armor}+@{centertorso_rear_armor}+@{righttorso_rear_armor})*1" class="sheet-armor" disabled="true" />
-      <input type="text" name="attr_total_armor_max" value="round(@{head_armor_max}+@{leftarm_armor_max}+@{rightarm_armor_max}+@{lefttorso_armor_max}+@righttorso_armor_max}+@{centertorso_armor_max}+@{leftleg_armor_max}+@{rightleg_armor_max}+@{lefttorso_rear_armor_max}+@{centertorso_rear_armor_max}+@{righttorso_rear_armor_max})*1" class="sheet-armor" disabled="true"/>Total Armor Max</label><br>
+      <label>Total Armor<input type="text" name="attr_total_armor" value="@{head_armor}+@{leftarm_armor}+@{rightarm_armor}+@{lefttorso_armor}+@{righttorso_armor}+@{centertorso_armor}+@{leftleg_armor}+@{rightleg_armor}+@{lefttorso_rear_armor}+@{centertorso_rear_armor}+@{righttorso_rear_armor}" class="sheet-armor-long" disabled="true" />
+      <input type="text" name="attr_total_armor_max" value="round(@{armor_tonnage}*16)" class="sheet-armor-long" disabled="true"/>Total Armor Max</label><br>
       <label>Armor Tonnage: <input type="text" name ="attr_armor_tonnage" class="sheet-armor" /></label>
     </div>
     <!--Section 2 Column 2 Rear Armor Data --> 
