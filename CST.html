@@ -270,14 +270,16 @@
     <label>Tons</label>
     <label>Critical</label>
     <label>Ammo</label><br>
-    <fieldset class="repeating_weapons">
-      <select>
-      <optgroup label="Energy Weapons">
-        <option value="er-large_laser">ER Large Laser 12 8 - 1-7 8-14</option>
+    <fieldset class="sheet-repeating_weapons">
+      <select name ="attr_weapontype" class="sheet-weapontype">
+       <optgroup label="Energy Weapons">
+        <option value="er_large_laser"><button type="roll" value="/roll 2d6" name="roll_er_large_laser" />ER Large Laser 12 8 - 1-7 8-14 15-19 20-28 5 2 -</option>
         <option value="er_medium_laser">ER Medium Laser 5 5 - 1-4 5-8</option>
-      </optgroup>
-      <optgroup label="Ballistic Weapons">
-      </optgroup>
+       </optgroup>
+       <optgroup label="Ballistic Weapons">
+        <option value="anti_missile_system"><button type="roll" value="/roll 2d6" name="roll_anti_missile_system" />Anti-Missile System 1 * - --- --- --- --- .5 1 12</option>
+       </optgroup>
+      </select>
     </fieldset>
   </div>
 <!-- End of Tab Weapons -->
