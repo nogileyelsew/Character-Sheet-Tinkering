@@ -405,7 +405,7 @@
    <!-- Heat Generation Table -->
    <div class="sheet-col" style="width:310px;">
     <div class="sheet-narrow-border">
-     <h4 style="margin-left: 55px;" class="sheet-inverted">Heat Generation</h4>
+     <h4 style="margin-left: 60px;" class="sheet-inverted">Heat Generation</h4>
      <table style="font-size: 90%;">
        <tr>
          <th>Activity/Condition</th>
@@ -457,7 +457,43 @@
        </tr>
        <tr>
          <td>Low Temperature</td>
-         <td>-1per turn/10°C below -30°C</td>
+         <td>-1 per turn/10°C below -30°C</td>
+       </tr>
+       <tr>
+         <td>High Temperature</td>
+         <td>+1 per turn/10°C above 50°C</td>
+       </tr>
+       <tr>
+         <td>Snow/Light Rain</td>
+         <td>-1 per turn</td>
+       </tr>
+       <tr>
+         <td>Blizzard/Heavy Rain</td>
+         <td>-2 per turn</td>
+       </tr>
+       <tr>
+         <td>Deep Snow</td>
+         <td>-1 per turn if 'Mech has 1</td>
+       </tr>
+       <tr>
+         <td></td>
+         <td>operational leg heat sink</td>
+       </tr>
+       <tr>
+         <td>Fire/Magma Crust</td>
+         <td>+5 if occupied in Heat Phase</td>
+       </tr>
+       <tr>
+         <td></td>
+         <td>+2/Hex exited in Move Phase</td>
+       </tr>
+       <tr>
+         <td>Magma, Liquid</td>
+         <td>+10 if Occupied in Heat Phase</td>
+       </tr>
+       <tr>
+         <td></td>
+         <td>+5/Hex exited in Move Phase</td>
        </tr>
      </table>
     </div> 
