@@ -1,14 +1,14 @@
 <div class="sheet-wrapper">
 <div class="sheet-3colrow">
   <!--Column 1 Title Data -->
-  <div class="sheet-col" style="text-align:center;">
+  <div class="sheet-col" style="text-align:center; width:266px; margin:1px;">
     <img src="http://i.imgur.com/QMQDsSJ.jpg" alt="Battletech" width="254"></img>
     <h4>Battlemech Record Sheet</h4>
   </div>
   <!--Column 2 Mech Data -->  
-  <div class="sheet-col">
+  <div class="sheet-col" style="width: 290px; margin:1px">
    <div class="sheet-wide-border">
-    <h4 style="text-align:center;">Mech Data</h4>
+    <h4 style="text-align:center; margin-left:45px;" class="sheet-inverted">'Mech Data</h4>
     <label>Type:<input type="text" name="attr_mech_name" class='sheet-long' /></label>
     <label>Tonnage:<input type="text" name="attr_mech_tonnage" value="10" class="sheet-short" /></label>
     <label>Technology Base:</label>
@@ -37,9 +37,9 @@
    </div>
   </div>
   <!-- Column 3 Warrior Data -->
-  <div class="sheet-col">
+  <div class="sheet-col" style="width:256px; margin:1px;">
    <div class="sheet-wide-border">
-    <h4 style="text-align:center;">Warrior Data</h4>
+    <h4 style="text-align:center; margin-left:33px;" class="sheet-inverted">Warrior Data</h4>
     <label>Name:<input type="text" name="attr_warrior1_name" class='sheet-long' /></label><br>
     <label>Gunnery:<input type="text" name="attr_warrior1_gunnery" value="4" class="sheet-short" /></label>
     <label>Piloting:<input type="text" name="attr_warrior1_piloting" value="5" class="sheet-short" /></label><br>
@@ -156,110 +156,112 @@
     </div>
     <hr>
     <div class= "sheet-3colrow">
-    <!-- Section 3 Critical Hits Section --> 
-      <h4 style="text-align:center;">Critical Hits</h4>
-    <!-- Section 3 Column 1 Left Side Critical Hits --> 
-    <div class="sheet-col" style="text-align:center;">
-      <h4>Left Arm</h4><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftarm_a1' value='1' />1. <input type="text" name="attr_leftarm_a1" value="Shoulder" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftarm_a2' value='1' />2. <input type="text" name="attr_leftarm_a2" value="Upper Arm Actuator" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftarm_a3' value='1' />3. <input type="text" name="attr_leftarm_a3" value="Lower Arm Actuator" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftarm_a4' value='1' />4. <input type="text" name="attr_leftarm_a4" value="Hand Actuator" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftarm_a5' value='1' />5. <input type="text" name="attr_leftarm_a5" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftarm_a6' value='1' />6. <input type="text" name="attr_leftarm_a6" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftarm_b1' value='1' />1. <input type="text" name="attr_leftarm_b1" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftarm_b2' value='1' />2. <input type="text" name="attr_leftarm_b2" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftarm_b3' value='1' />3. <input type="text" name="attr_leftarm_b3" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftarm_b4' value='1' />4. <input type="text" name="attr_leftarm_b4" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftarm_b5' value='1' />5. <input type="text" name="attr_leftarm_b5" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftarm_b6' value='1' />6. <input type="text" name="attr_leftarm_b6" value="" class='sheet-extralong' /></label><br>
-      <h4>Left Torso</h4><br>
-      <label><input type='checkbox' name='attr_criticalhit_lefttorso_a1' value='1' />1. <input type="text" name="attr_lefttorso_a1" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_lefttorso_a2' value='1' />2. <input type="text" name="attr_lefttorso_a2" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_lefttorso_a3' value='1' />3. <input type="text" name="attr_lefttorso_a3" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_lefttorso_a4' value='1' />4. <input type="text" name="attr_lefttorso_a4" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_lefttorso_a5' value='1' />5. <input type="text" name="attr_lefttorso_a5" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_lefttorso_a6' value='1' />6. <input type="text" name="attr_lefttorso_a6" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_lefttorso_b1' value='1' />1. <input type="text" name="attr_lefttorso_b1" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_lefttorso_b2' value='1' />2. <input type="text" name="attr_lefttorso_b2" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_lefttorso_b3' value='1' />3. <input type="text" name="attr_lefttorso_b3" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_lefttorso_b4' value='1' />4. <input type="text" name="attr_lefttorso_b4" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_lefttorso_b5' value='1' />5. <input type="text" name="attr_lefttorso_b5" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_lefttorso_b6' value='1' />6. <input type="text" name="attr_lefttorso_b6" value="" class='sheet-extralong' /></label><br>
-      <h4>Left Leg</h4><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftleg_a1' value='1' />1. <input type="text" name="attr_leftleg_a1" value="Hip" class='sheet-extralong' disabled="true" /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftleg_a2' value='1' />2. <input type="text" name="attr_leftleg_a2" value="Upper Leg Actuator" class='sheet-extralong' disabled="true" /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftleg_a3' value='1' />3. <input type="text" name="attr_leftleg_a3" value="Lower Leg Actuator" class='sheet-extralong' disabled="true" /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftleg_a4' value='1' />4. <input type="text" name="attr_leftleg_a4" value="Foot Actuator" class='sheet-extralong' disabled="true" /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftleg_a5' value='1' />5. <input type="text" name="attr_leftleg_a5" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_leftleg_a6' value='1' />6. <input type="text" name="attr_leftleg_a6" value="" class='sheet-extralong' /></label><br>
-    </div>   
-    <!-- Section 3 column 2 Center Critical Hits --> 
-    <div class="sheet-col" style="text-align:center;">
-      <h4>Head</h4><br>
-      <label><input type='checkbox' name='attr_criticalhit_head_a1' value='1' />1. <input type="text" name="attr_head_a1" value="Life Support" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_head_a2' value='1' />1. <input type="text" name="attr_head_a2" value="Sensors" class='sheet-extralong' disabled="true" /></label><br>  
-      <label><input type='checkbox' name='attr_criticalhit_head_a3' value='1' />1. <input type="text" name="attr_head_a3" value="Cockpit" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_head_a4' value='1' />1. <input type="text" name="attr_head_a4" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_head_a5' value='1' />1. <input type="text" name="attr_head_a5" value="Sensors" class='sheet-extralong' disabled="true"/></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_head_a6' value='1' />1. <input type="text" name="attr_head_a6" value="Life Support" class='sheet-extralong' /></label><br>
-      <h4>Center Torso</h4><br>
-      <label><input type='checkbox' name='attr_criticalhit_centertorso_a1' value='1' />1. <input type="text" name="attr_centertorso_a1" value="Engine" class='sheet-extralong' disabled="true" /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_centertorso_a2' value='1' />2. <input type="text" name="attr_centertorso_a2" value="Engine" class='sheet-extralong' disabled="true" /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_centertorso_a3' value='1' />3. <input type="text" name="attr_centertorso_a3" value="Engine" class='sheet-extralong' disabled="true" /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_centertorso_a4' value='1' />4. <input type="text" name="attr_centertorso_a4" value="Gyro" class='sheet-extralong' disabled="true" /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_centertorso_a5' value='1' />5. <input type="text" name="attr_centertorso_a5" value="Gyro" class='sheet-extralong' disabled="true" /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_centertorso_a6' value='1' />6. <input type="text" name="attr_centertorso_a6" value="Gyro" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_centertorso_b1' value='1' />1. <input type="text" name="attr_centertorso_b1" value="Gyro" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_centertorso_b2' value='1' />2. <input type="text" name="attr_centertorso_b2" value="Engine" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_centertorso_b3' value='1' />3. <input type="text" name="attr_centertorso_b3" value="Engine" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_centertorso_b4' value='1' />4. <input type="text" name="attr_centertorso_b4" value="Engine" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_centertorso_b5' value='1' />5. <input type="text" name="attr_centertorso_b5" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_centertorso_b6' value='1' />6. <input type="text" name="attr_centertorso_b6" value="" class='sheet-extralong' /></label><br>
-      <div class="sheet-criticalhit-block" style="text-align:center; width:120px;">
-        <label>Engine Hits: <input type='checkbox' name='attr_criticalhit_engine_c1' value='1' /><input type='checkbox' name='attr_criticalhit_engine_c2' value='1' /><input type='checkbox' name='attr_criticalhit_engine_c3' value='1' /></label><br>
-        <label>Gyro Hits: <input type='checkbox' name='attr_criticalhit_gyro_c1' value='1' /><input type='checkbox' name='attr_criticalhit_gyro_c2' value='1' /></label><br>
-        <label>Sensor Hits: <input type='checkbox' name='attr_criticalhit_sensor_c1' value='1' /><input type='checkbox' name='attr_criticalhit_sensor_c2' value='1' /></label><br>
-        <label>Life Support: <input type='checkbox' name='attr_criticalhit_lifesupport_c1' value='1' /></label><br>
+    <!-- Section 3 Critical Hits Section -->
+     <div class="sheet-wide-border">
+      <h4 style="text-align:center; margin-left:320px;" class="sheet-inverted">Critical Hits Table</h4>
+      <!-- Section 3 Column 1 Left Side Critical Hits --> 
+      <div class="sheet-col" style="text-align:center;">
+       <h4>Left Arm</h4><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftarm_a1' value='1' />1. <input type="text" name="attr_leftarm_a1" value="Shoulder" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftarm_a2' value='1' />2. <input type="text" name="attr_leftarm_a2" value="Upper Arm Actuator" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftarm_a3' value='1' />3. <input type="text" name="attr_leftarm_a3" value="Lower Arm Actuator" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftarm_a4' value='1' />4. <input type="text" name="attr_leftarm_a4" value="Hand Actuator" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftarm_a5' value='1' />5. <input type="text" name="attr_leftarm_a5" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftarm_a6' value='1' />6. <input type="text" name="attr_leftarm_a6" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftarm_b1' value='1' />1. <input type="text" name="attr_leftarm_b1" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftarm_b2' value='1' />2. <input type="text" name="attr_leftarm_b2" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftarm_b3' value='1' />3. <input type="text" name="attr_leftarm_b3" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftarm_b4' value='1' />4. <input type="text" name="attr_leftarm_b4" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftarm_b5' value='1' />5. <input type="text" name="attr_leftarm_b5" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftarm_b6' value='1' />6. <input type="text" name="attr_leftarm_b6" value="" class='sheet-extralong' /></label><br>
+       <h4>Left Torso</h4><br>
+       <label><input type='checkbox' name='attr_criticalhit_lefttorso_a1' value='1' />1. <input type="text" name="attr_lefttorso_a1" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_lefttorso_a2' value='1' />2. <input type="text" name="attr_lefttorso_a2" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_lefttorso_a3' value='1' />3. <input type="text" name="attr_lefttorso_a3" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_lefttorso_a4' value='1' />4. <input type="text" name="attr_lefttorso_a4" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_lefttorso_a5' value='1' />5. <input type="text" name="attr_lefttorso_a5" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_lefttorso_a6' value='1' />6. <input type="text" name="attr_lefttorso_a6" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_lefttorso_b1' value='1' />1. <input type="text" name="attr_lefttorso_b1" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_lefttorso_b2' value='1' />2. <input type="text" name="attr_lefttorso_b2" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_lefttorso_b3' value='1' />3. <input type="text" name="attr_lefttorso_b3" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_lefttorso_b4' value='1' />4. <input type="text" name="attr_lefttorso_b4" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_lefttorso_b5' value='1' />5. <input type="text" name="attr_lefttorso_b5" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_lefttorso_b6' value='1' />6. <input type="text" name="attr_lefttorso_b6" value="" class='sheet-extralong' /></label><br>
+       <h4>Left Leg</h4><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftleg_a1' value='1' />1. <input type="text" name="attr_leftleg_a1" value="Hip" class='sheet-extralong' disabled="true" /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftleg_a2' value='1' />2. <input type="text" name="attr_leftleg_a2" value="Upper Leg Actuator" class='sheet-extralong' disabled="true" /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftleg_a3' value='1' />3. <input type="text" name="attr_leftleg_a3" value="Lower Leg Actuator" class='sheet-extralong' disabled="true" /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftleg_a4' value='1' />4. <input type="text" name="attr_leftleg_a4" value="Foot Actuator" class='sheet-extralong' disabled="true" /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftleg_a5' value='1' />5. <input type="text" name="attr_leftleg_a5" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_leftleg_a6' value='1' />6. <input type="text" name="attr_leftleg_a6" value="" class='sheet-extralong' /></label><br>
+      </div>   
+      <!-- Section 3 column 2 Center Critical Hits --> 
+      <div class="sheet-col" style="text-align:center;">
+       <h4>Head</h4><br>
+       <label><input type='checkbox' name='attr_criticalhit_head_a1' value='1' />1. <input type="text" name="attr_head_a1" value="Life Support" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_head_a2' value='1' />1. <input type="text" name="attr_head_a2" value="Sensors" class='sheet-extralong' disabled="true" /></label><br>  
+       <label><input type='checkbox' name='attr_criticalhit_head_a3' value='1' />1. <input type="text" name="attr_head_a3" value="Cockpit" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_head_a4' value='1' />1. <input type="text" name="attr_head_a4" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_head_a5' value='1' />1. <input type="text" name="attr_head_a5" value="Sensors" class='sheet-extralong' disabled="true"/></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_head_a6' value='1' />1. <input type="text" name="attr_head_a6" value="Life Support" class='sheet-extralong' /></label><br>
+       <h4>Center Torso</h4><br>
+       <label><input type='checkbox' name='attr_criticalhit_centertorso_a1' value='1' />1. <input type="text" name="attr_centertorso_a1" value="Engine" class='sheet-extralong' disabled="true" /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_centertorso_a2' value='1' />2. <input type="text" name="attr_centertorso_a2" value="Engine" class='sheet-extralong' disabled="true" /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_centertorso_a3' value='1' />3. <input type="text" name="attr_centertorso_a3" value="Engine" class='sheet-extralong' disabled="true" /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_centertorso_a4' value='1' />4. <input type="text" name="attr_centertorso_a4" value="Gyro" class='sheet-extralong' disabled="true" /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_centertorso_a5' value='1' />5. <input type="text" name="attr_centertorso_a5" value="Gyro" class='sheet-extralong' disabled="true" /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_centertorso_a6' value='1' />6. <input type="text" name="attr_centertorso_a6" value="Gyro" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_centertorso_b1' value='1' />1. <input type="text" name="attr_centertorso_b1" value="Gyro" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_centertorso_b2' value='1' />2. <input type="text" name="attr_centertorso_b2" value="Engine" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_centertorso_b3' value='1' />3. <input type="text" name="attr_centertorso_b3" value="Engine" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_centertorso_b4' value='1' />4. <input type="text" name="attr_centertorso_b4" value="Engine" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_centertorso_b5' value='1' />5. <input type="text" name="attr_centertorso_b5" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_centertorso_b6' value='1' />6. <input type="text" name="attr_centertorso_b6" value="" class='sheet-extralong' /></label><br>
+       <div class="sheet-criticalhit-block" style="text-align:center; width:120px;">
+         <label>Engine Hits: <input type='checkbox' name='attr_criticalhit_engine_c1' value='1' /><input type='checkbox' name='attr_criticalhit_engine_c2' value='1' /><input type='checkbox' name='attr_criticalhit_engine_c3' value='1' /></label><br>
+         <label>Gyro Hits: <input type='checkbox' name='attr_criticalhit_gyro_c1' value='1' /><input type='checkbox' name='attr_criticalhit_gyro_c2' value='1' /></label><br>
+         <label>Sensor Hits: <input type='checkbox' name='attr_criticalhit_sensor_c1' value='1' /><input type='checkbox' name='attr_criticalhit_sensor_c2' value='1' /></label><br>
+         <label>Life Support: <input type='checkbox' name='attr_criticalhit_lifesupport_c1' value='1' /></label><br>
+       </div>
+       <label>Battle Value: <input type="text" name="attr_battlevalue" value="" class='sheet-long' /></label><br>
+       <label>Cost: <input type="text" name="attr_cost" value="" class='sheet-long' /></label><br>
       </div>
-      <label>Battle Value: <input type="text" name="attr_battlevalue" value="" class='sheet-long' /></label><br>
-      <label>Cost: <input type="text" name="attr_cost" value="" class='sheet-long' /></label><br>
-    </div>
-    <!-- Section 3 Column 3 Right Side Critical Hits --> 
-    <div class="sheet-col" style="text-align:center;">
-      <h4>Right Arm</h4><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightarm_a1' value='1' />1. <input type="text" name="attr_rightarm_a1" value="Shoulder" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightarm_a2' value='1' />2. <input type="text" name="attr_rightarm_a2" value="Upper Arm Actuator" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightarm_a3' value='1' />3. <input type="text" name="attr_rightarm_a3" value="Lower Arm Actuator" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightarm_a4' value='1' />4. <input type="text" name="attr_rightarm_a4" value="Hand Actuator" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightarm_a5' value='1' />5. <input type="text" name="attr_rightarm_a5" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightarm_a6' value='1' />6. <input type="text" name="attr_rightarm_a6" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightarm_b1' value='1' />1. <input type="text" name="attr_rightarm_b1" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightarm_b2' value='1' />2. <input type="text" name="attr_rightarm_b2" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightarm_b3' value='1' />3. <input type="text" name="attr_rightarm_b3" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightarm_b4' value='1' />4. <input type="text" name="attr_rightarm_b4" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightarm_b5' value='1' />5. <input type="text" name="attr_rightarm_b5" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightarm_b6' value='1' />6. <input type="text" name="attr_rightarm_b6" value="" class='sheet-extralong' /></label><br>
-      <h4>Right Torso</h4><br>
-      <label><input type='checkbox' name='attr_criticalhit_righttorso_a1' value='1' />1. <input type="text" name="attr_righttorso_a1" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_righttorso_a2' value='1' />2. <input type="text" name="attr_righttorso_a2" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_righttorso_a3' value='1' />3. <input type="text" name="attr_righttorso_a3" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_righttorso_a4' value='1' />4. <input type="text" name="attr_righttorso_a4" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_righttorso_a5' value='1' />5. <input type="text" name="attr_righttorso_a5" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_righttorso_a6' value='1' />6. <input type="text" name="attr_righttorso_a6" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_righttorso_b1' value='1' />1. <input type="text" name="attr_righttorso_b1" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_righttorso_b2' value='1' />2. <input type="text" name="attr_righttorso_b2" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_righttorso_b3' value='1' />3. <input type="text" name="attr_righttorso_b3" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_righttorso_b4' value='1' />4. <input type="text" name="attr_righttorso_b4" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_righttorso_b5' value='1' />5. <input type="text" name="attr_righttorso_b5" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_righttorso_b6' value='1' />6. <input type="text" name="attr_righttorso_b6" value="" class='sheet-extralong' /></label><br>
-      <h4>Right Leg</h4><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightleg_a1' value='1' />1. <input type="text" name="attr_rightleg_a1" value="Hip" class='sheet-extralong' disabled="true" /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightleg_a2' value='1' />2. <input type="text" name="attr_rightleg_a2" value="Upper Leg Actuator" class='sheet-extralong' disabled="true" /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightleg_a3' value='1' />3. <input type="text" name="attr_rightleg_a3" value="Lower Leg Actuator" class='sheet-extralong' disabled="true" /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightleg_a4' value='1' />4. <input type="text" name="attr_rightleg_a4" value="Foot Actuator" class='sheet-extralong' disabled="true" /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightleg_a5' value='1' />5. <input type="text" name="attr_rightleg_a5" value="" class='sheet-extralong' /></label><br>
-      <label><input type='checkbox' name='attr_criticalhit_rightleg_a6' value='1' />6. <input type="text" name="attr_rightleg_a6" value="" class='sheet-extralong' /></label><br>
+      <!-- Section 3 Column 3 Right Side Critical Hits --> 
+      <div class="sheet-col" style="text-align:center;">
+       <h4>Right Arm</h4><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightarm_a1' value='1' />1. <input type="text" name="attr_rightarm_a1" value="Shoulder" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightarm_a2' value='1' />2. <input type="text" name="attr_rightarm_a2" value="Upper Arm Actuator" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightarm_a3' value='1' />3. <input type="text" name="attr_rightarm_a3" value="Lower Arm Actuator" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightarm_a4' value='1' />4. <input type="text" name="attr_rightarm_a4" value="Hand Actuator" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightarm_a5' value='1' />5. <input type="text" name="attr_rightarm_a5" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightarm_a6' value='1' />6. <input type="text" name="attr_rightarm_a6" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightarm_b1' value='1' />1. <input type="text" name="attr_rightarm_b1" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightarm_b2' value='1' />2. <input type="text" name="attr_rightarm_b2" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightarm_b3' value='1' />3. <input type="text" name="attr_rightarm_b3" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightarm_b4' value='1' />4. <input type="text" name="attr_rightarm_b4" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightarm_b5' value='1' />5. <input type="text" name="attr_rightarm_b5" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightarm_b6' value='1' />6. <input type="text" name="attr_rightarm_b6" value="" class='sheet-extralong' /></label><br>
+       <h4>Right Torso</h4><br>
+       <label><input type='checkbox' name='attr_criticalhit_righttorso_a1' value='1' />1. <input type="text" name="attr_righttorso_a1" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_righttorso_a2' value='1' />2. <input type="text" name="attr_righttorso_a2" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_righttorso_a3' value='1' />3. <input type="text" name="attr_righttorso_a3" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_righttorso_a4' value='1' />4. <input type="text" name="attr_righttorso_a4" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_righttorso_a5' value='1' />5. <input type="text" name="attr_righttorso_a5" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_righttorso_a6' value='1' />6. <input type="text" name="attr_righttorso_a6" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_righttorso_b1' value='1' />1. <input type="text" name="attr_righttorso_b1" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_righttorso_b2' value='1' />2. <input type="text" name="attr_righttorso_b2" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_righttorso_b3' value='1' />3. <input type="text" name="attr_righttorso_b3" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_righttorso_b4' value='1' />4. <input type="text" name="attr_righttorso_b4" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_righttorso_b5' value='1' />5. <input type="text" name="attr_righttorso_b5" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_righttorso_b6' value='1' />6. <input type="text" name="attr_righttorso_b6" value="" class='sheet-extralong' /></label><br>
+       <h4>Right Leg</h4><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightleg_a1' value='1' />1. <input type="text" name="attr_rightleg_a1" value="Hip" class='sheet-extralong' disabled="true" /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightleg_a2' value='1' />2. <input type="text" name="attr_rightleg_a2" value="Upper Leg Actuator" class='sheet-extralong' disabled="true" /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightleg_a3' value='1' />3. <input type="text" name="attr_rightleg_a3" value="Lower Leg Actuator" class='sheet-extralong' disabled="true" /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightleg_a4' value='1' />4. <input type="text" name="attr_rightleg_a4" value="Foot Actuator" class='sheet-extralong' disabled="true" /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightleg_a5' value='1' />5. <input type="text" name="attr_rightleg_a5" value="" class='sheet-extralong' /></label><br>
+       <label><input type='checkbox' name='attr_criticalhit_rightleg_a6' value='1' />6. <input type="text" name="attr_rightleg_a6" value="" class='sheet-extralong' /></label><br>
+      </div>
     </div>
     <!--End of Section 3 Critical Hits -->
   </div>
