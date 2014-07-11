@@ -407,94 +407,28 @@
     <div class="sheet-narrow-border">
      <h4 style="margin-left: 60px;" class="sheet-inverted">Heat Generation</h4>
      <table style="font-size: 85%;">
-       <tr>
-         <th>Activity/Condition</th>
-         <th>Modifier</th>
-       </tr>
-       <tr>
-         <td>Walking</td>
-         <td>+1 per turn</td>
-       </tr>
-       <tr>
-        <td>Running</td>
-        <td>+2 per turn</td>
-       </tr>
-       <tr>
-         <td>Jumping</td>
-         <td>+1 per Hex (Min. 3)</td>
-       </tr>
-       <tr>
-         <td>Standing Up</td>
-         <td>+1 per attempt</td>
-       </tr>
-       <tr>
-         <td>Weapons Fire</td>
-         <td>Per Each Weapon</td>
-       </tr>
-       <tr>
-         <td>Heat Sink</td>
-         <td>-1/Operational Sink</td>
-       </tr>
-       <tr>
-         <td></td>
-         <td>-1/Sink Underwater (6 Max)</td>
-       </tr>
-       <tr>
-         <td>Double Heat Sink</td>
-         <td>-2/Operational Sink</td>
-       </tr>
-       <tr>
-         <td></td>
-         <td>-2/Sink Underwater (6 Max)</td>
-       </tr>
-       <tr>
-         <td>First Engine Hit</td>
-         <td>+5 per turn</td>
-       </tr>
-       <tr>
-         <td>Second Engine Hit</td>
-         <td>+10 (total) per turn</td>
-       </tr>
-       <tr>
-         <td>Low Temperature</td>
-         <td>-1 per turn/10°C below -30°C</td>
-       </tr>
-       <tr>
-         <td>High Temperature</td>
-         <td>+1 per turn/10°C above 50°C</td>
-       </tr>
-       <tr>
-         <td>Snow/Light Rain</td>
-         <td>-1 per turn</td>
-       </tr>
-       <tr>
-         <td>Blizzard/Heavy Rain</td>
-         <td>-2 per turn</td>
-       </tr>
-       <tr>
-         <td>Deep Snow</td>
-         <td>-1 per turn if 'Mech has 1</td>
-       </tr>
-       <tr>
-         <td></td>
-         <td>operational leg heat sink</td>
-       </tr>
-       <tr>
-         <td>Fire/Magma Crust</td>
-         <td>+5 if occupied in Heat Phase</td>
-       </tr>
-       <tr>
-         <td></td>
-         <td>+2/Hex exited in Move Phase</td>
-       </tr>
-       <tr>
-         <td>Magma, Liquid</td>
-         <td>+10 if Occupied in Heat Phase</td>
-       </tr>
-       <tr>
-         <td></td>
-         <td>+5/Hex exited in Move Phase</td>
-       </tr>
+       <tr><th>Activity/Condition</th><th>Modifier</th></tr>
+       <tr><td>Walking</td><td>+1 per turn</td></tr>
+       <tr><td>Running</td><td>+2 per turn</td></tr>
+       <tr><td>Jumping</td><td>+1 per Hex (Min. 3)</td></tr>
+       <tr><td>Standing Up</td><td>+1 per attempt</td></tr>
+       <tr><td>Weapons Fire</td><td>Per Each Weapon</td></tr>
+       <tr><td>Heat Sink</td><td>-1/Operational Sink</td></tr>
+       <tr><td></td><td>-1/Sink Underwater (6 Max)</td></tr>
+       <tr><td>Double Heat Sink</td><td>-2/Operational Sink</td></tr>
+       <tr><td></td><td>-2/Sink Underwater (6 Max)</td></tr>
+       <tr><td>First Engine Hit</td><td>+5 per turn</td></tr>
+       <tr><td>Second Engine Hit</td><td>+10 (total) per turn</td></tr>
+       <tr><td>Low Temperature</td><td>-1 per turn/10°C below -30°C</td></tr>
+       <tr><td>High Temperature</td><td>+1 per turn/10°C above 50°C</td></tr>
+       <tr><td>Snow/Light Rain</td><td>-1 per turn</td></tr>
+       <tr><td>Blizzard/Heavy Rain</td><td>-2 per turn</td></tr>
+       <tr><td>Deep Snow</td><td>-1 per turn if 'Mech has 1</td></tr>
+       <tr><td></td><td>operational leg heat sink</td></tr>
+       <tr><td>Fire/Magma Crust</td><td>+5 if occupied in Heat Phase</td></tr>
+       <tr><td></td><td>+2/Hex exited in Move Phase</td></tr>
+       <tr><td>Magma, Liquid</td><td>+10 if Occupied in Heat Phase</td></tr>
+       <tr><td></td><td>+5/Hex exited in Move Phase</td></tr>
      </table>
     </div> 
    </div>
@@ -506,7 +440,7 @@
    <div class="sheet-col">
     <div class="sheet-narrow-border">
      <h4 style="margin-left: 1px;" class="sheet-inverted">Movement Modifiers</h4>
-     <table style="width:100%;">
+     <table style="width:100%; font-size:100%; text-align:center;">
        <tr><th width="33%;">Base Terrain</th><th width="33%;">MP Cost</th><th width="33%;">Piloting Modifier</th></tr>
        <tr><td>Building, Light</td><td>2(α)</td><td>0</td></tr>
        <tr><td>Building, Medium</td><td>3(α)</td><td>0</td></tr>
@@ -540,12 +474,14 @@
        <tr><td>Swamp</td><td>+1(ß)</td><td>0</td></tr>
      </table>
      <h5>Notes:</h5><br>
-     <label>See additional Rules in "BattleTech® Compendium - The Rules of Warfare"</label><br>
-     <label>(α):Piloting skill roll required to prevent damage.</label><br>
-     <label>(ß):Units entering this terrain may get stuck.</label><br>
-     <label>(Φ):Skidding rules apply.</label><br>
-     <label>(π):Piloting skill roll required to prevent falling.</label><br>
-     <label>(Σ):If traveling along road, otherwise, cost of underlying terrain.</label>
+     <div class="sheet-criticalhit-block">
+      <label>See additional Rules in "BattleTech® Compendium - The Rules of Warfare"</label><br>
+      <label>(α):Piloting skill roll required to prevent damage.</label><br>
+      <label>(ß):Units entering this terrain may get stuck.</label><br>
+      <label>(Φ):Skidding rules apply.</label><br>
+      <label>(π):Piloting skill roll required to prevent falling.</label><br>
+      <label>(Σ):If traveling along road, otherwise, cost of underlying terrain.</label>
+     </div>
     </div>
    </div>
   </div>
