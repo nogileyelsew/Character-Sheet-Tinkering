@@ -487,7 +487,7 @@
    <!-- Weapons Fire Modifiers Table -->
    <div class="sheet-col">
     <div class="sheet-narrow-border">
-     <h4 style="margin-left: 75px;" class="sheet-inverted">Weapons Fire Modifiers</h4>
+     <h4 style="margin-left: 75px;" class="sheet-inverted">Attack Modifiers</h4>
      <table style="width:100%; font-size:100%; text-align:center;">
        <tr><th width="50%;">Attacker</th><th width="50%;"></th></tr>
        <tr><th width="50%;">Movement</th><th width="50%;">Modifier</th></tr>
@@ -510,8 +510,44 @@
        <tr><td>48+</td><td>+7</td></tr>
        <tr><th width="50%;">Other</th><th width="50%;">Modifier</th></tr>
        <tr><td>Prone</td><td>+2</td></tr>
-       <tr><td>Careful Aim</td><td>-2</td></tr>
+       <tr><td>Careful Aim</td><td>-1</td></tr>
        <tr><td>Bracing</td><td>-2</td></tr>
+       <tr><th width="50%;">Range and Terrain</th><th width="50%;"></th></tr>
+       <tr><th width="50%;">Range</th><th width="50%;">Modifier</th></tr>
+       <tr><td>Short</td><td>None</td></tr>
+       <tr><td>Medium</td><td>+2</td></tr>
+       <tr><td>Long</td><td>+4</td></tr>
+       <tr><td>Extreme</td><td>+8</td></tr>
+       <tr><td>Minimum</td><td>+1 at minimum range;</td></tr>
+       <tr><td></td><td>additional +1/each hex less than minimum.</td></tr>
+       <tr><th width="50%;">Terrain</th><th width="50%;">Modifier</th></tr>
+       <tr><td>Light Woods/Smoke</td><td>+1 per intervening hex;</td></tr>
+       <tr><td></td><td>+1 if target is in light woods.</td></tr>
+       <tr><td>Heavy Woods/Smoke</td><td>+2 per intervening hex;</td></tr>
+       <tr><td></td><td>+2 if target is in heavy woods.</td></tr>
+       <tr><td>Water, Depth 1</td><td>-1 to hit a Battlemech</td></tr>
+       <tr><td></td><td>in a water hex; +1 to hit for Battlemech firing from a water hex.</td></tr>
+       <tr><td>Water, Depth 2</td><td>Battlemechs cannot fire</td></tr>
+       <tr><td></td><td>into or out of 2+ depth water.</td></tr>
+       <tr><th width="50%;">Target</th><th width="50%;"></th></tr>
+       <tr><td>Partial Cover</td><td>+3</td></tr>
+       <tr><td>Prone</td><td>-2 from adjacent hex;</td></tr>
+       <tr><td></td><td>+1 from all other hexes.</td></tr>
+       <tr><td>Secondary Target</td><td>+1</td></tr>
+       <tr><td>Immobile</td><td>-4</td></tr>
+       <tr><td>Hull Down</td><td>+2</td></tr>
+       <tr><td>Infantry Squad</td><td>+1</td></tr>
+       <tr><th width="50%;">Movement</th><th width="50%;">Modifier</th></tr>
+       <tr><td>Moved 0-2 Hexes</td><td>None</td></tr>
+       <tr><td>Moved 3-4 Hexes</td><td>+1</td></tr>
+       <tr><td>Moved 5-6 Hexes</td><td>+2</td></tr>
+       <tr><td>Moved 7-9 Hexes</td><td>+3</td></tr>
+       <tr><td>Moved 10-13 Hexes</td><td>+4</td></tr>
+       <tr><td>Moved 14-18 Hexes</td><td>+5</td></tr>
+       <tr><td>Moved 19-24 Hexes</td><td>+6</td></tr>
+       <tr><td>Moved 25+ Hexes</td><td>+7</td></tr>
+       <tr><td>Jumped</td><td>+1</td></tr>
+       <tr><td>Sprinting</td><td>-1</td></tr>
     </div>
    </div>  
   </div>
@@ -525,5 +561,5 @@
 </div>
 <!-- Footer -->
 <hr>
-<footer>Version: <input type="text" class='sheet-medium' name="attr_version" value="1.07.10.14" disabled="true" /></footer>
+<footer>Last Updated: <input type="text" class='sheet-medium' name="attr_version" value="08.10.14" disabled="true" /></footer>
 </div>
