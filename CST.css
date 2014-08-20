@@ -14,16 +14,48 @@
     border-left-style: none;
     border-color: black;
     border-width: 2px;
-    padding: 0px;}
+    padding: 0px;
+    margin: 1px;
+}
+/*medium Input Box*/
+.charsheet input.sheet-medium {
+    text-align: center;
+    width: 85px;
+    padding: 0px;
+}
 /*Long Input Box*/    
 .charsheet input.sheet-long {
-    width: 110px;
+    width: 125px;
     border-top-style: none;
     border-right-style: none;
     border-bottom-style: solid;
     border-left-style: none;
     border-color: black;
+    border-width: 2px;
     padding: 0px;
+}
+/*Extra Long Input Box*/    
+.charsheet input.sheet-extralong {
+    width: 160px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: black;
+    border-width: 2px;
+    padding: 0px;
+}
+/*Uber Long Input Box*/
+.charsheet input.sheet-uberlong {
+    width: 208px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: black;
+    border-width: 2px;
+    padding: 0px;
+    margin: 1px;
 }
 .charsheet hr {
     border-color: black;
@@ -31,6 +63,37 @@
 }
 .charsheet button {
     margin-right: 6px;
+}
+/*Wide Border Styling*/
+.sheet-wide-border {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    padding: 5px;
+    padding-top: 0px;
+    margin: 10px;
+    box-shadow: -10px 10px 5px #888888;
+}
+/*Narrow Border Styling*/
+.sheet-narrow-border {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    padding: 5px;
+    padding-top: 0px;
+    margin: 10px;
+    box-shadow: 10px 10px 5px #888888;
+}
+/*Inverted Header Styling*/
+.sheet-inverted {
+    text-align:center;
+    background: black;
+    color: white;
+    width: 12em;
+    padding: 5px;
+    padding-top: 0px;
+    margin: 2px;
+    margin-top: 0px;
 }
 /*Armor/Internal Structure Input Box*/
 .charsheet input.sheet-armor {
@@ -40,11 +103,22 @@
     border-color: black;
     border-width: 2px;
     padding: 2px;
-    }
+    margin: 2px;
+}
+/*Armor/Internal Structure Input Box*/
+.charsheet input.sheet-armor-long {
+    text-align: center;
+    width: 3em;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 2px;
+    margin: 2px;
+}
 /* Tab Styling*/
 .charsheet input[type="radio"].sheet-tab {
     width: 15%;
-	display: inline-block;
+    display: inline-block;
     opacity: 0;
     position: relative;
     cursor: pointer;
@@ -61,8 +135,6 @@
     text-align: center;
     font-size: 100%;
     font-weight:bold;
-    border: solid;
-    border-width: 2px;
     margin-bottom: 2px;
 }    
 .charsheet input[type="radio"].sheet-tab:checked + label{
@@ -126,4 +198,94 @@
 .charsheet .sheet-tab-construction-radio:checked ~ .sheet-tab-construction .sheet-tab-modifiers {
     display: none !important;
     visibility: hidden !important;
+}
+/* Critical Hits Styling*/
+.charsheet .sheet-criticalhit-block {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 5px;
+    margin: 10px;
+    margin-left:55px;
+}
+/* Critical Hits Styling*/
+.charsheet .sheet-critical-header {
+    margin:3px;
+    margin-bottom: -15px;
+}
+/* Critical Hits Styling*/
+.charsheet .sheet-critical-header-two {
+    margin-bottom: -15px;
+}
+/*Weapons Input Styling*/
+.charsheet input.sheet-weapon {
+    text-align: center;
+    font-weight:bold;
+    font-size:85%;
+    width: 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 1px;
+    margin: 1px;
+}
+/*Weapons Input Styling*/
+.charsheet input.sheet-weapon-short {
+    text-align: center;
+    width: 50px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: black;
+    border-width: 2px;
+    padding: 0px;
+    margin: 1px;
+}
+.charsheet input.sheet-weapon-long {
+    text-align: center;
+    font-weight:bold;
+    font-size:85%;
+    width: 175px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 2px;
+    margin: 1px;
+}
+/*Heat Scale Styling*/
+.charsheet input[type="radio"].sheet-heat-label {
+    width: 8%;
+    display: inline-block;
+    opacity: 0;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}   
+.charsheet input[type="radio"].sheet-heat-label + label {
+    width: 8%;
+	display: inline-block;
+    position: relative;
+	left: -8%;
+    margin-right: -8%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 95%;
+    font-weight:bold;
+    margin-bottom: 2px;
+}
+.charsheet input[type="radio"].sheet-heat-label:checked + label {
+    background-color: #FF4D4D;
+}
+.charsheet input[type="radio"].sheet-heat-label:checked + label + label {
+    background-color: #FF4D4D;
+}
+/* Critical Hits Styling*/
+.charsheet .sheet-movement-block {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 5px;
+    margin: 2px;
 }
