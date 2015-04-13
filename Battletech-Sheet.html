@@ -2248,6 +2248,13 @@
               <tr><td><label class="sheet-label-adjust">Internal Structure Mass:</label></td><td><input type="number" name="attr_internalstructure_tonnage" value="(@{unit_tonnage}/10)*@{internalstructure_type}" class="sheet-number-large" disabled="true"/></td></tr>
               <tr><td><label class="sheet-label-adjust">Engine Rating:</label></td><td><input type="number" name="attr_tr_engine_rating:" value="@{engine_rating}" class="sheet-number-large" disabled="true"/></td></tr>
               <tr><td><label class="sheet-label-adjust">Engine Mass:</label></td><td><input type="number" name="attr_tr_engine_tonnage" value="@{engine_tonnage}" class="sheet-number-large" disabled="true"/></td></tr>
+              <tr><td><label class="sheet-label-adjust">Heat Sink Type:</label></td><td><select class="sheet-vehicle-select" type="number" name="attr_heatsink_tonnage_adjust">
+                                                                                          <option value="1.5" >Compact</option>
+                                                                                          <option value="1">Double</option>
+                                                                                          <option value="1">Laser</option>
+                                                                                          <option value="1" selected="true" >Standard</option>
+                                                                                        </select></td></tr>
+              <tr><td><label class="sheet-label-adjust">Heat Sink Mass:</label></td><td><input type="number" name ="attr_heatsink_tonnage" value="(@{max_heatsinks}-10)*@{heatsink_tonnage_adjust}" class="sheet-number-large" disabled="true"/></td></tr>
               <tr><td><label class="sheet-label-adjust">Cockpit Type:</label></td><td><select class="sheet-vehicle-select" type="number" name="attr_cockpit_tonnage">
                                                                                               <option value="6">Command Console</option>
                                                                                               <option value="3">Enhanced Imaging</option>
