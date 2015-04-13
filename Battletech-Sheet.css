@@ -1,0 +1,1084 @@
+/* Text Input Very Long Box*/    
+.charsheet input.sheet-verylong {
+    font-size: 85%;
+    width: 235px;
+    height: 18px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+
+/*Wide Border Styling*/
+.charsheet .sheet-wide-border {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-top: 0px;
+    box-shadow: -10px 10px 5px #888888;
+    font-weight: bold;
+}
+
+/*Inverted Header Styling*/
+.charsheet .sheet-inverted {
+    text-align:center;
+    background: black;
+    color: white;
+    width: 12em;
+    padding: 5px;
+    padding-top: 0px;
+    margin: 2px;
+    margin-top: 0px;
+}
+
+/* Inverted Header for Section Breaks */
+.charsheet .sheet-inverted-three {
+    margin-top: 10px;
+    font-size: 90%;
+    color: white;
+    background: black;
+    text-align: center;
+    width: 97%;
+}
+/*Inverted Long Header Styling*/
+.charsheet .sheet-inverted-long {
+    text-align:center;
+    background: black;
+    color: white;
+    width: 33em;
+    padding: 5px;
+    padding-top: 0px;
+    margin: 2px;
+    margin-top: 0px;
+}
+
+/* Label Adjust */
+.charsheet .sheet-label-adjust {
+    font-size: 85%;
+    font-weight: bold;
+    display: inline;
+}
+
+/* Label Adjust */
+.charsheet .sheet-label-adjust-two {
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Character Sheet Hard Return */
+.charsheet hr {
+    border-color: black;
+    margin: 2px;
+    margin-top: 5px;
+}
+
+/* Character Sheet Hard Return with Extra Bottom Margin */
+.charsheet hr.sheet-bottom-margin {
+    border-color: black;
+    margin: 2px;
+    margin-top: 5px;
+    margin-bottom: 13px;
+}
+
+/* <p> Element Adjusting Font */
+.charsheet .sheet-font-adjust {
+    font-size: 118%;
+    background-color: #fff;
+}
+
+/* Text Input Long Box*/    
+.charsheet input.sheet-long {
+    width: 125px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: black;
+    border-width: 2px;
+    padding: 1px;
+}
+
+/* Number Input Box */
+.charsheet input[type="number"].sheet-number-small {
+    width: 45px;
+    height: 20px;
+    padding: 1px;
+    margin: 2px;
+    text-align: center;
+}
+
+/* Select Tonnage */
+.charsheet select.sheet-tonnage-select {
+    display: inline;
+    width: 55px;
+    height: 20px;
+    padding: 1px;
+    margin: 2px;
+}
+
+/* Select Engine */
+.charsheet select.sheet-engine-select {
+    display: inline;
+    width: 172px;
+    height: 20px;
+    padding: 1px;
+    margin: 2px;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+/* Heat Dissipation Roll Button */
+.charsheet button[type=roll].sheet-heat-roll-button::before {
+    content: "Heat Dissipation Roll";
+    font-family: arial;
+    font-size: 65%;
+    font-weight: bold;
+}
+
+/* Text Input Extralong Box*/    
+.charsheet input.sheet-extralong {
+    width: 160px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: black;
+    border-width: 2px;
+    padding: 1px;
+    margin-bottom: 8px;
+}
+
+/* Initiative Roll Button */
+.charsheet button[type=roll].sheet-initiative-roll-button::before {
+    content: "Initiative Roll";
+    font-family: arial;
+    font-size: 65%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Piloting Roll Button */
+.charsheet button[type=roll].sheet-piloting-roll-button::before {
+    content: "Piloting Roll";
+    font-family: arial;
+    font-size: 65%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Spacing for Warrior Hits <Div> */
+.charsheet .sheet-extra-margin {
+    margin: 8px;
+}
+
+/* Warrior Hits Section 1 Column 3 (Opacity for "0" Check Box) */
+.charsheet .sheet-warrior-checkbox {
+    opacity: .1;
+}
+
+/* Hide actual radio */
+.charsheet input[type="radio"].sheet-warrior-radio {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Fake radio */
+.charsheet input[type="radio"].sheet-warrior-radio + span::before {
+    margin-right: 4px;
+    border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    
+    background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+    
+    content: "✘";
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    color: rgb(204,0,0);
+    
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* Remove dot from all radios _after_ selected one */
+.charsheet input[type="radio"].sheet-warrior-radio:checked ~ input[type="radio"] + span::before {    
+    content: "";
+}
+
+/* Consciousness Roll Button Styling */
+.charsheet button[type=roll].sheet-consciousness-roll-button::before {
+    content: "Consciousness Roll";
+    font-family: arial;
+    font-size: 65%;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Tab Styling */
+.charsheet div.sheet-tab-content {
+    display: none;
+}
+
+.charsheet input.sheet-tab1:checked ~ div.sheet-tab1,
+.charsheet input.sheet-tab2:checked ~ div.sheet-tab2,
+.charsheet input.sheet-tab3:checked ~ div.sheet-tab3,
+.charsheet input.sheet-tab4:checked ~ div.sheet-tab4,
+.charsheet input.sheet-tab5:checked ~ div.sheet-tab5 {
+    display: block;
+}
+
+.charsheet input.sheet-tab {
+    width: 164px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -1.5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.charsheet input.sheet-tab::before {
+    content: attr(title);
+    
+    border: solid 1px #a8a8a8;
+    text-align: center;
+    display: inline-block;
+    
+    background: #fff;
+    background: -moz-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -webkit-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -ms-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -o-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    
+    width: 164px;
+    height: 20px;
+    font-size: 18px;
+}
+
+.charsheet input.sheet-tab:checked::before {
+    background: #fff;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.charsheet input.sheet-tab:not(:first-child)::before {
+    border-left: none;
+}
+
+.charsheet div.sheet-tab-content {
+    border: 1px solid #a8a8a8;
+    border-top-color: #000;
+    margin: 2px 0 0 5px;
+    padding: 5px;
+}
+
+/* END TAB STYLING */
+
+/* Tab 1 (Armor) Background-1 */
+/* <a href="http://imgur.com/BApNDwu"><img src="http://i.imgur.com/BApNDwu.jpg" title="source: imgur.com" /></a> */
+.charsheet .sheet-background-1 {
+    background-image: url("http://i.imgur.com/mckAzws.jpg");
+    /* background-size: 500px 720px; */
+    background-size: 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Tab 1 (Armor) Background-2 */
+/* <a href="http://imgur.com/47yTBHu"><img src="http://i.imgur.com/47yTBHu.jpg" title="source: imgur.com" /></a> */
+.charsheet .sheet-background-2 {
+    background-image: url("http://i.imgur.com/47yTBHu.jpg");
+    background-size: 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Tab 1 (Armor) Number Input Box */
+.charsheet input[type="number"].sheet-number-armor {
+    width: 36px;
+    height: 18px;
+    padding: 1px;
+    margin: 2px;
+    text-align: center;
+}
+
+/* Hide actual radio */
+.charsheet input[type="radio"].sheet-armor-radio {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Fake radio */
+.charsheet input[type="radio"].sheet-armor-radio + span::before {
+    margin-right: 4px;
+    border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    
+    background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+    
+    content: "•";
+    width: 12px;
+    height: 12px;
+    font-size: 31px;
+    color: rgb(204,0,0);
+    
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* Remove dot from all radios _after_ selected one */
+.charsheet input[type="radio"].sheet-armor-radio:checked ~ input[type="radio"] + span::before {    
+    content: "/";
+    font-size: 16px;
+    color: rgb(163,163,163);
+    opacity: .75;
+}
+
+/* Tab 1 Section 1 Table Left Justify */
+.charsheet .sheet-table-left {
+    text-align: left;
+}
+
+/* Tab 1 Section 2 Internal Structure Select */
+.charsheet select.sheet-internalstructure-select {
+    display: inline;
+    width: 75%;
+    height: 20px;
+    padding: 1px;
+    margin: 2px;
+    font-size: 90%;
+    font-weight: bold;
+    margin-left: 12.5%;
+}
+
+/* Critical Hits Table Checkbox Styling */
+/* Hide Actual Checkbox */
+.charsheet input[type="checkbox"].sheet-critical-checkbox {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Fake Checkbox */
+.charsheet input[type="checkbox"].sheet-critical-checkbox + span::before {
+    margin-right: 4px;
+    border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    
+    background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+    
+    content: "✔";
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    color: rgb(0,204,0);
+    
+    -moz-border-radius: 25%;
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+}
+
+/* Remove dot from all radios _after_ selected one */
+.charsheet input[type="checkbox"].sheet-critical-checkbox:checked + span::before {    
+    content: "✘";
+    color: rgb(204,0,0);
+}
+
+/* Text Input Uberlong Box*/    
+.charsheet input.sheet-uberlong {
+    width: 200px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: #808080;
+    border-width: 2px;
+    padding: 1px;
+}
+
+/* Tab 1 Critical Hits Inside Border */
+.charsheet .sheet-criticalhit-border {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 16%;
+}
+
+/* Tab 1 Critical Hits Locatiion Inside Border */
+.charsheet .sheet-criticalhit-location-border {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 5px;
+    padding-top: 0px;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 7%;
+}
+
+/* Head / Leg Critical Location Roll Button */
+.charsheet button[type=roll].sheet-head-leg-critical::before {
+    content: "Head / Leg Critical Location";
+    font-family: arial;
+    font-size: 65%;
+    font-weight: bold;
+    margin: 8px;
+}
+
+/* Arm / Torso Critical Location Roll Button */
+.charsheet button[type=roll].sheet-arm-torso-critical::before {
+    content: "Arm / Torso Critical Location";
+    font-family: arial;
+    font-size: 65%;
+    font-weight: bold;
+    margin: 8px;
+}
+
+/* Tab 2 Weapons Input Weapon Short */
+.charsheet input.sheet-weapon-short {
+    text-align: center;
+    width: 35px;
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* Tab 2 Weapons Input Weapon Short Underline */
+.charsheet input.sheet-weapon-short-underline {
+    text-align: center;
+    width: 35px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* Tab 2 Weapons Input Weapon  */
+.charsheet input.sheet-weapon {
+    text-align: center;
+    width: 51px;
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* Tab 2 Weapons Input Weapon Underline */
+.charsheet input.sheet-weapon-underline {
+    text-align: center;
+    width: 51px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* Tab 2 Weapons Input Weapon Medium */
+.charsheet input.sheet-weapon-medium {
+    text-align: center;
+    width: 95px;
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* Tab 2 Weapons Input Weapon Long */
+.charsheet input.sheet-weapon-long {
+    text-align: center;
+    width: 145px;
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* Tab 2 Weapons Input Weapon Long Underline */
+.charsheet input.sheet-weapon-long-underline {
+    text-align: center;
+    width: 145px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* Tab 2 Attack Roll Button Warrior 1 */
+.charsheet button[type=roll].sheet-attack-roll-button-warrior1 {
+    width: 34px;
+}
+
+/* Tab 2 Attack Roll Button Warrior 2 */
+.charsheet button[type=roll].sheet-attack-roll-button-warrior2 {
+    width: 34px;
+}
+
+/* Tab 2 Section 2 Show/Hide Sections */
+.charsheet .sheet-show-hide-container {
+    margin-bottom: -23px;
+}
+
+.charsheet input[type="checkbox"].sheet-show-hide {
+	width: 98%;
+	height: 28px;
+	opacity: 0;
+	margin: 0;
+	position: relative;
+    cursor: pointer;
+	z-index: 1;
+}
+
+.charsheet .sheet-show-hide + label.sheet-inverted-two {
+	margin-top: 10px;
+    position: relative;
+	top: -28px;
+    font-size: 90%;
+    color: white;
+    background: black;
+    text-align: center;
+    width: 97%;
+}
+
+.charsheet .sheet-show-hide ~ .sheet-contained {
+    position: relative;
+	top: -28px;
+}
+
+.charsheet .sheet-show-hide:checked + label.sheet-inverted-two {
+    background-color: #191919;
+}
+
+.charsheet .sheet-show-hide:checked ~ .sheet-contained {
+	display: none;
+    visibility: hidden;
+}
+
+.charsheet .sheet-pictos {
+    font-family: "Pictos";
+    font-size: 90%;
+}
+
+/* Tab 2 Section 2 Hit Location and Multiple Munitions Roll Buttons
+    Hit Location Roll Button */
+.charsheet button[type=roll].sheet-hit-location::before {
+    content: "Hit Location";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Punch Kick Location Roll Button */
+.charsheet button[type=roll].sheet-punch-kick-location::before {
+    content: "Punch / Kick Location";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Critical Confirmation Roll Button */
+.charsheet button[type=roll].sheet-critical::before {
+    content: "Critical Confirmation";
+    font-family: arial;
+    font-size: 85%;
+}
+
+/* Multiple Munitions Hits Roll Button */
+.charsheet button[type=roll].sheet-multiple-munitions-hit::before {
+    content: "Multiple 'Munitions Hits";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Tab 2 Section 2 Hit Location and Multiple Munitions Rollable Table Buttons
+   Battlemech Left Side Hit Roll Button */
+.charsheet button[type=roll].sheet-mech-left-hit::before {
+    content: "Battlemech Left Side";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Battlemech Front/Rear Hit Roll Button */
+.charsheet button[type=roll].sheet-mech-front-rear-hit::before {
+    content: "Battlemech Front / Rear";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Battlemech Right Side Hit Roll Button */
+.charsheet button[type=roll].sheet-mech-right-hit::before {
+    content: "Battlemech Right Side";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/*   Punch Left Side Hit Roll Button */
+.charsheet button[type=roll].sheet-punch-left-hit::before {
+    content: "Punch Left Side";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Punch Front/Rear Hit Roll Button */
+.charsheet button[type=roll].sheet-punch-front-rear-hit::before {
+    content: "Punch Front / Rear";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Punch Right Side Hit Roll Button */
+.charsheet button[type=roll].sheet-punch-right-hit::before {
+    content: "Punch Right Side";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Kick Left Side Hit Roll Button */
+.charsheet button[type=roll].sheet-kick-left-hit::before {
+    content: "Kick Left Side";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Kick Front/Rear Hit Roll Button */
+.charsheet button[type=roll].sheet-kick-front-rear-hit::before {
+    content: "Kick Front / Rear";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Kick Right Side Hit Roll Button */
+.charsheet button[type=roll].sheet-kick-right-hit::before {
+    content: "Kick Right Side";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Determinging Critical Hit Roll Button */
+.charsheet button[type=roll].sheet-determine-critical::before {
+    content: "Determine Critical Hit";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 2 Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-2::before {
+    content: "2 Missiles / Ultra AC / LB 2-X AC";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 4 Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-4::before {
+    content: "4 Missiles";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 6 Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-6::before {
+    content: "6 Missiles";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 5 Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-5::before {
+    content: "5 Missiles / LB 5-X AC";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 10 Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-10::before {
+    content: "10 Missiles / LB 10-X AC";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 15 Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-15::before {
+    content: "15 Missiles / LB 15-X AC";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 20 Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-20::before {
+    content: "20 Missiles / LB 20-X AC";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 2 Modified Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-2-modified::before {
+    content: "2 Missiles";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 4 Modified Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-4-modified::before {
+    content: "4 Missiles";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 5 Modified Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-5-modified::before {
+    content: "5 Missiles";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 6 Modified Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-6-modified::before {
+    content: "6 Missiles";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 10 Modified Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-10-modified::before {
+    content: "10 Missiles";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 15 Modified Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-15-modified::before {
+    content: "15 Missiles";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Munition Hits 20 Modified Roll Button */
+.charsheet button[type=roll].sheet-missile-hits-20-modified::before {
+    content: "20 Missiles";
+    font-family: arial;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Tab 2 Section 3 (Heat Scale) Background-6 */
+/* <a href="http://imgur.com/uwy5mxT"><img src="http://i.imgur.com/uwy5mxT.jpg" title="source: imgur.com" /></a> */
+.charsheet .sheet-background-6 {
+    background-image: url("http://i.imgur.com/uwy5mxT.jpg");
+    background-size: 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Tab 2 Heat Diagram Radio Buttons */
+
+/* Tab 2 Section 2 Column 2 Heat Scale (Opacity for "0" Check Box) */
+.charsheet .sheet-heat-checkbox {
+    opacity: .1;
+    margin-left: -15px;
+}
+
+/* Hide actual radio */
+.charsheet input[type="radio"].sheet-heat-radio {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Fake radio */
+.charsheet input[type="radio"].sheet-heat-radio + span::before {
+    margin-right: 4px;
+    border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    
+    background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+    
+    content: "";
+    width: 24px;
+    height: 14px;
+    font-size: 12px;
+    color: #CF0000;
+    
+    -moz-border-radius: 20%;
+    -webkit-border-radius: 20%;
+    border-radius: 20%;
+}
+
+/* Remove dot from all radios _before_ selected one */
+.charsheet input[type="radio"].sheet-heat-radio:checked ~ input[type="radio"].sheet-heat-radio + span::before,
+input[type="radio"].sheet-heat-radio:checked + span::before {    
+    content: "◄►";
+}
+
+/*Narrow Border Styling*/
+.charsheet .sheet-narrow-border {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    padding: 5px;
+    padding-top: 0px;
+    margin: 10px;
+    margin-bottom: 15px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+/* Tab 2 Section 3 (Heat Scale) Table One  */
+.charsheet .sheet-table-one {
+    font-size: 85%;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.charsheet .sheet-table-one-header {
+    font-size: 100%;
+    color: #ffffff;
+    text-align: center;
+    background-color: #666666;
+}
+
+.charsheet .sheet-table-one-alternate {
+    background-color: #e6e6e6;
+}
+    
+/* Tab 3 (Quad Armor) Background-3 */
+/* <a href="http://imgur.com/fm2pGCt"><img src="http://i.imgur.com/fm2pGCt.jpg" title="source: imgur.com" /></a> */
+.charsheet .sheet-background-3 {
+    background-image: url("http://i.imgur.com/fm2pGCt.jpg");
+    background-size: 800px 350px;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Tab 3 (Quad Armor) Background-4 */
+/* <a href="http://imgur.com/US2OvM4"><img src="http://i.imgur.com/US2OvM4.jpg" title="source: imgur.com" /></a> */
+.charsheet .sheet-background-4 {
+    background-image: url("http://i.imgur.com/US2OvM4.jpg");
+    background-size: 290px 150px;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Torso Critical Location Roll Button */
+.charsheet button[type=roll].sheet-torso-critical::before {
+    content: "Torso Critical Location";
+    font-family: arial;
+    font-size: 65%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* Tab 4 Other Units Styling */
+
+/* Vehicle Table */
+.charsheet .sheet-table-vehicle {
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Select Vehicle Movement / Suspension Factor */
+.charsheet select.sheet-vehicle-select {
+    display: inline;
+    width: 120px;
+    height: 20px;
+    padding: 1px;
+    margin: 2px;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+/* Vehicle Label Adjust */
+.charsheet .sheet-label-vehicle {
+    display: inline;
+    font-size: 95%;
+    font-weight: bold;
+}
+
+/* Tab 4 (Other Unit)  Number Input Box */
+.charsheet input[type="number"].sheet-number-large {
+    width: 55px;
+    height: 18px;
+    padding: 1px;
+    margin: 2px;
+    text-align: center;
+}
+
+/* Tab 4 (Other Units) Vehicle-Background-1 */
+/* <a href="http://imgur.com/eRfgTal"><img src="http://i.imgur.com/eRfgTal.jpg" title="source: imgur.com" /></a> */
+.charsheet .sheet-background-5 {
+    background-image: url("http://i.imgur.com/eRfgTal.jpg");
+    background-size: 535px 750px;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Vehicle Armor Diagram Adjustmets Front */
+.charsheet .sheet-vehicle-top {
+    text-align: center;
+}
+
+/* Vehicle Armor Diagram Adjustmets Left Side */
+.charsheet .sheet-vehicle-left {
+    text-align: left;
+    margin-top: -25%;
+}
+
+/* Vehicle Armor Diagram Adjustmets Turret */
+.charsheet .sheet-vehicle-turret {
+    text-align: center;
+    margin-top: 10%;
+    margin-left: -10%;
+}
+
+/* Vehicle Armor Diagram Adjustmets Right Side */
+.charsheet .sheet-vehicle-right {
+    text-align: right;
+    margin-top: -25%;
+    margin-left: -16%;
+}
+
+/* Tab 5 Modifiers Tables Header Border */
+.charsheet .sheet-header-border {
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+    background-color: #D3D3D3;
+}
+
+/* Tab 5 Modifiers Inside Border */
+.charsheet .sheet-modifiers-border {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 5px;
+    margin: 2px;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+/* Tab 5 Data / Config. Table Border */
+.charsheet .sheet-rollable-table {
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+}
