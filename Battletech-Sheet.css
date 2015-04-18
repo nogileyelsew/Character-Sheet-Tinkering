@@ -958,10 +958,29 @@ input[type="radio"].sheet-heat-radio:checked + span::before {
     background-color: #666666;
 }
 
+.charsheet .sheet-table-two-header {
+    font-size: 110%;
+    text-align: right;
+}
+
+.charsheet .sheet-table-three-header {
+    font-size: 110%;
+    text-align: left;
+}
+
+.charsheet .sheet-table-four-header {
+    font-size: 110%;
+    text-align: center;
+}
+
 .charsheet .sheet-table-one-alternate {
     background-color: #e6e6e6;
 }
     
+.charsheet .sheet-superscript {
+    font-size: 120%;
+}
+
 /* Tab 3 (Quad Armor) Background-3 */
 /* <a href="http://imgur.com/fm2pGCt"><img src="http://i.imgur.com/fm2pGCt.jpg" title="source: imgur.com" /></a> */
 .charsheet .sheet-background-3 {
@@ -1057,28 +1076,757 @@ input[type="radio"].sheet-heat-radio:checked + span::before {
     margin-left: -16%;
 }
 
-/* Tab 5 Modifiers Tables Header Border */
-.charsheet .sheet-header-border {
-    border-style: solid;
-    border-color: #808080;
-    border-width: 1px;
-    background-color: #D3D3D3;
-}
-
-/* Tab 5 Modifiers Inside Border */
-.charsheet .sheet-modifiers-border {
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    padding: 5px;
-    margin: 2px;
-    font-size: 90%;
+/* Tab 5 Rolltemplate Table of Colors */
+.charsheet .sheet-table-colors {
+    width: 98%;
     font-weight: bold;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    margin-top: 5px;
+    text-align: center;
+    vertical-align: bottom;
 }
 
-/* Tab 5 Data / Config. Table Border */
-.charsheet .sheet-rollable-table {
+.charsheet .sheet-table-light {
+    background-color: #A9A9A9;
+}
+
+.charsheet .sheet-table-black {
+    margin: 2px;
+}
+
+.charsheet .sheet-table-purple {
+    color: #9900ff;
+    margin: 2px;
+}
+
+.charsheet .sheet-table-blue {
+    color: #0000ff;
+    margin: 2px;
+}
+
+.charsheet .sheet-table-lime {
+    color: #00ff00;
+    margin: 2px;
+}
+
+.charsheet .sheet-table-gold {
+    color: #f1c232;
+    margin: 2px;
+}
+
+.charsheet .sheet-table-maroon {
+    color: #800000;
+    margin: 2px;
+}
+
+.charsheet .sheet-table-dark {
+    background-color: #191919;
+    color: #ffffff;
+}
+
+.charsheet .sheet-table-white {
+    color: #ffffff;
+    margin: 2px;
+}
+
+.charsheet .sheet-table-yellow {
+    color: #ffff00;
+    margin: 2px;
+}
+
+.charsheet .sheet-table-orange {
+    color: #ff9900;
+    margin: 2px;
+}
+
+.charsheet .sheet-table-red {
+    color: #ff0000;
+    margin: 2px;
+}
+
+.charsheet .sheet-table-aqua {
+    color: #00ffff;
+    margin: 2px;
+}
+
+.charsheet .sheet-table-steelblue {
+    color: #4682B4;
+    margin: 2px;
+}
+
+/* Tab 5 Rollable Table Data Border */
+.charsheet .sheet-table-two {
+    font-size: 85%;
+    font-weight: bold;
     border-style: solid;
     border-color: #808080;
     border-width: 1px;
+    margin-top: 5px;
+}
+
+/* Roll Templates Light Background (Black) */
+/* <a href="http://imgur.com/B9h8hTe"><img src="http://i.imgur.com/B9h8hTe.png" title="source: imgur.com" /></a> */
+.sheet-rolltemplate-battletech-black table {
+    width: 189px;
+    height: 100%;
+    padding: 2px;
+    background: url(http://i.imgur.com/B9h8hTe.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Arial Black", Gadget, sans-serif;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-battletech-black th {
+    color: rgb(0, 0, 0);
+    padding: 10px 1px 10px 25px;
+    line-height: 1.1em;
+	font-size: 1.1em;
+    text-shadow: 1px 1px #C1C1C1;
+    text-align: center;
+}
+ 
+.sheet-rolltemplate-battletech-black td {
+    padding-left: 30px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.sheet-rolltemplate-battletech-black .sheet-footer {
+    color: #000000;
+    text-shadow: 1px 1px #C1C1C1;
+}
+
+.sheet-rolltemplate-battletech-black .inlinerollresult  {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 1em;
+}
+ 
+.sheet-rolltemplate-battletech-black .inlinerollresult.fullcrit {
+	color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-black .inlinerollresult.fullfail {
+    color: #B31515;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-black .inlinerollresult.importantroll {
+	color: #3FB315;
+    border: none;
+}
+/* Purple Rolltemplate */
+.sheet-rolltemplate-battletech-purple table {
+    width: 189px;
+    height: 100%;
+    padding: 2px;
+    background: url(http://i.imgur.com/B9h8hTe.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Arial Black", Gadget, sans-serif;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-battletech-purple th {
+    color: #9900ff;
+    padding: 10px 1px 10px 25px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    text-shadow: 1px 1px #333333;
+    text-align: center;
+}
+ 
+.sheet-rolltemplate-battletech-purple td {
+    padding-left: 30px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.sheet-rolltemplate-battletech-purple .sheet-colorize {
+    color: #ffffff;
+}
+
+.sheet-rolltemplate-battletech-purple .sheet-footer {
+    color: #9900ff;
+    text-shadow: 1px 1px #333333;
+}
+
+.sheet-rolltemplate-battletech-purple .inlinerollresult  {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 1em;
+}
+ 
+.sheet-rolltemplate-battletech-purple .inlinerollresult.fullcrit {
+	color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-purple .inlinerollresult.fullfail {
+    color: #B31515;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-purple .inlinerollresult.importantroll {
+	color: #3FB315;
+    border: none;
+}
+
+/* Blue Rolltemplate */
+.sheet-rolltemplate-battletech-blue table {
+    width: 189px;
+    height: 100%;
+    padding: 2px;
+    background: url(http://i.imgur.com/B9h8hTe.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Arial Black", Gadget, sans-serif;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-battletech-blue th {
+    color: #0000ff;
+    padding: 10px 1px 10px 25px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    text-shadow: 1px 1px #333333;
+    text-align: center;
+}
+ 
+.sheet-rolltemplate-battletech-blue td {
+    padding-left: 30px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.sheet-rolltemplate-battletech-blue .sheet-footer {
+    color: #0000ff;
+    text-shadow: 1px 1px #333333;
+}
+
+.sheet-rolltemplate-battletech-blue .inlinerollresult  {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 1em;
+}
+ 
+.sheet-rolltemplate-battletech-blue .inlinerollresult.fullcrit {
+    color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-blue .inlinerollresult.fullfail {
+    color: #B31515;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-blue .inlinerollresult.importantroll {
+	color: #3FB315;
+    border: none;
+}
+
+/* Steel-Blue Rolltemplate */
+.sheet-rolltemplate-battletech-steelblue table {
+    width: 189px;
+    height: 100%;
+    padding: 2px;
+    background: url(http://i.imgur.com/B9h8hTe.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Arial Black", Gadget, sans-serif;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-battletech-steelblue th {
+    color: #4682B4;
+    padding: 10px 1px 10px 25px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+}
+ 
+.sheet-rolltemplate-battletech-steelblue td {
+    padding-left: 30px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.sheet-rolltemplate-battletech-steelblue .sheet-footer {
+    color: #4682B4;
+    text-shadow: 1px 1px #000000;
+}
+
+.sheet-rolltemplate-battletech-steelblue .inlinerollresult  {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 1em;
+}
+ 
+.sheet-rolltemplate-battletech-steelblue .inlinerollresult.fullcrit {
+    color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-steelblue .inlinerollresult.fullfail {
+    color: #B31515;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-steelblue .inlinerollresult.importantroll {
+    color: #3FB315;
+    border: none;
+}
+
+/* Gold Rolltemplate */
+.sheet-rolltemplate-battletech-gold table {
+    width: 189px;
+    height: 100%;
+    padding: 2px;
+    background: url(http://i.imgur.com/B9h8hTe.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Arial Black", Gadget, sans-serif;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-battletech-gold th {
+    color: #f1c232;
+    padding: 10px 1px 10px 25px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+}
+ 
+.sheet-rolltemplate-battletech-gold td {
+    padding-left: 30px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.sheet-rolltemplate-battletech-gold .sheet-footer {
+    color: #f1c232;
+    text-shadow: 1px 1px #000000;
+}
+
+.sheet-rolltemplate-battletech-gold .inlinerollresult  {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 1em;
+}
+ 
+.sheet-rolltemplate-battletech-gold .inlinerollresult.fullcrit {
+    color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-gold .inlinerollresult.fullfail {
+    color: #B31515;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-gold .inlinerollresult.importantroll {
+    color: #3FB315;
+    border: none;
+}
+
+/* Maroon Rolltemplate */
+.sheet-rolltemplate-battletech-maroon table {
+    width: 189px;
+    height: 100%;
+    padding: 2px;
+    background: url(http://i.imgur.com/B9h8hTe.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Arial Black", Gadget, sans-serif;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-battletech-maroon th {
+    color: #800000;
+    padding: 10px 1px 10px 25px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    text-shadow: 1px 1px #333333;
+    text-align: center;
+}
+ 
+.sheet-rolltemplate-battletech-maroon td {
+    padding-left: 30px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.sheet-rolltemplate-battletech-maroon .sheet-footer {
+    color: #800000;
+    text-shadow: 1px 1px #333333;
+}
+
+.sheet-rolltemplate-battletech-maroon .inlinerollresult  {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 1em;
+}
+ 
+.sheet-rolltemplate-battletech-maroon .inlinerollresult.fullcrit {
+    color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-maroon .inlinerollresult.fullfail {
+    color: #B31515;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-maroon .inlinerollresult.importantroll {
+    color: #3FB315;
+    border: none;
+}
+
+/* Roll Templates Dark Background (White) */
+/* <a href="http://imgur.com/Jqo7tDz"><img src="http://i.imgur.com/Jqo7tDz.png" title="source: imgur.com" /></a> */
+.sheet-rolltemplate-battletech-white table {
+    width: 189px;
+    height: 100%;
+    padding: 2px;
+    background: url(http://i.imgur.com/Jqo7tDz.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Arial Black", Gadget, sans-serif;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-battletech-white th {
+    color: #ffffff;
+    padding: 10px 1px 10px 25px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+}
+ 
+.sheet-rolltemplate-battletech-white td {
+    padding-left: 30px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.sheet-rolltemplate-battletech-white .sheet-footer {
+    color: #ffffff;
+    text-shadow: 1px 1px #000000;
+}
+
+.sheet-rolltemplate-battletech-white .inlinerollresult  {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 1em;
+}
+
+.sheet-rolltemplate-battletech-white .inlinerollresult.fullcrit {
+    color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-white .inlinerollresult.fullfail {
+    color: #B31515;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-white .inlinerollresult.importantroll {
+	color: #3FB315;
+    border: none;
+}
+
+/* Yellow Roll Template */
+.sheet-rolltemplate-battletech-yellow table {
+    width: 189px;
+    height: 100%;
+    padding: 2px;
+    background: url(http://i.imgur.com/Jqo7tDz.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Arial Black", Gadget, sans-serif;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-battletech-yellow th {
+    color: #ffff00;
+    padding: 10px 1px 10px 25px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+}
+ 
+.sheet-rolltemplate-battletech-yellow td {
+    padding-left: 30px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.sheet-rolltemplate-battletech-yellow .sheet-footer {
+    color: #ffff00;
+    text-shadow: 1px 1px #000000;
+}
+
+.sheet-rolltemplate-battletech-yellow .inlinerollresult  {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 1em;
+}
+
+.sheet-rolltemplate-battletech-yellow .inlinerollresult.fullcrit {
+    color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-yellow .inlinerollresult.fullfail {
+    color: #B31515;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-yellow .inlinerollresult.importantroll {
+    color: #3FB315;
+    border: none;
+}
+
+/* Orange Roll Template */
+.sheet-rolltemplate-battletech-orange table {
+    width: 189px;
+    height: 100%;
+    padding: 2px;
+    background: url(http://i.imgur.com/Jqo7tDz.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Arial Black", Gadget, sans-serif;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-battletech-orange th {
+    color: #ff9900;
+    padding: 10px 1px 10px 25px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+}
+ 
+.sheet-rolltemplate-battletech-orange td {
+    padding-left: 30px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.sheet-rolltemplate-battletech-orange .sheet-footer {
+    color: #ff9900;
+    text-shadow: 1px 1px #000000;
+}
+
+.sheet-rolltemplate-battletech-orange .inlinerollresult  {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 1em;
+}
+
+.sheet-rolltemplate-battletech-orange .inlinerollresult.fullcrit {
+    color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-orange .inlinerollresult.fullfail {
+    color: #B31515;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-orange .inlinerollresult.importantroll {
+    color: #3FB315;
+    border: none;
+}
+
+/* Red Roll Template */
+.sheet-rolltemplate-battletech-red table {
+    width: 189px;
+    height: 100%;
+    padding: 2px;
+    background: url(http://i.imgur.com/Jqo7tDz.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Arial Black", Gadget, sans-serif;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-battletech-red th {
+    color: #ff0000;
+    padding: 10px 1px 10px 25px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+}
+ 
+.sheet-rolltemplate-battletech-red td {
+    padding-left: 30px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.sheet-rolltemplate-battletech-red .sheet-footer {
+    color: #ff0000;
+    text-shadow: 1px 1px #000000;
+}
+
+.sheet-rolltemplate-battletech-red .inlinerollresult  {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 1em;
+}
+
+.sheet-rolltemplate-battletech-red .inlinerollresult.fullcrit {
+    color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-red .inlinerollresult.fullfail {
+    color: #B31515;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-red .inlinerollresult.importantroll {
+    color: #3FB315;
+    border: none;
+}
+
+/* Aqua Roll Template */
+.sheet-rolltemplate-battletech-aqua table {
+    width: 189px;
+    height: 100%;
+    padding: 2px;
+    background: url(http://i.imgur.com/Jqo7tDz.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Arial Black", Gadget, sans-serif;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-battletech-aqua th {
+    color: #00ffff;
+    padding: 10px 1px 10px 25px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+}
+ 
+.sheet-rolltemplate-battletech-aqua td {
+    padding-left: 30px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.sheet-rolltemplate-battletech-aqua .sheet-footer {
+    color: #00ffff;
+    text-shadow: 1px 1px #000000;
+}
+
+.sheet-rolltemplate-battletech-aqua .inlinerollresult  {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 1em;
+}
+
+.sheet-rolltemplate-battletech-aqua .inlinerollresult.fullcrit {
+    color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-aqua .inlinerollresult.fullfail {
+    color: #B31515;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-aqua .inlinerollresult.importantroll {
+    color: #3FB315;
+    border: none;
+}
+
+/* Lime Roll Template */
+.sheet-rolltemplate-battletech-lime table {
+    width: 189px;
+    height: 100%;
+    padding: 2px;
+    background: url(http://i.imgur.com/Jqo7tDz.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Arial Black", Gadget, sans-serif;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-battletech-lime th {
+    color: #00ff00;
+    padding: 10px 1px 10px 25px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+}
+ 
+.sheet-rolltemplate-battletech-lime td {
+    padding-left: 30px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.sheet-rolltemplate-battletech-lime .sheet-footer {
+    color: #00ff00;
+    text-shadow: 1px 1px #000000;
+}
+
+.sheet-rolltemplate-battletech-lime .inlinerollresult  {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 1em;
+}
+
+.sheet-rolltemplate-battletech-lime .inlinerollresult.fullcrit {
+    color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-lime .inlinerollresult.fullfail {
+    color: #B31515;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech-lime .inlinerollresult.importantroll {
+    color: #3FB315;
+    border: none;
 }
