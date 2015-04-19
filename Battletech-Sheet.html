@@ -217,7 +217,7 @@
     </div>
     <label class="sheet-label-adjust">Operational: <input type="number" name="attr_heatsinks" value="10" class="sheet-number-small" /></label><label class="sheet-label-adjust"><input type="number" name="attr_max_heatsinks" value="10" class="sheet-number-small" /> Total</label>
     <!-- Button Name: "roll_heat_dissipation" -->
-    <button type="roll" value="@{character_name} dissipates [[@{heat_dissipation}]] Heat. Reducing its total Heat to [[{@{heat}-@{heat_dissipation},0}kh1]]." name="roll_heat_dissipation" class="sheet-heat-roll-button" /></button><label class="sheet-label-adjust"><input type="number" name="attr_heat_dissipation" value="@{heatsinks}*@{typeofheatsink}" class="sheet-number-small" disabled="true" />Heat Dissipated</label>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name}}} {{line-one=Dissipating}} {{line-two=[[@{heat_dissipation}]] Heat...}} {{line-three=Reducing Total}} {{line-four=Heat to [[{@{heat}-@{heat_dissipation},0}kh1]].}} {{footer=~~~ Heat Level ~~~}}" name="roll_heat_dissipation" class="sheet-heat-roll-button" /></button><label class="sheet-label-adjust"><input type="number" name="attr_heat_dissipation" value="@{heatsinks}*@{typeofheatsink}" class="sheet-number-small" disabled="true" />Heat Dissipated</label>
     <label class="sheet-inverted-three">AMS Mode</label>
     <table>
       <tr>
@@ -256,9 +256,9 @@
      </tr>
      <tr>
       <!-- Button Name: "roll_initiative" -->
-      <td><button type="roll" value="/em Intiative\nRolling for Intiatve: [[2d6&{tracker}]]" name="roll_initiative" class="sheet-initiative-roll-button" /></button></td>
+      <td><button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name}}} {{line-one=Pilot Reaction,}} {{line-two=Initiative Roll...}} {{line-three=Outcome: [[2d6]]}} {{footer=~~~~ Initiative ~~~}}" name="roll_initiative" class="sheet-initiative-roll-button" /></button></td>
       <!-- Button Name: "roll_piloting_warrior1" -->
-      <td><button type="roll" value="@{warrior1_name} attempts to control @{character_name}...\nRolling: [[2d6]] vs modified target number of [[@{warrior1_piloting}+?{Modifiers|0}]]" name="roll_piloting_warrior1" class="sheet-piloting-roll-button" /></button></td>
+      <td><button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name}}} {{line-one=@{warrior1_name}}} {{line-two=Tries to Maintain Control... }} {{line-three=Success on: [[@{warrior1_piloting}+?{Modifiers|0}]]+ }} {{line-four=Outcome: [[2d6]] }} {{footer=Piloting Skill Roll}}" name="roll_piloting_warrior1" class="sheet-piloting-roll-button" /></button></td>
      </tr>
     </table>
     <div class="sheet-extra-margin">
@@ -272,7 +272,7 @@
       <input type="radio" value="6" name="attr_warrior1_hits" class="sheet-warrior-radio" /><span></span></label>
     </div>
     <!-- Button Name: "roll_consciousness_warrior1" -->
-    <button type="roll" value="@{warrior1_name} tries to maintain conciousness...\nRolling: [[2d6]] vs target number of [[round(-0.04*(@{warrior1_hits}*@{warrior1_hits}*@{warrior1_hits})+0.32*(@{warrior1_hits}*@{warrior1_hits})+1.36*@{warrior1_hits}+1.6)]]" name="roll_consciousness_warrior1" class="sheet-consciousness-roll-button" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{warrior1_name} }} {{line-two=Tries to Maintain Consciousness... }} {{line-three=Success on: [[round(-0.04*(@{warrior1_hits}*@{warrior1_hits}*@{warrior1_hits})+0.32*(@{warrior1_hits}*@{warrior1_hits})+1.36*@{warrior1_hits}+1.6)]]+ }} {{line-four=Outcome: [[2d6]] }} {{footer=Consciousness ? }}" name="roll_consciousness_warrior1" class="sheet-consciousness-roll-button" /></button>
     <hr>
     <h5 style="text-align:center" >Warrior 2</h5>
     <label class="sheet-label-adjust">Name: <input type="text" name="attr_warrior2_name" class='sheet-extralong' /></label>
@@ -284,7 +284,7 @@
      <tr>
       <td></td>
       <!-- Button Name: "roll_piloting_warrior2" -->
-      <td><button type="roll" value="@{warrior2_name} attempts to control @{character_name}...\nRolling: [[2d6]] vs modified target number of [[@{warrior2_piloting}+?{Modifiers|0}]]" name="roll_piloting_warrior2" class="sheet-piloting-roll-button" /></button></td>
+      <td><button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name}}} {{line-one=@{warrior2_name}}} {{line-two=Tries to Maintain Control... }} {{line-three=Success on: [[@{warrior2_piloting}+?{Modifiers|0}]]+ }} {{line-four=Outcome: [[2d6]] }} {{footer=Piloting Skill Roll}}" name="roll_piloting_warrior2" class="sheet-piloting-roll-button" /></button></td>
      </tr>
     </table>
     <div class="sheet-extra-margin">
@@ -298,7 +298,7 @@
       <input type="radio" value="6" name="attr_warrior2_hits" class="sheet-warrior-radio" /><span></span></label>
     </div>
     <!-- Button Name: "roll_consciousness_warrior2" -->
-    <button type="roll" value="@{warrior2_name} tries to maintain conciousness...\nRolling: [[2d6]] vs target number of [[round(-0.04*(@{warrior2_hits}*@{warrior2_hits}*@{warrior2_hits})+0.32*(@{warrior2_hits}*@{warrior2_hits})+1.36*@{warrior2_hits}+1.6)]]" name="roll_consciousness_warrior2" class="sheet-consciousness-roll-button" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{warrior2_name} }} {{line-two=Tries to Maintain Consciousness... }} {{line-three=Success on: [[round(-0.04*(@{warrior2_hits}*@{warrior2_hits}*@{warrior2_hits})+0.32*(@{warrior2_hits}*@{warrior2_hits})+1.36*@{warrior2_hits}+1.6)]]+ }} {{line-four=Outcome: [[2d6]] }} {{footer=Consciousness ? }}" name="roll_consciousness_warrior2" class="sheet-consciousness-roll-button" /></button>
   <!-- END (Sheet Header) Column 3 Warrior Data -->
   </div>
 <!--END (Sheet Header) Title/Mech Data/Warrior Data -->
@@ -1179,9 +1179,9 @@
            <h4 class="sheet-inverted" style="margin-left: 5%">Critical Slot Hit</h4>
            <table>
              <!--Button Name: roll_head_leg_critical -->
-             <tr><td><button type="roll" value="/em Critical Hit\nRolling for Head/Leg Critical Slot Destroyed\nOutcome: Slot Number [[1d6]] Destroyed" name="roll_head_leg_critical"  class="sheet-head-leg-critical" /></button></td></tr>
+             <tr><td><button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=Head / Leg Critical Hit Location...}} {{line-two=Outcome: }} {{line-three=Slot Number [[1d6cs7cf<6]] is Destroyed. }}  {{footer=Head / Leg Critical }}" name="roll_head_leg_critical"  class="sheet-head-leg-critical" /></button></td></tr>
              <!--Button Name: roll_arm_torso_critical -->
-             <tr><td><button type="roll" value="/em Critical Hit\nRolling for Arm/Torso Critical Slot Destroyed\nOutcome: [[1t[Critical-Section]]]\nSlot Number [[1d6]] Destroyed" name="roll_arm_torso_critical" class="sheet-arm-torso-critical" /></button></td></tr>
+             <tr><td><button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=Arm / Torso Critical Hit Location... }} {{line-two=Outcome:}} {{line-three=[[1t[Critical-Section]]] }} {{line-four=Slot Number [[1d6cs7cf<6]] is Destroyed. }} {{footer=Arm/Torso Critical }}" name="roll_arm_torso_critical" class="sheet-arm-torso-critical" /></button></td></tr>
            </table>
        </div>
       </div>
@@ -1248,9 +1248,9 @@
     <input type="text" name="weapon_ammo_label" value="Ammo" class="sheet-weapon" disabled="true" /><br>
     <!-- Weapon Number 1 -->
     <!-- Weapon 1 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name}}} {{weapon-name=@{weapon1_name}}} {{modifier=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]}} {{attack=Attack: [[2d6]]}} {{damage=Damage: @{weapon1_damage}}} {{heat=Heat: @{weapon1_heat_generated}}} {{footer=~ Weapon Attack ~}}" name="roll_weapon1_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">01</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon1_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon1_damage} }} {{line-five=Heat: @{weapon1_heat_generated} }} {{footer=Weapon 1 Attack }}" name="roll_weapon1_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">01</span>
     <!-- Weapon 1 Warrior 2 Attack Roll Button --> 
-    <button type="roll" value="/em fires a @{weapon1_name}.\n\nMinimum Range: @{weapon1_minimum}\nShort Range: @{weapon1_short}\nMedium Range @{weapon1_medium}\nLong Range: @{weapon1_long}\nExtreme Range: @{weapon1_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon1_damage}\nHeat: @{weapon1_heat_generated}" name="roll_weapon1_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon1_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon1_damage} }} {{line-five=Heat: @{weapon1_heat_generated} }} {{footer=Weapon 1 Attack }}" name="roll_weapon1_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon1_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon1_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon1_damage" value="0" class="sheet-weapon-underline" />
@@ -1265,9 +1265,9 @@
     <input type="text" name="attr_weapon1_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 2 -->
     <!-- Weapon 2 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon2_name}.\n\nMinimum Range: @{weapon2_minimum}\nShort Range: @{weapon2_short}\nMedium Range @{weapon2_medium}\nLong Range: @{weapon2_long}\nExtreme Range: @{weapon2_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon2_damage}\nHeat: @{weapon2_heat_generated}" name="roll_weapon2_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">02</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon2_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon2_damage} }} {{line-five=Heat: @{weapon2_heat_generated} }} {{footer=Weapon 2 Attack }}" name="roll_weapon2_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">02</span>
     <!-- Weapon 2 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon2_name}.\n\nMinimum Range: @{weapon2_minimum}\nShort Range: @{weapon2_short}\nMedium Range @{weapon2_medium}\nLong Range: @{weapon2_long}\nExtreme Range: @{weapon2_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon2_damage}\nHeat: @{weapon2_heat_generated}" name="roll_weapon2_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon2_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon2_damage} }} {{line-five=Heat: @{weapon2_heat_generated} }} {{footer=Weapon 2 Attack }}" name="roll_weapon2_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon2_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon2_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon2_damage" value="0" class="sheet-weapon-underline" />
@@ -1282,9 +1282,9 @@
     <input type="text" name="attr_weapon2_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 3 -->
     <!-- Weapon 3 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon3_name}.\n\nMinimum Range: @{weapon3_minimum}\nShort Range: @{weapon3_short}\nMedium Range @{weapon3_medium}\nLong Range: @{weapon3_long}\nExtreme Range: @{weapon3_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon3_damage}\nHeat: @{weapon3_heat_generated}" name="roll_weapon3_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">03</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon3_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon3_damage} }} {{line-five=Heat: @{weapon3_heat_generated} }} {{footer=Weapon 3 Attack }}" name="roll_weapon3_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">03</span>
     <!-- Weapon 3 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon3_name}.\n\nMinimum Range: @{weapon3_minimum}\nShort Range: @{weapon3_short}\nMedium Range @{weapon3_medium}\nLong Range: @{weapon3_long}\nExtreme Range: @{weapon3_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon3_damage}\nHeat: @{weapon3_heat_generated}" name="roll_weapon3_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon3_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon3_damage} }} {{line-five=Heat: @{weapon3_heat_generated} }} {{footer=Weapon 3 Attack }}" name="roll_weapon3_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon3_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon3_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon3_damage" value="0" class="sheet-weapon-underline" />
@@ -1299,9 +1299,9 @@
     <input type="text" name="attr_weapon3_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 4 -->
     <!-- Weapon 4 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon4_name}.\n\nMinimum Range: @{weapon4_minimum}\nShort Range: @{weapon4_short}\nMedium Range @{weapon4_medium}\nLong Range: @{weapon4_long}\nExtreme Range: @{weapon4_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon4_damage}\nHeat: @{weapon4_heat_generated}" name="roll_weapon4_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">04</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon4_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon4_damage} }} {{line-five=Heat: @{weapon4_heat_generated} }} {{footer=Weapon 4 Attack }}" name="roll_weapon4_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">04</span>
     <!-- Weapon 4 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon4_name}.\n\nMinimum Range: @{weapon4_minimum}\nShort Range: @{weapon4_short}\nMedium Range @{weapon4_medium}\nLong Range: @{weapon4_long}\nExtreme Range: @{weapon4_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon4_damage}\nHeat: @{weapon4_heat_generated}" name="roll_weapon4_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon4_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon4_damage} }} {{line-five=Heat: @{weapon4_heat_generated} }} {{footer=Weapon 4 Attack }}" name="roll_weapon4_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon4_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon4_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon4_damage" value="0" class="sheet-weapon-underline" />
@@ -1316,9 +1316,9 @@
     <input type="text" name="attr_weapon4_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 5 -->
     <!-- Weapon 5 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon5_name}.\n\nMinimum Range: @{weapon5_minimum}\nShort Range: @{weapon5_short}\nMedium Range @{weapon5_medium}\nLong Range: @{weapon5_long}\nExtreme Range: @{weapon5_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon5_damage}\nHeat: @{weapon5_heat_generated}" name="roll_weapon5_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">05</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon5_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon5_damage} }} {{line-five=Heat: @{weapon5_heat_generated} }} {{footer=Weapon 5 Attack }}" name="roll_weapon5_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">05</span>
     <!-- Weapon 5 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon5_name}.\n\nMinimum Range: @{weapon5_minimum}\nShort Range: @{weapon5_short}\nMedium Range @{weapon5_medium}\nLong Range: @{weapon5_long}\nExtreme Range: @{weapon5_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon5_damage}\nHeat: @{weapon5_heat_generated}" name="roll_weapon5_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon5_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon5_damage} }} {{line-five=Heat: @{weapon5_heat_generated} }} {{footer=Weapon 5 Attack }}" name="roll_weapon5_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon5_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon5_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon5_damage" value="0" class="sheet-weapon-underline" />
@@ -1333,9 +1333,9 @@
     <input type="text" name="attr_weapon5_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 6 -->
     <!-- Weapon 6 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon6_name}.\n\nMinimum Range: @{weapon6_minimum}\nShort Range: @{weapon6_short}\nMedium Range @{weapon6_medium}\nLong Range: @{weapon6_long}\nExtreme Range: @{weapon6_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon6_damage}\nHeat: @{weapon6_heat_generated}" name="roll_weapon6_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">06</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon6_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon6_damage} }} {{line-five=Heat: @{weapon6_heat_generated} }} {{footer=Weapon 6 Attack }}" name="roll_weapon6_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">06</span>
     <!-- Weapon 6 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon6_name}.\n\nMinimum Range: @{weapon6_minimum}\nShort Range: @{weapon6_short}\nMedium Range @{weapon6_medium}\nLong Range: @{weapon6_long}\nExtreme Range: @{weapon6_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon6_damage}\nHeat: @{weapon6_heat_generated}" name="roll_weapon6_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon6_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon6_damage} }} {{line-five=Heat: @{weapon6_heat_generated} }} {{footer=Weapon 6 Attack }}" name="roll_weapon6_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon6_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon6_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon6_damage" value="0" class="sheet-weapon-underline" />
@@ -1350,9 +1350,9 @@
     <input type="text" name="attr_weapon6_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 7 -->
     <!-- Weapon 7 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon7_name}.\n\nMinimum Range: @{weapon7_minimum}\nShort Range: @{weapon7_short}\nMedium Range @{weapon7_medium}\nLong Range: @{weapon7_long}\nExtreme Range: @{weapon7_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon7_damage}\nHeat: @{weapon7_heat_generated}" name="roll_weapon7_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">07</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon7_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon7_damage} }} {{line-five=Heat: @{weapon7_heat_generated} }} {{footer=Weapon 7 Attack }}" name="roll_weapon7_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">07</span>
     <!-- Weapon 7 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon7_name}.\n\nMinimum Range: @{weapon7_minimum}\nShort Range: @{weapon7_short}\nMedium Range @{weapon7_medium}\nLong Range: @{weapon7_long}\nExtreme Range: @{weapon7_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon7_damage}\nHeat: @{weapon7_heat_generated}" name="roll_weapon7_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon7_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon7_damage} }} {{line-five=Heat: @{weapon7_heat_generated} }} {{footer=Weapon 7 Attack }}" name="roll_weapon7_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon7_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon7_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon7_damage" value="0" class="sheet-weapon-underline" />
@@ -1367,9 +1367,9 @@
     <input type="text" name="attr_weapon7_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 8 -->
     <!-- Weapon 8 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon8_name}.\n\nMinimum Range: @{weapon8_minimum}\nShort Range: @{weapon8_short}\nMedium Range @{weapon8_medium}\nLong Range: @{weapon8_long}\nExtreme Range: @{weapon8_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon8_damage}\nHeat: @{weapon8_heat_generated}" name="roll_weapon8_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">08</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon8_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon8_damage} }} {{line-five=Heat: @{weapon8_heat_generated} }} {{footer=Weapon 8 Attack }}" name="roll_weapon8_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">08</span>
     <!-- Weapon 8 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon8_name}.\n\nMinimum Range: @{weapon8_minimum}\nShort Range: @{weapon8_short}\nMedium Range @{weapon8_medium}\nLong Range: @{weapon8_long}\nExtreme Range: @{weapon8_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon8_damage}\nHeat: @{weapon8_heat_generated}" name="roll_weapon8_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon8_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon8_damage} }} {{line-five=Heat: @{weapon8_heat_generated} }} {{footer=Weapon 8 Attack }}" name="roll_weapon8_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon8_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon8_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon8_damage" value="0" class="sheet-weapon-underline" />
@@ -1384,9 +1384,9 @@
     <input type="text" name="attr_weapon8_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 9 -->
     <!-- Weapon 9 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon9_name}.\n\nMinimum Range: @{weapon9_minimum}\nShort Range: @{weapon9_short}\nMedium Range @{weapon9_medium}\nLong Range: @{weapon9_long}\nExtreme Range: @{weapon9_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon9_damage}\nHeat: @{weapon9_heat_generated}" name="roll_weapon9_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">09</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon9_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon9_damage} }} {{line-five=Heat: @{weapon9_heat_generated} }} {{footer=Weapon 9 Attack }}" name="roll_weapon9_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">09</span>
     <!-- Weapon 9 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon9_name}.\n\nMinimum Range: @{weapon9_minimum}\nShort Range: @{weapon9_short}\nMedium Range @{weapon9_medium}\nLong Range: @{weapon9_long}\nExtreme Range: @{weapon9_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon9_damage}\nHeat: @{weapon9_heat_generated}" name="roll_weapon9_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon9_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon9_damage} }} {{line-five=Heat: @{weapon9_heat_generated} }} {{footer=Weapon 9 Attack }}" name="roll_weapon9_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon9_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon9_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon9_damage" value="0" class="sheet-weapon-underline" />
@@ -1401,9 +1401,9 @@
     <input type="text" name="attr_weapon9_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 10 -->
     <!-- Weapon 10 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon10_name}.\n\nMinimum Range: @{weapon10_minimum}\nShort Range: @{weapon10_short}\nMedium Range @{weapon10_medium}\nLong Range: @{weapon10_long}\nExtreme Range: @{weapon10_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon10_damage}\nHeat: @{weapon10_heat_generated}" name="roll_weapon10_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">10</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon10_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon10_damage} }} {{line-five=Heat: @{weapon10_heat_generated} }} {{footer=Weapon 10 Attack }}" name="roll_weapon10_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">10</span>
     <!-- Weapon 10 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon10_name}.\n\nMinimum Range: @{weapon10_minimum}\nShort Range: @{weapon10_short}\nMedium Range @{weapon10_medium}\nLong Range: @{weapon10_long}\nExtreme Range: @{weapon10_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon10_damage}\nHeat: @{weapon10_heat_generated}" name="roll_weapon10_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon10_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon10_damage} }} {{line-five=Heat: @{weapon10_heat_generated} }} {{footer=Weapon 10 Attack }}" name="roll_weapon10_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon10_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon10_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon10_damage" value="0" class="sheet-weapon-underline" />
@@ -1418,9 +1418,9 @@
     <input type="text" name="attr_weapon10_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 11 -->
     <!-- Weapon 11 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon11_name}.\n\nMinimum Range: @{weapon11_minimum}\nShort Range: @{weapon11_short}\nMedium Range @{weapon11_medium}\nLong Range: @{weapon11_long}\nExtreme Range: @{weapon11_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon11_damage}\nHeat: @{weapon11_heat_generated}" name="roll_weapon11_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">11</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon11_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon11_damage} }} {{line-five=Heat: @{weapon11_heat_generated} }} {{footer=Weapon 11 Attack }}" name="roll_weapon11_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">11</span>
     <!-- Weapon 11 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon11_name}.\n\nMinimum Range: @{weapon11_minimum}\nShort Range: @{weapon11_short}\nMedium Range @{weapon11_medium}\nLong Range: @{weapon11_long}\nExtreme Range: @{weapon11_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon11_damage}\nHeat: @{weapon11_heat_generated}" name="roll_weapon11_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon11_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon11_damage} }} {{line-five=Heat: @{weapon11_heat_generated} }} {{footer=Weapon 11 Attack }}" name="roll_weapon11_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon11_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon11_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon11_damage" value="0" class="sheet-weapon-underline" />
@@ -1435,9 +1435,9 @@
     <input type="text" name="attr_weapon11_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 12 -->
     <!-- Weapon 12 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon12_name}.\n\nMinimum Range: @{weapon12_minimum}\nShort Range: @{weapon12_short}\nMedium Range @{weapon12_medium}\nLong Range: @{weapon12_long}\nExtreme Range: @{weapon12_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon12_damage}\nHeat: @{weapon12_heat_generated}" name="roll_weapon12_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">12</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon12_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon12_damage} }} {{line-five=Heat: @{weapon12_heat_generated} }} {{footer=Weapon 12 Attack }}" name="roll_weapon12_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">12</span>
     <!-- Weapon 12 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon12_name}.\n\nMinimum Range: @{weapon12_minimum}\nShort Range: @{weapon12_short}\nMedium Range @{weapon12_medium}\nLong Range: @{weapon12_long}\nExtreme Range: @{weapon12_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon12_damage}\nHeat: @{weapon12_heat_generated}" name="roll_weapon12_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon12_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon12_damage} }} {{line-five=Heat: @{weapon12_heat_generated} }} {{footer=Weapon 12 Attack }}" name="roll_weapon12_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon12_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon12_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon12_damage" value="0" class="sheet-weapon-underline" />
@@ -1452,9 +1452,9 @@
     <input type="text" name="attr_weapon12_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 13 -->
     <!-- Weapon 13 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon13_name}.\n\nMinimum Range: @{weapon13_minimum}\nShort Range: @{weapon13_short}\nMedium Range @{weapon13_medium}\nLong Range: @{weapon13_long}\nExtreme Range: @{weapon13_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon13_damage}\nHeat: @{weapon13_heat_generated}" name="roll_weapon13_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">13</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon13_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon13_damage} }} {{line-five=Heat: @{weapon13_heat_generated} }} {{footer=Weapon 13 Attack }}" name="roll_weapon13_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">13</span>
     <!-- Weapon 13 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon13_name}.\n\nMinimum Range: @{weapon13_minimum}\nShort Range: @{weapon13_short}\nMedium Range @{weapon13_medium}\nLong Range: @{weapon13_long}\nExtreme Range: @{weapon13_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon13_damage}\nHeat: @{weapon13_heat_generated}" name="roll_weapon13_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon13_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon13_damage} }} {{line-five=Heat: @{weapon13_heat_generated} }} {{footer=Weapon 13 Attack }}" name="roll_weapon13_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon13_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon13_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon13_damage" value="0" class="sheet-weapon-underline" />
@@ -1469,9 +1469,9 @@
     <input type="text" name="attr_weapon13_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 14 -->
     <!-- Weapon 14 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon14_name}.\n\nMinimum Range: @{weapon14_minimum}\nShort Range: @{weapon14_short}\nMedium Range @{weapon14_medium}\nLong Range: @{weapon14_long}\nExtreme Range: @{weapon14_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon14_damage}\nHeat: @{weapon14_heat_generated}" name="roll_weapon14_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">14</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon14_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon14_damage} }} {{line-five=Heat: @{weapon14_heat_generated} }} {{footer=Weapon 14 Attack }}" name="roll_weapon14_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">14</span>
     <!-- Weapon 14 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon14_name}.\n\nMinimum Range: @{weapon14_minimum}\nShort Range: @{weapon14_short}\nMedium Range @{weapon14_medium}\nLong Range: @{weapon14_long}\nExtreme Range: @{weapon14_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon14_damage}\nHeat: @{weapon14_heat_generated}" name="roll_weapon14_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon14_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon14_damage} }} {{line-five=Heat: @{weapon14_heat_generated} }} {{footer=Weapon 14 Attack }}" name="roll_weapon14_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon14_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon14_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon14_damage" value="0" class="sheet-weapon-underline" />
@@ -1486,9 +1486,9 @@
     <input type="text" name="attr_weapon14_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 15 -->
     <!-- Weapon 15 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon15_name}.\n\nMinimum Range: @{weapon15_minimum}\nShort Range: @{weapon15_short}\nMedium Range @{weapon15_medium}\nLong Range: @{weapon15_long}\nExtreme Range: @{weapon15_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon15_damage}\nHeat: @{weapon15_heat_generated}" name="roll_weapon15_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">15</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon15_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon15_damage} }} {{line-five=Heat: @{weapon15_heat_generated} }} {{footer=Weapon 15 Attack }}" name="roll_weapon15_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">15</span>
     <!-- Weapon 15 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon15_name}.\n\nMinimum Range: @{weapon15_minimum}\nShort Range: @{weapon15_short}\nMedium Range @{weapon15_medium}\nLong Range: @{weapon15_long}\nExtreme Range: @{weapon15_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon15_damage}\nHeat: @{weapon15_heat_generated}" name="roll_weapon15_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon15_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon15_damage} }} {{line-five=Heat: @{weapon15_heat_generated} }} {{footer=Weapon 15 Attack }}" name="roll_weapon15_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon15_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon15_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon15_damage" value="0" class="sheet-weapon-underline" />
@@ -1503,9 +1503,9 @@
     <input type="text" name="attr_weapon15_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 16 -->
     <!-- Weapon 16 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon16_name}.\n\nMinimum Range: @{weapon16_minimum}\nShort Range: @{weapon16_short}\nMedium Range @{weapon16_medium}\nLong Range: @{weapon16_long}\nExtreme Range: @{weapon16_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon16_damage}\nHeat: @{weapon16_heat_generated}" name="roll_weapon16_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">16</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon16_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon16_damage} }} {{line-five=Heat: @{weapon16_heat_generated} }} {{footer=Weapon 16 Attack }}" name="roll_weapon16_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">16</span>
     <!-- Weapon 16 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon16_name}.\n\nMinimum Range: @{weapon16_minimum}\nShort Range: @{weapon16_short}\nMedium Range @{weapon16_medium}\nLong Range: @{weapon16_long}\nExtreme Range: @{weapon16_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon16_damage}\nHeat: @{weapon16_heat_generated}" name="roll_weapon16_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon16_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon16_damage} }} {{line-five=Heat: @{weapon16_heat_generated} }} {{footer=Weapon 16 Attack }}" name="roll_weapon16_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon16_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon16_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon16_damage" value="0" class="sheet-weapon-underline" />
@@ -1520,9 +1520,9 @@
     <input type="text" name="attr_weapon16_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 17 -->
     <!-- Weapon 17 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon17_name}.\n\nMinimum Range: @{weapon17_minimum}\nShort Range: @{weapon17_short}\nMedium Range @{weapon17_medium}\nLong Range: @{weapon17_long}\nExtreme Range: @{weapon17_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon17_damage}\nHeat: @{weapon17_heat_generated}" name="roll_weapon17_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">17</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon17_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon17_damage} }} {{line-five=Heat: @{weapon17_heat_generated} }} {{footer=Weapon 17 Attack }}" name="roll_weapon17_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">17</span>
     <!-- Weapon 17 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon17_name}.\n\nMinimum Range: @{weapon17_minimum}\nShort Range: @{weapon17_short}\nMedium Range @{weapon17_medium}\nLong Range: @{weapon17_long}\nExtreme Range: @{weapon17_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon17_damage}\nHeat: @{weapon17_heat_generated}" name="roll_weapon17_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon17_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon17_damage} }} {{line-five=Heat: @{weapon17_heat_generated} }} {{footer=Weapon 17 Attack }}" name="roll_weapon17_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon17_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon17_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon17_damage" value="0" class="sheet-weapon-underline" />
@@ -1537,9 +1537,9 @@
     <input type="text" name="attr_weapon17_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 18 -->
     <!-- Weapon 18 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon18_name}.\n\nMinimum Range: @{weapon18_minimum}\nShort Range: @{weapon18_short}\nMedium Range @{weapon18_medium}\nLong Range: @{weapon18_long}\nExtreme Range: @{weapon18_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon18_damage}\nHeat: @{weapon18_heat_generated}" name="roll_weapon18_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">18</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon18_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon18_damage} }} {{line-five=Heat: @{weapon18_heat_generated} }} {{footer=Weapon 18 Attack }}" name="roll_weapon18_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">18</span>
     <!-- Weapon 18 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon18_name}.\n\nMinimum Range: @{weapon18_minimum}\nShort Range: @{weapon18_short}\nMedium Range @{weapon18_medium}\nLong Range: @{weapon18_long}\nExtreme Range: @{weapon18_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon18_damage}\nHeat: @{weapon18_heat_generated}" name="roll_weapon18_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon18_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon18_damage} }} {{line-five=Heat: @{weapon18_heat_generated} }} {{footer=Weapon 18 Attack }}" name="roll_weapon18_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon18_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon18_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon18_damage" value="0" class="sheet-weapon-underline" />
@@ -1554,9 +1554,9 @@
     <input type="text" name="attr_weapon18_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 19 -->
     <!-- Weapon 19 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon19_name}.\n\nMinimum Range: @{weapon19_minimum}\nShort Range: @{weapon19_short}\nMedium Range @{weapon19_medium}\nLong Range: @{weapon19_long}\nExtreme Range: @{weapon19_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon19_damage}\nHeat: @{weapon19_heat_generated}" name="roll_weapon19_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">19</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon19_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon19_damage} }} {{line-five=Heat: @{weapon19_heat_generated} }} {{footer=Weapon 19 Attack }}" name="roll_weapon19_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">19</span>
     <!-- Weapon 19 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon19_name}.\n\nMinimum Range: @{weapon19_minimum}\nShort Range: @{weapon19_short}\nMedium Range @{weapon19_medium}\nLong Range: @{weapon19_long}\nExtreme Range: @{weapon19_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon19_damage}\nHeat: @{weapon19_heat_generated}" name="roll_weapon19_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon19_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon19_damage} }} {{line-five=Heat: @{weapon19_heat_generated} }} {{footer=Weapon 19 Attack }}" name="roll_weapon19_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon19_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon19_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon19_damage" value="0" class="sheet-weapon-underline" />
@@ -1571,9 +1571,9 @@
     <input type="text" name="attr_weapon19_ammo" value="0" class="sheet-weapon-underline" /><br>
     <!-- Weapon Number 20 -->
     <!-- Weapon 20 Warrior 1 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon20_name}.\n\nMinimum Range: @{weapon20_minimum}\nShort Range: @{weapon20_short}\nMedium Range @{weapon20_medium}\nLong Range: @{weapon20_long}\nExtreme Range: @{weapon20_extreme}\n\nModified to Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon20_damage}\nHeat: @{weapon20_heat_generated}" name="roll_weapon20_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">20</span>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon20_name} }} {{line-two=To Hit: [[@{warrior1_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon20_damage} }} {{line-five=Heat: @{weapon20_heat_generated} }} {{footer=Weapon 20 Attack }}" name="roll_weapon20_warrior1" class="sheet-attack-roll-button-warrior1" /></button><span class="sheet-font-adjust">20</span>
     <!-- Weapon 20 Warrior 2 Attack Roll Button -->  
-    <button type="roll" value="/em fires a @{weapon20_name}.\n\nMinimum Range: @{weapon20_minimum}\nShort Range: @{weapon20_short}\nMedium Range @{weapon20_medium}\nLong Range: @{weapon20_long}\nExtreme Range: @{weapon20_extreme}\n\nModified to Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]] \n Rolling: [[2d6]] \nDamage: @{weapon20_damage}\nHeat: @{weapon20_heat_generated}" name="roll_weapon20_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
+    <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=@{weapon20_name} }} {{line-two=To Hit: [[@{warrior2_gunnery}+?{Modifiers|0}]]+ }} {{line-three=Attack: [[2d6]] }} {{line-four=Damage: @{weapon20_damage} }} {{line-five=Heat: @{weapon20_heat_generated} }} {{footer=Weapon 20 Attack }}" name="roll_weapon20_warrior2" class="sheet-attack-roll-button-warrior2" /></button>
     <input type="text" name="attr_weapon20_name" value="--" class="sheet-weapon-long-underline" />
     <input type="text" name="attr_weapon20_heat_generated" value="0" class="sheet-weapon-short-underline" />
     <input type="text" name="attr_weapon20_damage" value="0" class="sheet-weapon-underline" />
@@ -1601,11 +1601,11 @@
             <h4 class="sheet-inverted" style="text-align: center; margin-left: 162px">Hit Locations</h4>
               <div style="margin-left: 20px; margin-bottom: 3px">
               <!-- Button Name "roll_hit_location" --> 
-              <button type="roll" value="/em Damage Location Roll\nis Rolling for Hit Location.\nHitting: [[2d6]]" name="roll_hit_location" class="sheet-hit-location" /></button>
+              <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=Damage Location }} {{line-two=... }} {{line-three=Hit: Location ([[2d6]]) }}  {{footer=Damage Location }}" name="roll_hit_location" class="sheet-hit-location" /></button>
               <!-- Button Name "roll_punch_kick_location" --> 
-              <button type="roll" value="/em Damage Location Roll\nis Rolling for Hit Location.\nHitting: [[1d6]]" name="roll_punch_kick_location" class="sheet-punch-kick-location" /></button>
+              <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=Punch / Kick }} {{line-two=Location... }} {{line-three=Hit: Location ([[1d6]]) }}  {{footer=~~ Punch / Kick ~~ }}" name="roll_punch_kick_location" class="sheet-punch-kick-location" /></button>
               <!-- Button Name "roll_critical" --> 
-              <button type="roll" value="/em Determining Critical Roll\nis Rolling for Critical Confirmation.\nOutcome: [[2d6]]" name="roll_critical" class="sheet-critical" /></button>
+              <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=Determine Critical }} {{line-two=Outcome: [[2d6]] }} {{line-three=(2-7) No Critical }} {{line-four=(8-9) 1 Critical }} {{line-five=(10-11) 2 Criticals }} {{line-six=(12) Head / Limb Blown Off... or}} {{line-seven=3 Torso Criticals }} {{footer=Determine Critical }}" name="roll_critical" class="sheet-critical" /></button>
               </div>
             </div>
           </div>
@@ -1614,7 +1614,7 @@
             <div class="sheet-narrow-border">
             <h4 class="sheet-inverted" style="text-align: center; margin-left: 25px">Multiple 'Munitions</h4>
             <!-- Button Name "roll_multiple_munitions_hit" --> 
-            <button type="roll" value="/em Munitions Hit Roll\nis Rolling for Number of 'Munitions Hits.\nOutcome: [[2d6]]" name="roll_multiple_munitions_hit" class="sheet-multiple-munitions-hit" /></button><br>
+            <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=Number of Missile }} {{line-two=Hits... }} {{line-three=Outcome: [[2d6]] }} {{footer=Missile Tracking }}" name="roll_multiple_munitions_hit" class="sheet-multiple-munitions-hit" /></button><br>
             </div>  
           </div>
         </div>  
@@ -1633,11 +1633,11 @@
         <h4 class="sheet-inverted" style="text-align: center; margin-left: 162px">Hit Locations</h4>
           <div style="margin-left: 20px; margin-bottom: 3px">
           <!-- Button Name "roll_mech_left_hit" --> 
-          <button type="roll" value="/em Damage Location Roll\nis Rolling for Left Side Damage Location.\nHitting: [[1t[Mech-Left-Hit]]]" name="roll_mech_left_hit" class="sheet-mech-left-hit" /></button>
+          <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=Damage Location }} {{line-two=Left Side... }} {{line-three=Hit: [[1t[Mech-Left-Hit]]] }} {{footer=Left Side Damage }}" name="roll_mech_left_hit" class="sheet-mech-left-hit" /></button>
           <!-- Button Name "roll_mech_front_rear_hit" --> 
-          <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name}}} {{location-text=Rolling Location for Damage to Front-Rear Arc}} {{location-roll=Hit: [[1t[Mech-Front-Rear-Hit]]]}}  {{footer=Damage Location}}" name="roll_mech_front_rear_hit" class="sheet-mech-front-rear-hit" /></button>
+          <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=Damage Location }} {{line-two=Front / Rear... }} {{line-three=Hit: [[1t[Mech-Front-Rear-Hit]]] }} {{footer=Front/Rear Damage }}" name="roll_mech_front_rear_hit" class="sheet-mech-front-rear-hit" /></button>
           <!-- Button Name "roll_mech_right_hit" --> 
-          <button type="roll" value="/em Damage Location Roll\nis Rolling for Right Side Damage Location.\nHitting: [[1t[Mech-Right-Hit]]]" name="roll_mech_right_hit" class="sheet-mech-right-hit" /></button>
+          <button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=Damage Location }} {{line-two=Right Side... }} {{line-three=Hit: [[1t[Mech-Right-Hit]]] }} {{footer=Right Side Damage }}" name="roll_mech_right_hit" class="sheet-mech-right-hit" /></button>
           </div>
           <div style="margin-left: 50px; margin-bottom: 3px">
           <!-- Button Name "roll_punch_left_hit" --> 
@@ -2708,9 +2708,9 @@
            <h4 class="sheet-inverted" style="margin-left: 5%">Critical Slot Hit</h4>
            <table>
              <!--Button Name: roll_head_leg_critical -->
-             <tr><td><button type="roll" value="/em Critical Hit\nRolling for Head/Leg Critical Slot Destroyed\nOutcome: Slot Number [[1d6]] Destroyed" name="roll_head_leg_critical"  class="sheet-head-leg-critical" /></button></td></tr>
+             <tr><td><button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=Head / Leg Critical Hit Location...}} {{line-two=Outcome: }} {{line-three=Slot Number [[1d6cs7cf<6]] is Destroyed. }}  {{footer=Head / Leg Critical }}" name="roll_head_leg_critical"  class="sheet-head-leg-critical" /></button></td></tr>
              <!--Button Name: roll_arm_torso_critical -->
-             <tr><td><button type="roll" value="/em Critical Hit\nRolling for Arm/Torso Critical Slot Destroyed\nOutcome: [[1t[Critical-Section]]]\nSlot Number [[1d6]] Destroyed" name="roll_arm_torso_critical" class="sheet-arm-torso-critical" /></button></td></tr>
+             <tr><td><button type="roll" value="&{template:battletech-@{color}} {{header=@{character_name} }} {{line-one=Torso Critical Hit Location... }} {{line-two=Outcome:}} {{line-three=[[1t[Critical-Section]]] }} {{line-four=Slot Number [[1d6cs7cf<6]] is Destroyed. }} {{footer=Torso Critical }}" name="roll_arm_torso_critical" class="sheet-arm-torso-critical" /></button></td></tr>
            </table>
        </div>
       </div>
@@ -4097,15 +4097,13 @@
     <table>
         <tr><th>{{header}}</th></tr>
         <tr><td>-------------------------------<td></tr>
-        <tr><td>{{weapon-name}}</td></tr>
-        <tr><td>{{modifier}}</td></tr>
-        <tr><td>{{attack}}</td></tr>
-        <tr><td>{{damage}}</td></tr>
-        <tr><td>{{heat}}</td></tr>
-        <tr><td>{{missile-text}}</td></tr>
-        <tr><td>{{missile-roll}}</td></tr>
-        <tr><td>{{location-text}}</td></tr>
-        <tr><td>{{location-roll}}</td></tr>
+        <tr><td>{{line-one}}</td></tr>
+        <tr><td>{{line-two}}</td></tr>
+        <tr><td>{{line-three}}</td></tr>
+        <tr><td>{{line-four}}</td></tr>
+        <tr><td>{{line-five}}</td></tr>
+        <tr><td>{{line-six}}</td></tr>
+        <tr><td>{{line-seven}}</td></tr>
         <tr><td>-------------------------------<td></tr>
         <tr><td><span class="sheet-footer">{{footer}}</span></td></tr>
     </table>
@@ -4114,15 +4112,13 @@
     <table>
         <tr><th>{{header}}</th></tr>
         <tr><td>-------------------------------<td></tr>
-        <tr><td>{{weapon-name}}</td></tr>
-        <tr><td>{{modifier}}</td></tr>
-        <tr><td>{{attack}}</td></tr>
-        <tr><td>{{damage}}</td></tr>
-        <tr><td>{{heat}}</td></tr>
-        <tr><td>{{missile-text}}</td></tr>
-        <tr><td>{{missile-roll}}</td></tr>
-        <tr><td>{{location-text}}</td></tr>
-        <tr><td>{{location-roll}}</td></tr>
+        <tr><td>{{line-one}}</td></tr>
+        <tr><td>{{line-two}}</td></tr>
+        <tr><td>{{line-three}}</td></tr>
+        <tr><td>{{line-four}}</td></tr>
+        <tr><td>{{line-five}}</td></tr>
+        <tr><td>{{line-six}}</td></tr>
+        <tr><td>{{line-seven}}</td></tr>
         <tr><td>-------------------------------<td></tr>
         <tr><td><span class="sheet-footer">{{footer}}</span></td></tr>
     </table>
@@ -4131,15 +4127,13 @@
     <table>
         <tr><th>{{header}}</th></tr>
         <tr><td>-------------------------------<td></tr>
-        <tr><td>{{weapon-name}}</td></tr>
-        <tr><td>{{modifier}}</td></tr>
-        <tr><td>{{attack}}</td></tr>
-        <tr><td>{{damage}}</td></tr>
-        <tr><td>{{heat}}</td></tr>
-        <tr><td>{{missile-text}}</td></tr>
-        <tr><td>{{missile-roll}}</td></tr>
-        <tr><td>{{location-text}}</td></tr>
-        <tr><td>{{location-roll}}</td></tr>
+        <tr><td>{{line-one}}</td></tr>
+        <tr><td>{{line-two}}</td></tr>
+        <tr><td>{{line-three}}</td></tr>
+        <tr><td>{{line-four}}</td></tr>
+        <tr><td>{{line-five}}</td></tr>
+        <tr><td>{{line-six}}</td></tr>
+        <tr><td>{{line-seven}}</td></tr>
         <tr><td>-------------------------------<td></tr>
         <tr><td><span class="sheet-footer">{{footer}}</span></td></tr>
     </table>
@@ -4148,15 +4142,13 @@
     <table>
         <tr><th>{{header}}</th></tr>
         <tr><td>-------------------------------<td></tr>
-        <tr><td>{{weapon-name}}</td></tr>
-        <tr><td>{{modifier}}</td></tr>
-        <tr><td>{{attack}}</td></tr>
-        <tr><td>{{damage}}</td></tr>
-        <tr><td>{{heat}}</td></tr>
-        <tr><td>{{missile-text}}</td></tr>
-        <tr><td>{{missile-roll}}</td></tr>
-        <tr><td>{{location-text}}</td></tr>
-        <tr><td>{{location-roll}}</td></tr>
+        <tr><td>{{line-one}}</td></tr>
+        <tr><td>{{line-two}}</td></tr>
+        <tr><td>{{line-three}}</td></tr>
+        <tr><td>{{line-four}}</td></tr>
+        <tr><td>{{line-five}}</td></tr>
+        <tr><td>{{line-six}}</td></tr>
+        <tr><td>{{line-seven}}</td></tr>
         <tr><td>-------------------------------<td></tr>
         <tr><td><span class="sheet-footer">{{footer}}</span></td></tr>
     </table>
@@ -4165,15 +4157,13 @@
     <table>
         <tr><th>{{header}}</th></tr>
         <tr><td>-------------------------------<td></tr>
-        <tr><td>{{weapon-name}}</td></tr>
-        <tr><td>{{modifier}}</td></tr>
-        <tr><td>{{attack}}</td></tr>
-        <tr><td>{{damage}}</td></tr>
-        <tr><td>{{heat}}</td></tr>
-        <tr><td>{{missile-text}}</td></tr>
-        <tr><td>{{missile-roll}}</td></tr>
-        <tr><td>{{location-text}}</td></tr>
-        <tr><td>{{location-roll}}</td></tr>
+        <tr><td>{{line-one}}</td></tr>
+        <tr><td>{{line-two}}</td></tr>
+        <tr><td>{{line-three}}</td></tr>
+        <tr><td>{{line-four}}</td></tr>
+        <tr><td>{{line-five}}</td></tr>
+        <tr><td>{{line-six}}</td></tr>
+        <tr><td>{{line-seven}}</td></tr>
         <tr><td>-------------------------------<td></tr>
         <tr><td><span class="sheet-footer">{{footer}}</span></td></tr>
     </table>
@@ -4182,15 +4172,13 @@
     <table>
         <tr><th>{{header}}</th></tr>
         <tr><td>-------------------------------<td></tr>
-        <tr><td>{{weapon-name}}</td></tr>
-        <tr><td>{{modifier}}</td></tr>
-        <tr><td>{{attack}}</td></tr>
-        <tr><td>{{damage}}</td></tr>
-        <tr><td>{{heat}}</td></tr>
-        <tr><td>{{missile-text}}</td></tr>
-        <tr><td>{{missile-roll}}</td></tr>
-        <tr><td>{{location-text}}</td></tr>
-        <tr><td>{{location-roll}}</td></tr>
+        <tr><td>{{line-one}}</td></tr>
+        <tr><td>{{line-two}}</td></tr>
+        <tr><td>{{line-three}}</td></tr>
+        <tr><td>{{line-four}}</td></tr>
+        <tr><td>{{line-five}}</td></tr>
+        <tr><td>{{line-six}}</td></tr>
+        <tr><td>{{line-seven}}</td></tr>
         <tr><td>-------------------------------<td></tr>
         <tr><td><span class="sheet-footer">{{footer}}</span></td></tr>
     </table>
@@ -4199,15 +4187,13 @@
     <table>
         <tr><th>{{header}}</th></tr>
         <tr><td>-------------------------------<td></tr>
-        <tr><td>{{weapon-name}}</td></tr>
-        <tr><td>{{modifier}}</td></tr>
-        <tr><td>{{attack}}</td></tr>
-        <tr><td>{{damage}}</td></tr>
-        <tr><td>{{heat}}</td></tr>
-        <tr><td>{{missile-text}}</td></tr>
-        <tr><td>{{missile-roll}}</td></tr>
-        <tr><td>{{location-text}}</td></tr>
-        <tr><td>{{location-roll}}</td></tr>
+        <tr><td>{{line-one}}</td></tr>
+        <tr><td>{{line-two}}</td></tr>
+        <tr><td>{{line-three}}</td></tr>
+        <tr><td>{{line-four}}</td></tr>
+        <tr><td>{{line-five}}</td></tr>
+        <tr><td>{{line-six}}</td></tr>
+        <tr><td>{{line-seven}}</td></tr>
         <tr><td>-------------------------------<td></tr>
         <tr><td><span class="sheet-footer">{{footer}}</span></td></tr>
     </table>
@@ -4216,15 +4202,13 @@
     <table>
         <tr><th>{{header}}</th></tr>
         <tr><td>-------------------------------<td></tr>
-        <tr><td>{{weapon-name}}</td></tr>
-        <tr><td>{{modifier}}</td></tr>
-        <tr><td>{{attack}}</td></tr>
-        <tr><td>{{damage}}</td></tr>
-        <tr><td>{{heat}}</td></tr>
-        <tr><td>{{missile-text}}</td></tr>
-        <tr><td>{{missile-roll}}</td></tr>
-        <tr><td>{{location-text}}</td></tr>
-        <tr><td>{{location-roll}}</td></tr>
+        <tr><td>{{line-one}}</td></tr>
+        <tr><td>{{line-two}}</td></tr>
+        <tr><td>{{line-three}}</td></tr>
+        <tr><td>{{line-four}}</td></tr>
+        <tr><td>{{line-five}}</td></tr>
+        <tr><td>{{line-six}}</td></tr>
+        <tr><td>{{line-seven}}</td></tr>
         <tr><td>-------------------------------<td></tr>
         <tr><td><span class="sheet-footer">{{footer}}</span></td></tr>
     </table>
@@ -4233,15 +4217,13 @@
     <table>
         <tr><th>{{header}}</th></tr>
         <tr><td>-------------------------------<td></tr>
-        <tr><td>{{weapon-name}}</td></tr>
-        <tr><td>{{modifier}}</td></tr>
-        <tr><td>{{attack}}</td></tr>
-        <tr><td>{{damage}}</td></tr>
-        <tr><td>{{heat}}</td></tr>
-        <tr><td>{{missile-text}}</td></tr>
-        <tr><td>{{missile-roll}}</td></tr>
-        <tr><td>{{location-text}}</td></tr>
-        <tr><td>{{location-roll}}</td></tr>
+        <tr><td>{{line-one}}</td></tr>
+        <tr><td>{{line-two}}</td></tr>
+        <tr><td>{{line-three}}</td></tr>
+        <tr><td>{{line-four}}</td></tr>
+        <tr><td>{{line-five}}</td></tr>
+        <tr><td>{{line-six}}</td></tr>
+        <tr><td>{{line-seven}}</td></tr>
         <tr><td>-------------------------------<td></tr>
         <tr><td><span class="sheet-footer">{{footer}}</span></td></tr>
     </table>
@@ -4250,15 +4232,13 @@
     <table>
         <tr><th>{{header}}</th></tr>
         <tr><td>-------------------------------<td></tr>
-        <tr><td>{{weapon-name}}</td></tr>
-        <tr><td>{{modifier}}</td></tr>
-        <tr><td>{{attack}}</td></tr>
-        <tr><td>{{damage}}</td></tr>
-        <tr><td>{{heat}}</td></tr>
-        <tr><td>{{missile-text}}</td></tr>
-        <tr><td>{{missile-roll}}</td></tr>
-        <tr><td>{{location-text}}</td></tr>
-        <tr><td>{{location-roll}}</td></tr>
+        <tr><td>{{line-one}}</td></tr>
+        <tr><td>{{line-two}}</td></tr>
+        <tr><td>{{line-three}}</td></tr>
+        <tr><td>{{line-four}}</td></tr>
+        <tr><td>{{line-five}}</td></tr>
+        <tr><td>{{line-six}}</td></tr>
+        <tr><td>{{line-seven}}</td></tr>
         <tr><td>-------------------------------<td></tr>
         <tr><td><span class="sheet-footer">{{footer}}</span></td></tr>
     </table>
@@ -4267,15 +4247,13 @@
     <table>
         <tr><th>{{header}}</th></tr>
         <tr><td>-------------------------------<td></tr>
-        <tr><td>{{weapon-name}}</td></tr>
-        <tr><td>{{modifier}}</td></tr>
-        <tr><td>{{attack}}</td></tr>
-        <tr><td>{{damage}}</td></tr>
-        <tr><td>{{heat}}</td></tr>
-        <tr><td>{{missile-text}}</td></tr>
-        <tr><td>{{missile-roll}}</td></tr>
-        <tr><td>{{location-text}}</td></tr>
-        <tr><td>{{location-roll}}</td></tr>
+        <tr><td>{{line-one}}</td></tr>
+        <tr><td>{{line-two}}</td></tr>
+        <tr><td>{{line-three}}</td></tr>
+        <tr><td>{{line-four}}</td></tr>
+        <tr><td>{{line-five}}</td></tr>
+        <tr><td>{{line-six}}</td></tr>
+        <tr><td>{{line-seven}}</td></tr>
         <tr><td>-------------------------------<td></tr>
         <tr><td><span class="sheet-footer">{{footer}}</span></td></tr>
     </table>
@@ -4284,15 +4262,13 @@
     <table>
         <tr><th>{{header}}</th></tr>
         <tr><td>-------------------------------<td></tr>
-        <tr><td>{{weapon-name}}</td></tr>
-        <tr><td>{{modifier}}</td></tr>
-        <tr><td>{{attack}}</td></tr>
-        <tr><td>{{damage}}</td></tr>
-        <tr><td>{{heat}}</td></tr>
-        <tr><td>{{missile-text}}</td></tr>
-        <tr><td>{{missile-roll}}</td></tr>
-        <tr><td>{{location-text}}</td></tr>
-        <tr><td>{{location-roll}}</td></tr>
+        <tr><td>{{line-one}}</td></tr>
+        <tr><td>{{line-two}}</td></tr>
+        <tr><td>{{line-three}}</td></tr>
+        <tr><td>{{line-four}}</td></tr>
+        <tr><td>{{line-five}}</td></tr>
+        <tr><td>{{line-six}}</td></tr>
+        <tr><td>{{line-seven}}</td></tr>
         <tr><td>-------------------------------<td></tr>
         <tr><td><span class="sheet-footer">{{footer}}</span></td></tr>
     </table>
