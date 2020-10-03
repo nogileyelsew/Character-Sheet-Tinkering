@@ -1,0 +1,223 @@
+<!-- Version 2.0 - 04/18/2019 Proof of Concept Armor Pips -->
+
+<div class="background-wrap">
+    <div class="grid-container contains-two-columns">
+        <div class="grid-item item-transparent"> <!-- LEFT COLUMN -->
+            <div class="armor-diagram">
+                
+            </div>
+        </div>
+        <div class="grid-item item-transparent"> <!-- RIGHT COLUMN ( HEAT & MOVEMENT ) -->
+            
+        </div>
+    </div>
+</div>
+
+<div class="grid-container contains-three-columns"> <!-- NOTES HERE -->
+    <div class="grid-item span-all-three">
+            <input type="number" name="attr_head_armor" value="0" class="number-armor" title="@{head_armor}" /><input type="number" name="attr_head_armor_max" value="0" class="number-armor" title="@{head_armor_max}" readonly="true" /><input type="number" name="attr_head_armor_factor" value="0" class="number-armor" title="@{head_armor_factor}" /><br>
+            <span class="input-label">Head</span>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" name="attr_head_armor_switch_7" value="1" class="block-switch hidden-checkbox" />
+        <div class="block-alpha">
+            <input type="checkbox" name="attr_head_armor_07" value="1" class="armor" title="@{head_armor_07}"/><span title="07" ></span>
+        </div>
+        <div class="block-beta">
+            <input type="checkbox" class="fake-armor" title="@{head_armor_07}"/><span title="07" ></span>
+        </div>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" name="attr_head_armor_switch_8" value="1" class="block-switch hidden-checkbox" />
+        <div class="block-alpha">
+            <input type="checkbox" name="attr_head_armor_08" value="1" class="armor" title="@{head_armor_08}"/><span title="08" ></span>
+        </div>
+        <div class="block-beta">
+            <input type="checkbox" class="fake-armor" title="@{head_armor_08}"/><span title="08" ></span>
+        </div>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" name="attr_head_armor_switch_9" value="1" class="block-switch hidden-checkbox" />
+        <div class="block-alpha">
+            <input type="checkbox" name="attr_head_armor_09" value="1" class="armor" title="@{head_armor_09}"/><span title="09" ></span>
+        </div>
+        <div class="block-beta">
+            <input type="checkbox" class="fake-armor" title="@{head_armor_09}"/><span title="09" ></span>
+        </div>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" name="attr_head_armor_switch_4" value="1" class="block-switch hidden-checkbox" />
+        <div class="block-alpha">
+            <input type="checkbox" name="attr_head_armor_04" value="1" class="armor" title="@{head_armor_04}"/><span title="04" ></span>
+        </div>
+        <div class="block-beta">
+            <input type="checkbox" class="fake-armor" title="@{head_armor_04}"/><span title="04" ></span>
+        </div>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" name="attr_head_armor_switch_5" value="1" class="block-switch hidden-checkbox" />
+        <div class="block-alpha">
+            <input type="checkbox" name="attr_head_armor_05" value="1" class="armor" title="@{head_armor_05}"/><span title="05" ></span>
+        </div>
+        <div class="block-beta">
+            <input type="checkbox" class="fake-armor" title="@{head_armor_05}"/><span title="05" ></span>
+        </div>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" name="attr_head_armor_switch_6" value="1" class="block-switch hidden-checkbox" />
+        <div class="block-alpha">
+            <input type="checkbox" name="attr_head_armor_06" value="1" class="armor" title="@{head_armor_06}"/><span title="06" ></span>
+        </div>
+        <div class="block-beta">
+            <input type="checkbox" class="fake-armor" title="@{head_armor_06}"/><span title="06" ></span>
+        </div>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" name="attr_head_armor_switch_1" value="1" class="block-switch hidden-checkbox" />
+        <div class="block-alpha">
+            <input type="checkbox" name="attr_head_armor_01" value="1" class="armor" title="@{head_armor_01}"/><span title="01" ></span>
+        </div>
+        <div class="block-beta">
+            <input type="checkbox" class="fake-armor" title="@{head_armor_01}"/><span title="01" ></span>
+        </div>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" name="attr_head_armor_switch_2" value="1" class="block-switch hidden-checkbox" />
+        <div class="block-alpha">
+            <input type="checkbox" name="attr_head_armor_02" value="1" class="armor" title="@{head_armor_02}"/><span title="02" ></span>
+        </div>
+        <div class="block-beta">
+            <input type="checkbox" class="fake-armor" title="@{head_armor_02}"/><span title="02" ></span>
+        </div>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" name="attr_head_armor_switch_3" value="1" class="block-switch hidden-checkbox" />
+        <div class="block-alpha">
+            <input type="checkbox" name="attr_head_armor_03" value="1" class="armor" title="@{head_armor_03}"/><span title="03" ></span>
+        </div>
+        <div class="block-beta">
+            <input type="checkbox" class="fake-armor" title="@{head_armor_03}"/><span title="03" ></span>
+        </div>
+    </div>
+</div>
+
+<!--Sheet Workers -->
+<script type="text/worker">
+    
+    // HEAD ARMOR - Hide / Display the Maximum Number Armor Factor
+	on("change:head_armor_factor", function(eventinfo) {
+		getAttrs(["head_armor", "head_armor_max", "head_armor_factor"], function(values) {
+		    console.log("%c|*** Battletech Character Sheet Calculating Partial Armor Factor ***|", "color:Black; background-color: LawnGreen");
+		    console.log(eventinfo.sourceAttribute + " was activated by " + eventinfo.sourceType);
+		    console.log("Previous Value: " + eventinfo.previousValue + " changed to a New Value of: " + eventinfo.newValue);
+		    console.log("head_armor: " + values.head_armor + " & head_armor_max: " + values.head_armor_max);
+		    console.log(JSON.stringify(eventinfo));
+		    var maxAllocated = 0;
+		    var updateSection = "";
+		    var updateValues = "";
+		    switch(eventinfo.sourceAttribute) {
+                case "head_armor_factor":
+                    maxAllocated = 9;
+                    updateSection = "head_armor_switch_";
+                    updateValues = "head_armor";
+                    console.log("Head Armor Factor Maximum: " + maxAllocated);
+                    console.log("Updating Values For: " + updateSection);
+                    console.log("Updating Values to: " + updateValues);
+                    break;
+                case "center_torso_armor_factor":
+                    // code block
+                    break;
+                default:
+                    // code block
+            }
+		    let setArmorFactorAttrs = {};
+		    for(let i=1; i <= maxAllocated; i++) {
+		        if (i <= eventinfo.newValue) {
+                    setArmorFactorAttrs[updateSection+i] = 1;
+                    console.log("Setting Armor Factor Display: " + updateSection + i + " = 1");
+		        }
+		        else {
+		            setArmorFactorAttrs[updateSection+i] = 0;
+		            console.log("Setting Armor Factor Display: " + updateSection + i + " = 0");
+                }
+                setAttrs(setArmorFactorAttrs, {silent:true});
+		    }
+		    let setArmorValuesAttrs = {};
+		    for(let a=0; a <= maxAllocated; a++) {
+		        if (a == 0) {
+		            setArmorValuesAttrs[updateValues] = eventinfo.newValue;
+                    console.log("Setting Armor Values: " + updateValues + " = " + eventinfo.newValue);
+		            setArmorValuesAttrs[updateValues+"_max"] = eventinfo.newValue;
+                    console.log("Setting Armor Values: " + updateValues + "_max = " + eventinfo.newValue);
+		        }
+		        else if (a <= eventinfo.newValue) {
+		            if (a <= 9) {
+                        setArmorValuesAttrs[updateValues+"_0"+a] = 1;
+		                console.log("Setting Armor Values: " + updateValues + "_0" + a + " = 1");
+		            }
+		            else {
+		                setArmorValuesAttrs[updateValues+"_"+a] = 1;
+		                console.log("Setting Armor Values: " + updateValues + a + " = 1");
+		            }
+                }
+                else {
+                    if (a <= 9) {
+                        setArmorValuesAttrs[updateValues+"_0"+a] = 0;
+		                console.log("Setting Armor Values: " + updateValues + "_0" + a + " = 0");
+		            }
+		            else {
+		                setArmorValuesAttrs[updateValues+"_"+a] = 0;
+		                console.log("Setting Armor Values: " + updateValues + a + " = 0");
+		            }
+                }
+                setAttrs(setArmorValuesAttrs, {silent:true});
+		    }
+		});
+	});
+    
+    // CALCULATE ARMOR VALUE FROM CHECKBOXES OR ATTRIBUTE
+    const armorRatings = ["head_armor","center_torso_armor"];
+    armorRatings.forEach(function (armorRating) {
+	    on("change:" + armorRating + " change:" + armorRating + "_01 change:" + armorRating + "_02 change:" + armorRating + "_03 change:" + armorRating + "_04 change:" + armorRating + "_05 change:" + armorRating + "_06 change:" + armorRating + "_07 change:" + armorRating + "_08 change:" + armorRating + "_09 change:" + armorRating + "_10", function(eventinfo) {
+	        getAttrs([armorRating, armorRating + "_max", armorRating + "_01", armorRating + "_02", armorRating + "_03", armorRating + "_04", armorRating + "_05", armorRating + "_06", armorRating + "_07", armorRating + "_08", armorRating + "_09", armorRating + "_10" ], function (values) {
+	            console.log("%c|*** Battletech Character Sheet Calculating Armor Value Change ***|", "color:Black; background-color: LawnGreen");
+		        console.log(eventinfo.sourceAttribute + " was activated by " + eventinfo.sourceType);
+		        console.log("Previous Value: " + eventinfo.previousValue + " changed to a New Value of: " + eventinfo.newValue);
+		        if ( eventinfo.sourceAttribute == armorRating ) {
+		            let setArmorValuesAttrs = {};
+		            for(let a=1; a <= values[armorRating + "_max"]; a++) {
+		                if (a <= eventinfo.newValue) {
+		                    if (a <= 9) {
+                                setArmorValuesAttrs[armorRating+"_0"+a] = 1;
+		                        console.log("Setting Armor Values: " + armorRating + "_0" + a + " = 1");
+		                    }
+		                    else {
+		                        setArmorValuesAttrs[armorRating+"_"+a] = 1;
+		                        console.log("Setting Armor Values: " + armorRating + a + " = 1");
+		                    }
+                        }
+                        else {
+                            if (a <= 9) {
+                                setArmorValuesAttrs[armorRating+"_0"+a] = 0;
+		                        console.log("Setting Armor Values: " + armorRating + "_0" + a + " = 0");
+		                    }
+		                    else {
+		                        setArmorValuesAttrs[armorRating+"_"+a] = 0;
+		                        console.log("Setting Armor Values: " + armorRating + a + " = 0");
+		                    }
+                        }
+                        setAttrs(setArmorValuesAttrs, {silent:true});
+		            }
+		        }
+		        else {
+		            let setArmorRatingAttrs = {};
+                    const armorRatingTotal = (parseInt(values[armorRating + "_01"], 10)||0) + (parseInt(values[armorRating + "_02"], 10)||0) + (parseInt(values[armorRating + "_03"], 10)||0) + (parseInt(values[armorRating + "_04"], 10)||0) + (parseInt(values[armorRating + "_05"], 10)||0) + (parseInt(values[armorRating + "_06"], 10)||0) + (parseInt(values[armorRating + "_07"], 10)||0) + (parseInt(values[armorRating + "_08"], 10)||0) + (parseInt(values[armorRating + "_09"], 10)||0) + (parseInt(values[armorRating + "_10"], 10)||0);
+		            {setArmorRatingAttrs[armorRating] = armorRatingTotal}
+		            console.log("Setting Armor Values: " + armorRating + " = " + armorRatingTotal );
+		            setAttrs (setArmorRatingAttrs, {silent:true})
+		        }
+	        });
+	    });
+	});
+	
+</script>

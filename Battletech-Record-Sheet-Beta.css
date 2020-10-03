@@ -1,0 +1,1308 @@
+button[type=roll] {
+    line-height: 1.25em;
+    font-size: 90% !Important;
+}
+
+/* Repeating Weapons Columns */
+.sheet-9colrow {display:block;}
+.sheet-9colrow .sheet-col {vertical-align:top; display:inline-block; width:calc(10%); margin-right:0px; text-align:center;}
+.sheet-9colrow .sheet-col.sheet-repeatingweapons1 { width:calc(24%); margin-left:3px; }
+.sheet-9colrow .sheet-col.sheet-repeatingweapons2 { width:calc(5%); }
+.sheet-9colrow .sheet-col.sheet-repeatingweapons4 { width:calc(8%); }
+.sheet-9colrow .sheet-col.sheet-repeatingweapons5 { width:calc(8%); }
+.sheet-9colrow .sheet-col.sheet-repeatingweapons6 { width:calc(8%); }
+.sheet-6colrow {display:block;}
+.sheet-6colrow .sheet-col {vertical-align:top; display:inline-block; width:calc(10%); margin-right:0px; text-align:center;}
+.sheet-6colrow .sheet-col.sheet-repeatingweapons10 { width:calc(12%); margin-left:3px; }
+.sheet-6colrow .sheet-col.sheet-repeatingweapons12 { width:calc(5%); }
+.sheet-6colrow .sheet-col.sheet-repeatingweapons13 { width:calc(7%); }
+.sheet-6colrow .sheet-col.sheet-repeatingweapons14 { width:calc(50%); margin-right:3px; }
+.sheet-5colrow {display:block;}
+.sheet-5colrow .sheet-col {vertical-align:top; display:inline-block; width:calc(10%); margin-right:0px; text-align:center;}
+.sheet-5colrow .sheet-col.sheet-repeatingweapons16 {margin-left:3px; }
+.sheet-5colrow .sheet-col.sheet-repeatingweapons20 { width:calc(55%); }
+
+.charsheet .sheet-weapons-label {
+    font-size: 75%;
+}
+
+.sheet-weapons-block {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 3px 0px 3px 0px;
+}
+
+/* Hide Repeating Weapons Radio */
+.charsheet input.sheet-rw-hide {
+    display: none;
+}
+
+/* Tab 2 Weapons Input Underline */
+.charsheet input.sheet-weapon-underline {
+    text-align: center;
+    width: 100%;
+    margin: 1px;
+    border-bottom: 1px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background: #e6e6e6;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+/* Repeating Weapons "Notes" Textarea */
+.sheet-rw-text-area {
+    width: 99%;
+    height: 1em;
+    border-bottom: 1px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background: #e6e6e6;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.sheet-rw-grey:checked ~ .sheet-weapons-block {
+    background: #bfbfbf;
+    background: -webkit-linear-gradient(#bfbfbf, #ffffff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#bfbfbf, #ffffff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#bfbfbf, #ffffff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#bfbfbf, #ffffff); /* Standard syntax (must be last) */
+}
+
+.sheet-rw-blue:checked ~ .sheet-weapons-block {
+    background: #b0c4de;
+    background: -webkit-linear-gradient(#b0c4de, #ffffff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#b0c4de, #ffffff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#b0c4de, #ffffff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#b0c4de, #ffffff); /* Standard syntax (must be last) */
+}
+
+.sheet-rw-orange:checked ~ .sheet-weapons-block {
+    background: #ff8c00;
+    background: -webkit-linear-gradient(#ff8c00, #ffffff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ff8c00, #ffffff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ff8c00, #ffffff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ff8c00, #ffffff); /* Standard syntax (must be last) */
+}
+
+.sheet-rw-gold:checked ~ .sheet-weapons-block {
+    background: #ffd700;
+    background: -webkit-linear-gradient(#ffd700, #ffffff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffd700, #ffffff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffd700, #ffffff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffd700, #ffffff); /* Standard syntax (must be last) */
+}
+
+/* Repeating Weapons Select */
+.charsheet select.sheet-rw-select {
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 1px;
+    margin: 1px;
+    background: #e6e6e6;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+/* Repeating Weapons Ammunition Container "Show / Hide" */
+.charsheet input[type="radio"].sheet-repeatingammo-toggle {
+    display: none;
+}
+
+.charsheet .sheet-repeatingammo-toggle-off:checked ~ .sheet-repeatingammo-contained {
+	display: none;
+    visibility: hidden;
+}
+
+/* TOP of SHEET ABOVE TABS */
+.sheet-col {vertical-align:top; display:inline; width:calc(100%); margin-right:0px;}
+.sheet-2colrow {display:block;}
+.sheet-2colrow .sheet-col {vertical-align:top; display:inline-block; width:calc(50%); margin-right:calc(1%); text-align:center;}
+.sheet-2colrow .sheet-col.sheet-unit1 { width:calc(65%); margin-right:calc(1%); margin-left:3px; }
+.sheet-2colrow .sheet-col.sheet-unit2 { width:calc(30%); }
+.sheet-4colrow {display:block;}
+.sheet-4colrow .sheet-col {vertical-align:top; display:inline-block; width:calc(22%); margin-right:calc(1%); text-align:center;}
+.sheet-4colrow .sheet-col.sheet-unit3 { width:calc(20%); margin-right:0px;  }
+.sheet-4colrow .sheet-col.sheet-unit4 { width:calc(25%); margin-right:0px; }
+.sheet-4colrow .sheet-col.sheet-unit5 { width:calc(30%); margin-right:0px; }
+.sheet-4colrow .sheet-col.sheet-unit6 { width:calc(19%); margin-right:0px; }
+
+.charsheet input.sheet-underline {
+    width: 100%;
+    height: 24px;
+    text-align: center;
+    margin: 1px;
+    border-bottom: 1px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+}
+
+.charsheet input.sheet-header-number {
+    width: 100%;
+    height: 24px;
+    text-align: center;
+    margin: 1px;
+    border-bottom: 1px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+}
+
+.charsheet table.sheet-header-table {
+    font-size: 75%;
+    width: 100%;
+}
+
+.charsheet table.sheet-border-table {
+    border: 1px solid black;
+}
+
+.sheet-border-table tr:nth-child(odd) {
+    background: #e6e6e6;
+}
+
+.charsheet .sheet-larger-text {
+    font-size: 18px;
+}
+
+/* Wiki Button */
+.charsheet button[type=roll].sheet-wiki-button::before {
+    content: "Version: 1.06 ~ Info at Roll20 Wiki: Battletech";
+    font-family: arial;
+    font-size: 94%;
+}
+
+/* Select Tonnage */
+.charsheet select.sheet-header-select {
+    width: 100%;
+    height: 24px;
+    border-bottom: 1px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    margin: 1px;
+}
+
+.charsheet input[type="number"].sheet-number {
+    width: 60px;
+    height: 20px;
+    padding: 1px;
+    margin: 2px;
+    text-align: center;
+}
+
+.charsheet select.sheet-select {
+    width: 85%;
+    height: 24px;
+}
+/* Text Input Uberlong Box*/    
+.charsheet input.sheet-longer {
+    width: 170px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+}
+
+/* Text Input Very Long Box*/    
+.charsheet input.sheet-verylong {
+    font-size: 85%;
+    width: 235px;
+    height: 18px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+
+/*Wide Border Styling*/
+.charsheet .sheet-wide-border {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-top: 0px;
+    box-shadow: -10px 10px 5px #888888;
+    font-weight: bold;
+}
+
+/*Inverted Header Styling*/
+.charsheet .sheet-inverted {
+    text-align:center;
+    background: black;
+    color: white;
+    width: 12em;
+    padding: 5px;
+    padding-top: 0px;
+    margin: 2px;
+    margin-top: 0px;
+}
+
+/* Inverted Header for Section Breaks */
+.charsheet .sheet-inverted-three {
+    margin-top: 10px;
+    font-size: 90%;
+    color: white;
+    background: black;
+    text-align: center;
+    width: 97%;
+}
+/*Inverted Long Header Styling*/
+.charsheet .sheet-inverted-long {
+    text-align:center;
+    background: black;
+    color: white;
+    width: 33em;
+    padding: 5px;
+    padding-top: 0px;
+    margin: 2px;
+    margin-top: 0px;
+}
+
+/* Label Adjust */
+.charsheet .sheet-label-adjust {
+    font-size: 85%;
+    font-weight: bold;
+    display: inline;
+}
+
+/* Label Adjust */
+.charsheet .sheet-label-adjust-two {
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Character Sheet Hard Return */
+.charsheet hr {
+    border-color: black;
+    margin: 2px;
+    margin-top: 5px;
+}
+
+/* Character Sheet White Hard Return */
+.charsheet hr.sheet-hr-white {
+    border-color: white;
+    margin: 2px;
+    margin-top: 5px;
+}
+
+/* Character Sheet Hard Return with Extra Bottom Margin */
+.charsheet hr.sheet-bottom-margin {
+    border-color: black;
+    margin: 2px;
+    margin-top: 5px;
+    margin-bottom: 13px;
+}
+
+/* <p> Element Adjusting Font */
+.charsheet .sheet-font-adjust {
+    font-size: 118%;
+    background-color: #fff;
+}
+
+/* Text Input Long Box*/    
+.charsheet input.sheet-long {
+    width: 125px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: black;
+    border-width: 2px;
+    padding: 1px;
+}
+
+/* Number Input Box */
+.charsheet input[type="number"].sheet-number-small {
+    width: 45px;
+    height: 20px;
+    padding: 1px;
+    margin: 2px;
+    text-align: center;
+}
+
+
+
+/* Select Engine */
+.charsheet select.sheet-engine-select {
+    display: inline;
+    width: 172px;
+    height: 20px;
+    padding: 1px;
+    margin: 2px;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+/* Text Input Extralong Box*/    
+.charsheet input.sheet-extralong {
+    width: 160px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: black;
+    border-width: 2px;
+    padding: 1px;
+    margin-bottom: 8px;
+}
+
+/* Initiative Roll Button */
+.charsheet button[type=roll].sheet-initiative-roll-button::before {
+    content: "Initiative Roll";
+    font-family: arial;
+    font-size: 65%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Piloting Roll Button */
+.charsheet button[type=roll].sheet-piloting-roll-button::before {
+    content: "Piloting Roll";
+    font-family: arial;
+    font-size: 65%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Spacing for Warrior Hits <Div> */
+.charsheet .sheet-extra-margin {
+    margin: 8px;
+}
+
+/* Warrior Hits Section 1 Column 3 (Opacity for "0" Check Box) */
+.charsheet .sheet-warrior-checkbox {
+    opacity: .1;
+}
+
+/* Hide actual radio */
+.charsheet input[type="radio"].sheet-warrior-radio {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Fake radio */
+.charsheet input[type="radio"].sheet-warrior-radio + span::before {
+    margin-right: 4px;
+    border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    
+    background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+    
+    content: "✘";
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    color: rgb(204,0,0);
+    
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* Remove dot from all radios _after_ selected one */
+.charsheet input[type="radio"].sheet-warrior-radio:checked ~ input[type="radio"] + span::before {    
+    content: "";
+}
+
+/* Consciousness Roll Button Styling 
+.charsheet button[type=roll].sheet-consciousness-roll-button::before {
+    content: "Consciousness Roll";
+    font-family: arial;
+    font-size: 65%;
+    font-weight: bold;
+    margin: 10px;
+}*/
+
+/* Tab Styling */
+.charsheet div.sheet-tab-content {
+    display: none;
+}
+
+.charsheet input.sheet-tab1:checked ~ div.sheet-tab1,
+.charsheet input.sheet-tab2:checked ~ div.sheet-tab2,
+.charsheet input.sheet-tab3:checked ~ div.sheet-tab3,
+.charsheet input.sheet-tab4:checked ~ div.sheet-tab4,
+.charsheet input.sheet-tab5:checked ~ div.sheet-tab5 {
+    display: block;
+}
+
+.charsheet input.sheet-tab {
+    width: 164px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -1.5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.charsheet input.sheet-tab::before {
+    content: attr(title);
+    
+    border: solid 1px #a8a8a8;
+    text-align: center;
+    display: inline-block;
+    
+    background: #fff;
+    background: -moz-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -webkit-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -ms-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -o-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    
+    width: 164px;
+    height: 20px;
+    font-size: 18px;
+}
+
+.charsheet input.sheet-tab:checked::before {
+    background: #fff;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.charsheet input.sheet-tab:not(:first-child)::before {
+    border-left: none;
+}
+
+.charsheet div.sheet-tab-content {
+    border: 1px solid #a8a8a8;
+    border-top-color: #000;
+    margin: 2px 0 0 5px;
+    padding: 5px;
+}
+
+/* END TAB STYLING */
+
+/* Tab 1 (Armor) Background-1 */
+/* <a href="http://imgur.com/BApNDwu"><img src="http://i.imgur.com/BApNDwu.jpg" title="source: imgur.com" /></a> */
+.charsheet .sheet-background-1 {
+    background-image: url("http://i.imgur.com/mckAzws.jpg");
+    /* background-size: 500px 720px; */
+    background-size: 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Tab 1 (Armor) Background-2 */
+/* <a href="http://imgur.com/47yTBHu"><img src="http://i.imgur.com/47yTBHu.jpg" title="source: imgur.com" /></a> */
+.charsheet .sheet-background-2 {
+    background-image: url("http://i.imgur.com/47yTBHu.jpg");
+    background-size: 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Tab 1 (Armor) Number Input Box */
+.charsheet input[type="number"].sheet-number-armor {
+    width: 36px;
+    height: 18px;
+    padding: 1px;
+    margin: 2px;
+    text-align: center;
+}
+
+/* Hide actual radio */
+.charsheet input[type="radio"].sheet-armor-radio {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Fake radio */
+.charsheet input[type="radio"].sheet-armor-radio + span::before {
+    margin-right: 4px;
+    border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    
+    background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+    
+    content: "•";
+    width: 12px;
+    height: 12px;
+    font-size: 31px;
+    color: rgb(204,0,0);
+    
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* Remove dot from all radios _after_ selected one */
+.charsheet input[type="radio"].sheet-armor-radio:checked ~ input[type="radio"] + span::before {    
+    content: "/";
+    font-size: 16px;
+    color: rgb(163,163,163);
+    opacity: .75;
+}
+
+/* Tab 1 Section 1 Table Left Justify */
+.charsheet .sheet-table-left {
+    text-align: left;
+}
+
+/* Tab 1 Section 2 Internal Structure Select */
+.charsheet select.sheet-internalstructure-select {
+    display: inline;
+    width: 75%;
+    height: 20px;
+    padding: 1px;
+    margin: 2px;
+    font-size: 90%;
+    font-weight: bold;
+    margin-left: 12.5%;
+}
+
+/* Critical Hits Table Checkbox Styling */
+/* Hide Actual Checkbox */
+.charsheet input[type="checkbox"].sheet-critical-checkbox {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Fake Checkbox */
+.charsheet input[type="checkbox"].sheet-critical-checkbox + span::before {
+    margin-right: 4px;
+    border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    
+    background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+    
+    content: "✔";
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    color: rgb(0,204,0);
+    
+    -moz-border-radius: 25%;
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+}
+
+/* Remove dot from all radios _after_ selected one */
+.charsheet input[type="checkbox"].sheet-critical-checkbox:checked + span::before {    
+    content: "✘";
+    color: rgb(204,0,0);
+}
+
+/* Text Input Uberlong Box*/    
+.charsheet input.sheet-uberlong {
+    width: 200px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: #808080;
+    border-width: 2px;
+    padding: 1px;
+}
+
+/* Tab 1 Critical Hits Inside Border */
+.charsheet .sheet-criticalhit-border {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 16%;
+}
+
+/* Tab 1 Critical Hits Locatiion Inside Border */
+.charsheet .sheet-criticalhit-location-border {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 5px;
+    padding-top: 0px;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 7%;
+}
+
+/* Head / Leg Critical Location Roll Button */
+.charsheet button[type=roll].sheet-head-leg-critical::before {
+    content: "Head / Leg Critical Location";
+    font-family: arial;
+    font-size: 65%;
+    font-weight: bold;
+    margin: 8px;
+}
+
+/* Arm / Torso Critical Location Roll Button */
+.charsheet button[type=roll].sheet-arm-torso-critical::before {
+    content: "Arm / Torso Critical Location";
+    font-family: arial;
+    font-size: 65%;
+    font-weight: bold;
+    margin: 8px;
+}
+
+/* Tab 2 Weapons Input Weapon Short */
+.charsheet input.sheet-weapon-short {
+    text-align: center;
+    width: 35px;
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* Tab 2 Weapons Input Weapon Short Underline */
+.charsheet input.sheet-weapon-short-underline {
+    text-align: center;
+    width: 35px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* Tab 2 Weapons Input Weapon  */
+.charsheet input.sheet-weapon {
+    text-align: center;
+    width: 51px;
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* Tab 2 Weapons Input Weapon Underline */
+.charsheet input.sheet-weapon-underline {
+    text-align: center;
+    width: 100%;
+    padding: 1px;
+    margin: 1px;
+    border-bottom: 1px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background: #e6e6e6;
+    box-shadow: none;
+    -webkit-border-radius: 0px;
+}
+
+/* Tab 2 Weapons Input Weapon Medium */
+.charsheet input.sheet-weapon-medium {
+    text-align: center;
+    width: 95px;
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* Tab 2 Weapons Input Weapon Long */
+.charsheet input.sheet-weapon-long {
+    text-align: center;
+    width: 145px;
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* Tab 2 Weapons Input Weapon Long Underline */
+.charsheet input.sheet-weapon-long-underline {
+    text-align: center;
+    width: 145px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: #808080;
+    border-width: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* Tab 2 Section 2 Show/Hide Sections */
+.charsheet .sheet-show-hide-container {
+    margin-bottom: -23px;
+}
+
+.charsheet input[type="checkbox"].sheet-show-hide {
+	width: 98%;
+	height: 24px;
+	opacity: 0;
+	margin: 0;
+	position: relative;
+    cursor: pointer;
+	z-index: 1;
+}
+
+.charsheet .sheet-show-hide + label.sheet-inverted-two {
+	margin-top: 3px;
+    position: relative;
+	top: -20px;
+    font-size: 90%;
+    color: white;
+    background: black;
+    text-align: center;
+    width: 97%;
+}
+
+.charsheet .sheet-show-hide ~ .sheet-contained {
+    position: relative;
+	top: -20px;
+}
+
+.charsheet .sheet-show-hide:checked + label.sheet-inverted-two {
+    background-color: #191919;
+}
+
+.charsheet .sheet-show-hide:checked ~ .sheet-contained {
+	display: none;
+    visibility: hidden;
+}
+
+.charsheet .sheet-pictos {
+    font-family: "Pictos";
+}
+
+
+
+/* Tab 2 Section 3 (Heat Scale) Background-6 */
+/* <a href="http://imgur.com/uwy5mxT"><img src="http://i.imgur.com/uwy5mxT.jpg" title="source: imgur.com" /></a> */
+.charsheet .sheet-background-6 {
+    background-image: url("http://i.imgur.com/uwy5mxT.jpg");
+    background-size: 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Tab 2 Heat Diagram Radio Buttons */
+
+/* Tab 2 Section 2 Column 2 Heat Scale (Opacity for "0" Check Box) */
+.charsheet .sheet-heat-checkbox {
+    opacity: .1;
+    margin-left: -15px;
+}
+
+/* Hide actual radio */
+.charsheet input[type="radio"].sheet-heat-radio {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Fake radio */
+.charsheet input[type="radio"].sheet-heat-radio + span::before {
+    margin-right: 4px;
+    border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    
+    background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+    
+    content: "";
+    width: 24px;
+    height: 14px;
+    font-size: 12px;
+    color: #CF0000;
+    
+    -moz-border-radius: 20%;
+    -webkit-border-radius: 20%;
+    border-radius: 20%;
+}
+
+/* Remove dot from all radios _before_ selected one */
+.charsheet input[type="radio"].sheet-heat-radio:checked ~ input[type="radio"].sheet-heat-radio + span::before,
+input[type="radio"].sheet-heat-radio:checked + span::before {    
+    content: "◄►";
+}
+
+/*Narrow Border Styling*/
+.charsheet .sheet-narrow-border {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    padding: 5px;
+    padding-top: 0px;
+    margin: 10px;
+    margin-bottom: 15px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+/* Tab 2 Section 3 (Heat Scale) Table One  */
+.charsheet .sheet-table-one {
+    font-size: 85%;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.charsheet .sheet-table-one-header {
+    font-size: 100%;
+    color: #ffffff;
+    text-align: center;
+    background-color: #666666;
+}
+
+.charsheet .sheet-table-two-header {
+    font-size: 110%;
+    text-align: right;
+}
+
+.charsheet .sheet-table-three-header {
+    font-size: 110%;
+    text-align: left;
+}
+
+.charsheet .sheet-table-four-header {
+    font-size: 110%;
+    text-align: center;
+}
+
+.charsheet .sheet-table-one-alternate {
+    background-color: #e6e6e6;
+}
+    
+.charsheet .sheet-superscript {
+    font-size: 120%;
+}
+
+/* Tab 3 (Quad Armor) Background-3 */
+/* <a href="http://imgur.com/fm2pGCt"><img src="http://i.imgur.com/fm2pGCt.jpg" title="source: imgur.com" /></a> */
+.charsheet .sheet-background-3 {
+    background-image: url("http://i.imgur.com/fm2pGCt.jpg");
+    background-size: 800px 350px;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Tab 3 (Quad Armor) Background-4 */
+/* <a href="http://imgur.com/US2OvM4"><img src="http://i.imgur.com/US2OvM4.jpg" title="source: imgur.com" /></a> */
+.charsheet .sheet-background-4 {
+    background-image: url("http://i.imgur.com/US2OvM4.jpg");
+    background-size: 290px 150px;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Torso Critical Location Roll Button */
+.charsheet button[type=roll].sheet-torso-critical::before {
+    content: "Torso Critical Location";
+    font-family: arial;
+    font-size: 65%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* Tab 4 Other Units Styling */
+
+/* Vehicle Table */
+.charsheet .sheet-table-vehicle {
+    font-size: 85%;
+    font-weight: bold;
+}
+
+/* Select Vehicle Movement / Suspension Factor */
+.charsheet select.sheet-vehicle-select {
+    display: inline;
+    width: 120px;
+    height: 20px;
+    padding: 1px;
+    margin: 2px;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+/* Vehicle Label Adjust */
+.charsheet .sheet-label-vehicle {
+    display: inline;
+    font-size: 95%;
+    font-weight: bold;
+}
+
+/* Tab 4 (Other Unit)  Number Input Box */
+.charsheet input[type="number"].sheet-number-large {
+    width: 55px;
+    height: 18px;
+    padding: 1px;
+    margin: 2px;
+    text-align: center;
+}
+
+/* Tab 4 (Other Units) Vehicle-Background-1 */
+/* <a href="http://imgur.com/uBDZjNj"><img src="http://i.imgur.com/uBDZjNj.png" title="source: imgur.com" /></a> */
+.charsheet .sheet-background-5 {
+    background-image: url("http://i.imgur.com/uBDZjNj.png");
+    background-size: 535px 750px;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Vehicle Armor Diagram Adjustmets Front */
+.charsheet .sheet-vehicle-top {
+    text-align: center;
+}
+
+/* Vehicle Armor Diagram Adjustmets Left Side */
+.charsheet .sheet-vehicle-left {
+    text-align: left;
+    margin-top: -25%;
+}
+
+/* Vehicle Armor Diagram Adjustmets Turret */
+.charsheet .sheet-vehicle-turret {
+    text-align: center;
+    margin-top: 1%;
+    margin-left: -10%;
+}
+
+/* Vehicle Armor Diagram Adjustmets Right Side */
+.charsheet .sheet-vehicle-right {
+    text-align: right;
+    margin-top: -25%;
+    margin-left: -16%;
+}
+
+/* Vehicle Armor Diagram Adjustmets Rear */
+.charsheet .sheet-vehicle-rear {
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* Tab 5 Rolltemplate Table of Colors */
+.charsheet .sheet-table-colors {
+    width: 98%;
+    font-weight: bold;
+    border-style: solid;
+    background-color: #D3D3D3;
+    border-color: #000000;
+    border-width: 1px;
+    margin-top: 5px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.charsheet .sheet-table-purple {
+    color: #9900ff;
+}
+
+.charsheet .sheet-table-blue {
+    color: #0000ff;
+}
+
+.charsheet .sheet-table-green {
+    color: #008000;
+}
+
+.charsheet .sheet-table-gold {
+    color: #f1c232;
+}
+
+.charsheet .sheet-table-red {
+    color: #ff0000;
+}
+
+/* Tab 5 Rollable Table Data Border */
+.charsheet .sheet-table-two {
+    font-size: 85%;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+    margin-top: 5px;
+}
+
+/* Roll Templates Background COMSTAR (SlateGrey(#708090) - Silver(#c0c0c0) - Silver(#c0c0c0) ) */
+.sheet-rolltemplate-battletech .sheet-background-Comstar {
+    background: #c0c0c0;
+    background: -webkit-linear-gradient(left top, #708090, #c0c0c0, #c0c0c0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right bottom, #708090, #c0c0c0. #c0c0c0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right bottom, #708090, #c0c0c0, #c0c0c0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(right bottom, #708090, #c0c0c0, #c0c0c0); /* Standard syntax (must be last) */
+    border: 1px, solid;
+    border-radius: 10px;
+}
+
+/* Roll Templates Background DAVION (DarkRed(#cc0000) - Red(#ff0000) - Gold(#ffd700) ) */
+.sheet-rolltemplate-battletech .sheet-background-Davion {
+    background: #ff0000;
+    background: -webkit-linear-gradient(#cc0000, #ff0000, #ffd700); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#cc0000, #ff0000, #ffd700); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#cc0000, #ff0000, #ffd700); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#cc0000, #ff0000, #ffd700); /* Standard syntax (must be last) */
+    border: 1px, solid;
+    border-radius: 10px;
+}
+
+/* Roll Templates Background KURITA (Black(#000000) - Black(#000000) - Red(#ff0000)) */
+.sheet-rolltemplate-battletech .sheet-background-Kurita {
+    background: #cc0000;
+    background: -webkit-linear-gradient(left top, #000000, #000000, #ff0000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #000000, #000000, #ff0000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #000000, #000000, #ff0000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom right, #000000, #000000, #ff0000); /* Standard syntax (must be last) */
+    border: 1px, solid, #000000;
+    border-radius: 10px;
+}
+
+/* Roll Templates Background LIAO (LimeGreen(#32cd32) - Green(#008000) - Black(#000000) ) */
+.sheet-rolltemplate-battletech .sheet-background-Liao {
+    background: green;
+    background: -webkit-linear-gradient(left top, #32cd32, #008000, #000000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #32cd32, #008000, #000000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #32cd32, #008000, #000000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom right, #32cd32, #008000, #000000); /* Standard syntax (must be last) */
+    border: 1px, solid;
+    border-radius: 10px;
+}
+
+/* Roll Templates Background MARIK (BlueViolet(#8a2be2) - DarkViolet(#9400d3) - Indigo(#4b0082) ) */
+.sheet-rolltemplate-battletech .sheet-background-Marik {
+    background: #9400d3;
+    background: -webkit-linear-gradient(#8a2be2, #9400d3, #4b0082); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#8a2be2, #9400d3, #4b0082); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#8a2be2, #9400d3, #4b0082); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#8a2be2, #9400d3, #4b0082); /* Standard syntax (must be last) */
+    border: 1px, solid;
+    border-radius: 10px;
+}
+
+/* Roll Templates Background STEINER (MidnightBlue(#191970) - Navy(#000080) - SteelBlue(#4682b4) ) */
+.sheet-rolltemplate-battletech .sheet-background-Steiner {
+    background: #000080;
+    background: -webkit-linear-gradient(#191970, #000080, #4682b4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#191970, #000080, #4682b4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#191970, #000080, #4682b4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#191970, #000080, #4682b4); /* Standard syntax (must be last) */
+    border: 1px, solid;
+    border-radius: 10px;
+}
+
+/* Roll Templates Background CLAN GHOST BEAR (LightGrey(#d3d3d3) - LightSteelBlue(#b0c4de) - SteelBlue(#4682b4) ) */
+.sheet-rolltemplate-battletech .sheet-background-Ghostbear {
+    background: #d3d3d3;
+    background: -webkit-linear-gradient(right top, #d3d3d3, #b0c4de, #4682b4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, #d3d3d3, #b0c4de, #4682b4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, #d3d3d3, #b0c4de, #4682b4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom left, #d3d3d3, #b0c4de, #4682b4); /* Standard syntax (must be last) */
+    border: 1px, solid;
+    border-radius: 10px;
+}
+
+/* Roll Templates Background CLAN JADE FALCON ( Khaki(#f0e68c) - LawnGreen(#7cfc00)- Green(#008000) ) */
+.sheet-rolltemplate-battletech .sheet-background-Jadefalcon {
+    background: #7cfc00;
+    background: -webkit-linear-gradient(right top, #f0e68c, #7cfc00, #008000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, #f0e68c, #7cfc00, #008000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, #f0e68c, #7cfc00, #008000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom left, #f0e68c, #7cfc00, #008000); /* Standard syntax (must be last) */
+    border: 1px, solid;
+    border-radius: 10px;
+}
+
+/* Roll Templates Background CLAN NOVA CAT ( Gold(#ffd700) - DarkRed(#8b0000)- DarkBlue(#00008b) ) */
+.sheet-rolltemplate-battletech .sheet-background-Novacat {
+    background: #00008b;
+    background: -webkit-linear-gradient(right top, #ffd700, #8b0000, #00008b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, #ffd700, #8b0000, #00008b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, #ffd700, #8b0000, #00008b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom left, #ffd700, #8b0000, #00008b); /* Standard syntax (must be last) */
+    border: 1px, solid;
+    border-radius: 10px;
+}
+
+/* Roll Templates Background CLAN SMOKE JAGUAR ( LightGrey(#d3d3d3) - SlateGrey(#708090)- MidnightBlue(#191970) ) */
+.sheet-rolltemplate-battletech .sheet-background-Smokejaguar {
+    background: #191970;
+    background: -webkit-linear-gradient(right top, #d3d3d3, #708090, #191970); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, #d3d3d3, #708090, #191970); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, #d3d3d3, #708090, #191970); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom left, #d3d3d3, #708090, #191970); /* Standard syntax (must be last) */
+    border: 1px, solid;
+    border-radius: 10px;
+}
+
+/* Roll Templates Background CLAN STEEL VIPER ( DimGrey(#696969) - Olivedrab(#6b8e23) - ForestGreen(#228b22) ) */
+.sheet-rolltemplate-battletech .sheet-background-Steelviper {
+    background: #696969;
+    background: -webkit-linear-gradient(right top, #696969, #6b8e23, #228b22); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, #696969, #6b8e23, #228b22); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, #696969, #6b8e23, #228b22); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom left, #696969, #6b8e23, #228b22); /* Standard syntax (must be last) */
+    border: 1px, solid;
+    border-radius: 10px;
+}
+
+/* Roll Templates Background CLAN WOLF ( Goldenrod(#daa520) - OrangeRed(#ff4500) - DarkRed(#8b0000) ) */
+.sheet-rolltemplate-battletech .sheet-background-Wolf {
+    background: #8b0000;
+    background: -webkit-linear-gradient(right top, #daa520, #ff4500, #8b0000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, #daa520, #ff4500, #8b0000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, #daa520, #ff4500, #8b0000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom left, #daa520, #ff4500, #8b0000); /* Standard syntax (must be last) */
+    border: 1px, solid;
+    border-radius: 10px;
+}
+
+.sheet-rolltemplate-battletech .sheet-rt-header {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    text-shadow: 1px 1px #000000;
+}
+.sheet-rolltemplate-battletech .sheet-rt-footer {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    text-shadow: 1px 1px #000000;
+}
+
+.sheet-rolltemplate-battletech table {
+    width: 95%;
+    height: 100%;
+    padding: 2px;
+    margin-left: 2.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffafa;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    border-spacing: 0px;
+}
+ 
+.sheet-rolltemplate-battletech td {
+    padding-left: 5px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #000000;
+}
+
+/* Odd Row Background (Hex Value #D9D1C7) */
+.sheet-rolltemplate-battletech tr:nth-of-type(odd) {
+    background: -webkit-linear-gradient(left,rgba(217, 209, 199,1),rgba(217, 209, 199,0.25)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(217, 209, 199,1),rgba(217, 209, 199,0.25)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(217, 209, 199,1),rgba(217, 209, 199,0.25)); /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(217, 209, 199,1), rgba(217, 209, 199,0.25)); /*Standard*/
+}
+
+.sheet-rolltemplate-battletech .sheet-enlarge {
+    font-size: 1.1em;
+}
+
+.sheet-rolltemplate-battletech .inlinerollresult  {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    font-size: 1em;
+}
+ 
+.sheet-rolltemplate-battletech .inlinerollresult.fullcrit {
+	color: #008000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech .inlinerollresult.fullfail {
+    color: #CC0000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-battletech .inlinerollresult.importantroll {
+	color: #008000;
+    border: none;
+}

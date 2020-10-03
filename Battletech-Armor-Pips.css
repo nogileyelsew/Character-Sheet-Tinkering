@@ -1,0 +1,128 @@
+/* JUST A BACKGROUND WRAP */
+.sheet-background-wrap {
+    max-width: 840px;
+}
+
+/* ITS ALL ABOUT THE GRID */
+.sheet-grid-container {
+    display: grid;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+.sheet-contains-two-columns {
+    grid-template-columns: auto 20%;
+}
+
+.sheet-contains-three-columns {
+    grid-template-columns: auto auto auto;
+}
+
+.sheet-span-all-three {
+    grid-column: 1 / 4;
+}
+
+.sheet-grid-item {
+    background-color: transparent;
+    border: 1px dashed #000000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ARMOR DIAGRAM IMAGE */
+.sheet-armor-diagram {
+    background-color: #f5f5f5; /* WhiteSmoke */
+    background-image: url("https://s3.amazonaws.com/files.d20.io/images/79790492/_nfthfAGtBiIWoMHB86oFg/max.jpg?1556118945");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 700px;
+}
+
+/* TOGGLING ARMOR CHECKBOXES */
+input.sheet-hidden-checkbox {
+    display: none;
+}
+
+.sheet-block-alpha,
+.sheet-block-switch:checked ~ .sheet-block-beta {
+  display: none;
+}
+
+.sheet-block-beta,
+.sheet-block-switch:checked ~ .sheet-block-alpha {
+  display: block;
+}
+
+/* CUSTOM CHECKBOXES FOR ARMOR */
+input.sheet-armor {
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0;
+}
+
+input.sheet-armor + span::before {
+    content: attr(title);
+    color: black;
+    border: solid 1px black;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    background: black;
+    background: linear-gradient(to bottom, #dcdcdc, #f5f5f5);
+    width: 14px;
+    height: 14px;
+    font-size: 9px;
+    margin-left: -14px;
+    margin-right: 2px;
+    padding: 0px 0px 0px 0px;
+    line-height: 14px;
+    box-shadow: 0px 0px 5px #b30000;
+}
+
+input.sheet-armor:checked + span::before {
+    color: #ffffff;
+    background: linear-gradient(to bottom, #a3c2db, #4682b4);
+    /*background: linear-gradient(to bottom, #4d0000, #990000);*/
+    border: solid 1px #4d0000;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #4682b4;
+}
+
+input.sheet-fake-armor {
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    cursor: default;
+    z-index: 5;
+    opacity: 0;
+}
+
+input.sheet-fake-armor + span::before {
+    content: attr(title);
+    color: #999999;
+    border: solid 1px #999999;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    background: black;
+    background: linear-gradient(to bottom, #dcdcdc, #f5f5f5);
+    width: 14px;
+    height: 14px;
+    font-size: 9px;
+    margin-left: -14px;
+    margin-right: 2px;
+    padding: 0px 0px 0px 0px;
+    line-height: 14px;
+}
